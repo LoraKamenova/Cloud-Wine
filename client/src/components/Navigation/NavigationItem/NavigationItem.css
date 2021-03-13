@@ -1,0 +1,13 @@
+.bottom-navigation-listItem {
+    margin: 10px;
+}
+
+.bottom-navigation-link {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.bottom-navigation-link:hover {
+    font-weight: bold;
+}
