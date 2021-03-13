@@ -1,14 +1,14 @@
 .bottom-navigation {
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7707457983193278) 50%, rgba(255,255,255,0) 100%);
     display: flex;
     justify-content: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7707457983193278) 50%, rgba(255,255,255,0) 100%);
+    padding: 10px;
     margin-bottom: 20px;
 }
 
 .bottom-navigation-list {
     display: flex;
     list-style-type: none;
-    padding: 10px;
     font-family: 'Open Sans Condensed', sans-serif;
 }
