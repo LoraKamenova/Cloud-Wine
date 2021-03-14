@@ -12,6 +12,7 @@ import Register from "./components/Register/Register";
 import Login from "./components/Login/Login";
 import AddJournal from "./components/AddJournal/AddJournal";
 import AddDestination from "./components/AddDestination/AddDestination";
+import AllJournals from "./components/AllJournals/AllJournals";
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
       {/*<Register />*/}
       {/*<Login />*/}
       {/*<AddJournal />*/}
-      <AddDestination />
+      {/*<AddDestination />*/}
+      <AllJournals />
     </div>
   );
 }

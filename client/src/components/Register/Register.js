@@ -2,7 +2,7 @@ import './Register.css'
 
 const Register = () => {
     return (
-        <main className="login-reg-pages register-page">
+        <main className="auth-pages register-page">
 
             <section className="auth-form-wrapper register-form-wrapper">
 
@@ -32,7 +32,7 @@ const Register = () => {
                         <div className="auth-form-field-heading">
                             <label htmlFor="email">Имейл адрес:</label>
                         </div>
-                        <input className="form-field-input" type="email" id="email" name="email"/>
+                        <input className="auth-form-field-input" type="email" id="email" name="email"/>
                     </div>
 
                     <div className="auth-form-field-wrapper">

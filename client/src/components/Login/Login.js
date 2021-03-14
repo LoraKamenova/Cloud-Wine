@@ -2,7 +2,7 @@ import './Login.css'
 
 const Login = () => {
     return (
-        <main className="login-reg-pages login-page">
+        <main className="auth-pages login-page">
 
             <section className="auth-form-wrapper login-form-wrapper">
 

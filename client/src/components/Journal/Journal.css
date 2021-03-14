@@ -1,7 +1,21 @@
 .journal-page {
     background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1615655025/React%20Project/writing_z4lxds.jpg');
+    height: 100vh;
 }
 
-.journal-article {
-    margin-right: 15%;
+.journal-section {
+    margin-right: 7%;
+}
+
+.button {
+    background-color: darkgreen;
+}
+
+.button:hover {
+    background-color: green;
+}
+
+.journal-page > .general-pages-wrapper > .journal-section {
+    height: 480px;
+    margin-top: 60px;
 }

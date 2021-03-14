@@ -33,14 +33,14 @@ const AddDestination = () => {
 
                             <div className="general-form-field-wrapper">
                                 <div className="general-form-field-heading">
-                                    <label htmlFor="url1">Линк към снимка 1:</label>
+                                    <label htmlFor="url1">URL към снимка 1:</label>
                                 </div>
                                 <input className="general-form-field-input" type="text" id="url1" name="url1"/>
                             </div>
 
                             <div className="general-form-field-wrapper">
                                 <div className="general-form-field-heading">
-                                    <label htmlFor="url2">Линк към снимка 2:</label>
+                                    <label htmlFor="url2">URL към снимка 2:</label>
                                 </div>
                                 <input className="general-form-field-input" type="text" id="url2" name="url2"/>
                             </div>

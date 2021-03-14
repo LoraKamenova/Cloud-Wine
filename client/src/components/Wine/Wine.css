@@ -1,7 +1,8 @@
 .wine-page {
     background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1615685490/React%20Project/wine_gxmm6t.jpg');
+    height: 100vh;
 }
 
-.wine-article {
-    margin-right: 5%;
+.wine-section {
+    margin-right: 4%;
 }

@@ -1,0 +1,15 @@
+.article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.article-heading {
+    font-size: 30px;
+    border-bottom: 5px solid red;
+}
+
+.article-paragraph {
+    margin-top: 40px;
+    line-height: 1.5;
+}

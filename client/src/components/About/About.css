@@ -1,7 +1,8 @@
 .about-page {
     background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1615684746/React%20Project/glasses_jxaovp.jpg');
+    height: 100vh;
 }
 
-.about-article {
-    margin-right: 10%;
+.about-section {
+    margin-right: 7%;
 }

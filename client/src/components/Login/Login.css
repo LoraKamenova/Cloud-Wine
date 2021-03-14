@@ -1,10 +1,12 @@
 .login-page {
     background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1615655024/React%20Project/login_dbmoom.jpg');
+    height: 100vh;
 }
 
 .login-form-wrapper {
-    width: 40%;
+    width: 43%;
     margin-top: 4%;
     margin-right: 7%;
+    padding: 20px 30px;
     align-self: flex-end;
 }

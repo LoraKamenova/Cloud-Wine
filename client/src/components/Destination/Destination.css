@@ -1,7 +1,21 @@
 .destination-page {
     background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1615655436/React%20Project/wine_map_p79f5c.jpg');
+    height: 100vh;
 }
 
-.destination-article {
-    margin-right: 15%;
+.destination-section {
+    margin-right: 7%;
+}
+
+.button {
+    background-color: darkgreen;
+}
+
+.button:hover {
+    background-color: green;
+}
+
+.destination-page > .general-pages-wrapper > .destination-section {
+    height: 480px;
+    margin-top: 60px;
 }
