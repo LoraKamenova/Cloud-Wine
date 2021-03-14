@@ -1,5 +1,7 @@
 import './AllJournals.css'
 import Aside from "../Aside/Aside";
+import Article from "../Article/Article";
+import JournalCard from "./JournalCard/JournalCard";
 
 const AllJournals = () => {
     return (
@@ -11,10 +13,12 @@ const AllJournals = () => {
                     <Aside/>
                 </section>
 
-                <section className="journals-sections">
+                <section className="journals-section">
+
                     <div className="button-wrapper">
                         <a className="button" href="#">Нов винопис<i className="fas fa-angle-double-right"></i></a>
                     </div>
+
                     <div className="all-journals-wrapper">
 
                         <img className="peg-image"
@@ -23,46 +27,35 @@ const AllJournals = () => {
                         <div className="all-journals-header">Всички винописи</div>
 
                         <div className="all-journals-container">
+
                             <a className="journal-card-link" href="#">
-                                <div className="journal-card">
-                                    <div className="image-wrapper">
-                                        <img className="journal-image"
-                                             src='https://www.andrey-andreev.com/wp-content/uploads/2018/07/IMGP7314.jpg'/>
-                                    </div>
-                                    <div className="title-wrapper">
-                                        <h3 className="title">Шато "Копса"</h3>
-                                    </div>
-                                </div>
+                                <JournalCard
+                                    title="Шато Копса"
+                                    url='https://www.andrey-andreev.com/wp-content/uploads/2018/07/IMGP7314.jpg'
+                                />
                             </a>
-                            <div className="journal-card">
-                                <div className="image-wrapper">
-                                    <img className="journal-image"
-                                         src='https://www.andrey-andreev.com/wp-content/uploads/2018/07/IMGP7314.jpg'/>
-                                </div>
-                                <div className="title-wrapper">
-                                    <h3 className="title">Шато "Копса"</h3>
-                                </div>
-                            </div>
 
-                            <div className="journal-card">
-                                <div className="image-wrapper">
-                                    <img className="journal-image"
-                                         src='https://www.andrey-andreev.com/wp-content/uploads/2018/07/IMGP7314.jpg'/>
-                                </div>
-                                <div className="title-wrapper">
-                                    <h3 className="title">Шато "Копса"</h3>
-                                </div>
-                            </div>
+                            <a className="journal-card-link" href="#">
+                                <JournalCard
+                                    title="Винарска изба Орбелус"
+                                    url='https://www.culinarytourism.bg/images/destinacii/106/orbelus_winery001.jpg'
+                                />
+                            </a>
 
-                            <div className="journal-card">
-                                <div className="image-wrapper">
-                                    <img className="journal-image"
-                                         src='https://www.andrey-andreev.com/wp-content/uploads/2018/07/IMGP7314.jpg'/>
-                                </div>
-                                <div className="title-wrapper">
-                                    <h3 className="title">Шато "Копса"</h3>
-                                </div>
-                            </div>
+                            <a className="journal-card-link" href="#">
+                                <JournalCard
+                                    title="Винарска изба Братя Минкови"
+                                    url='https://www.transgourme.eu/media/k2/items/cache/2d535442c2c0b0669d8f5a051ed00bcc_XL.jpg'
+                                />
+                            </a>
+
+                            <a className="journal-card-link" href="#">
+                                <JournalCard
+                                    title="Винарска изба Катаржина Естейт"
+                                    url='https://katarzyna.bg/wp-content/uploads/2018/08/4-1024x683.jpg'
+                                />
+                            </a>
+
                         </div>
                     </div>
                 </section>

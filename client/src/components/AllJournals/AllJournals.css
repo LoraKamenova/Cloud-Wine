@@ -6,18 +6,23 @@
     display: flex;
 }
 
-.journals-sections {
+.journals-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 80%;
     margin: 0 auto 4% auto;
+}
 
+.button-wrapper {
+    display: flex;
+    height: 90px;
+    justify-content: flex-end;
+    padding: 20px 0;
 }
 
 .all-journals-wrapper {
     display: flex;
-    width: 100%;
     flex-direction: column;
     background-image: url("https://res.cloudinary.com/dyhmxus4n/image/upload/v1615753659/React%20Project/old_paper_qjmsnl.jpg");
     background-position: center center;
@@ -25,15 +30,12 @@
     background-attachment: fixed;
     background-size: 100% 100%;
     justify-content: center;
+    width: 100%;
     padding: 20px;
 }
 
-
-.all-journals-container {
-    justify-content: center;
-    display: flex;
+.peg-image {
     margin: 0 auto;
-    flex-wrap: wrap;
 }
 
 .all-journals-header {
@@ -43,42 +45,11 @@
     position: relative;
     top: -20px
 }
-
-.peg-image {
-    margin: 0 auto;
-}
-
-.journal-card {
-    background-color: white;
-    width: 320px;
-    padding: 20px 20px 40px 20px;
-    margin: 10px;
-    transform: rotate(2deg);
-}
-
-.journal-card:nth-child(even) {
-    transform: rotate(1deg);
-}
-
-.aside-section {
+.all-journals-container {
+    justify-content: center;
     display: flex;
-    flex-direction: column;;
-}
-
-.journal-card:nth-child(odd) {
-    transform: rotate(-1deg);
-}
-
-.journal-image {
     margin: 0 auto;
-    width: 280px;
-    height: 260px;
-}
-
-.title-wrapper {
-    font-size: 25px;
-    font-family: 'Caveat', cursive;
-    text-align: center;
+    flex-wrap: wrap;
 }
 
 .journal-card-link {
@@ -90,9 +61,10 @@
     cursor: pointer;
 }
 
-.button-wrapper {
-    display: flex;
-    height: 90px;
-    justify-content: flex-end;
-    padding: 20px 0;
+.journal-card-link:nth-child(even) {
+    transform: rotate(1deg);
+}
+
+.journal-card-link:nth-child(odd) {
+    transform: rotate(-1deg);
 }
