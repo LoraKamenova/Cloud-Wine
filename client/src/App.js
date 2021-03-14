@@ -10,6 +10,8 @@ import Destination from "./components/Destination/Destination";
 import Journal from "./components/Journal/Journal";
 import Register from "./components/Register/Register";
 import Login from "./components/Login/Login";
+import AddJournal from "./components/AddJournal/AddJournal";
+import AddDestination from "./components/AddDestination/AddDestination";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
       {/*<Journal />*/}
       {/*<Register />*/}
       {/*<Login />*/}
+      {/*<AddJournal />*/}
+      <AddDestination />
     </div>
   );
 }

@@ -4,8 +4,8 @@
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
 
-/*General styles for common pages and login-register pages*/
-.common-page, .login-reg-pages {
+/*General styles for common pages, login-register and form pages*/
+.common-page, .login-reg-pages, .form-pages {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -73,65 +73,65 @@
     padding-left: 5px;
     font-size: 20px;
 }
-
+/*-------------------------------------------------------------*/
 /*General styles for forms*/
 
-.form-wrapper {
+.auth-form-wrapper, .general-form-wrapper {
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.65);
     color: white;
 }
 
-.form-site-name-wrapper {
+.auth-form-site-name-wrapper, .general-form-site-name-wrapper {
     margin: 0 auto;
     border-bottom: 2px solid #5A8839;
 }
 
-.form-site-name-text {
+.auth-form-site-name-text, .general-form-site-name-text {
     position: relative;
     bottom: -25px;
     left: 50px
 }
 
-.form-site-name {
+.auth-form-site-name, .general-form-site-name {
     font-family: 'Caveat', cursive;
     font-size: 50px;
     color: #9F61B1;
 }
 
-.form-pic {
+.auth-form-pic, .general-form-pic {
     width: 400px;
     height: 70px;
 }
 
-.form {
+.auth-form, .general-form {
     padding: 30px 50px 40px 50px;
 }
 
-.form-heading-wrapper {
+.auth-form-heading-wrapper, .general-form-heading-wrapper {
     text-align: center;
 }
 
-.form-field-wrapper {
+.auth-form-field-wrapper, .general-form-field-wrapper {
     margin-top: 20px;
 }
 
-.form-field-input {
+.auth-form-field-input, .general-form-field-input {
     width: 100%;
     padding: 3px;
     margin-top: 3px;
 }
 
-.form-button-wrapper {
+.auth-form-button-wrapper, .general-form-button-wrapper {
     text-align: center;
 }
 
-.form-button {
+.auth-form-button, .general-form-button {
     outline: none;
     padding: 10px 50px;
     border-radius: 5px;
-    background-color: #5A8839;
+    background-color: #5B8A39;
     color: white;
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
@@ -140,7 +140,30 @@
     border: none;
 }
 
-.form-button:hover {
+.auth-form-button {
+    padding: 10px 50px;
+}
+
+.general-form-button {
+    padding: 10px 100px;
+}
+
+.auth-form-button:hover, .general-form-button:hover {
     cursor: pointer;
     background-color: #3C5A26;
+}
+
+.general-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.general-form-main-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.general-form-sub-section {
+    width: 50%;
+    padding: 10px;
 }
