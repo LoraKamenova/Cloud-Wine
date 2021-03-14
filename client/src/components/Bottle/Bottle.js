@@ -1,16 +1,16 @@
-import './About.css'
+import './Bottle.css'
 import Aside from "../Aside/Aside";
 
-const About = () => {
+const Bottle = () => {
     return (
-        <main className="common-page about-page">
-            <h1 className="site-name about-page-site-name">Винoписи</h1>
+        <main className="common-page bottle-page">
+            <h1 className="site-name">Винoписи</h1>
 
             <div className="common-page-wrapper">
                 <Aside/>
-                <article className="common-page-article">
+                <article className="common-page-article bottle-article">
                     <div className="common-page-heading-wrapper">
-                        <span className="common-page-heading">ЗА НАС</span>
+                        <span className="common-page-heading">БУТИЛКИ</span>
                     </div>
                     <p className="common-page-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Phasellus
@@ -32,4 +32,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default Bottle;
