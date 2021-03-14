@@ -1,0 +1,36 @@
+
+.journal-details-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.journal-details-card-header {
+    text-align: center;
+}
+
+.journal-details-card-heading {
+    font-size: 35px;
+}
+
+.journal-details-card-image-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.journal-details-card-image {
+    width: 420px;
+    height: 250px;
+    box-shadow: 0px 0px 11px -3px #000000;
+}
+
+.journal-details-card-text {
+    padding: 20px 40px;
+    text-align: justify;
+}
+
+.journal-details-card-button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}

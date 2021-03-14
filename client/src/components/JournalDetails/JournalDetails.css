@@ -1,0 +1,15 @@
+.journal-details-page {
+    background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1615655025/React%20Project/writing_z4lxds.jpg');
+}
+
+.details-page-wrapper {
+    display: flex;
+}
+
+.journal-details-section {
+    width: 80%;
+    background-color: white;
+    padding: 25px;
+    margin: 5vh auto;
+    min-height: 90vh;
+}

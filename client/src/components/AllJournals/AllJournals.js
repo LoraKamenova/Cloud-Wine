@@ -1,12 +1,10 @@
 import './AllJournals.css'
 import Aside from "../Aside/Aside";
-import Article from "../Article/Article";
 import JournalCard from "./JournalCard/JournalCard";
 
 const AllJournals = () => {
     return (
         <main className="all-pages all-journals-page">
-
 
             <div className="all-page-wrapper">
                 <section className="aside-section">

@@ -20,7 +20,7 @@ const Journal = () => {
                             congue sapien. Curabitur sed lacus ut dolor auctor fermentum ac sed risus. Aliquam quis risus vel felis cursus
                             eleifend ac a enim. Curabitur dapibus diam sit amet scelerisque ultricies."
                     />
-                    <a className="button" href="#">Виж Винописите<i className="fas fa-angle-double-right"></i></a>
+                    <a className="button info-button" href="#">Виж Винописите<i className="fas fa-angle-double-right"></i></a>
                 </section>
             </div>
         </main>

@@ -9,9 +9,9 @@
 .journals-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 80%;
-    margin: 0 auto 4% auto;
+    margin: 3vh auto;
+    min-height: 96vh;
 }
 
 .button-wrapper {

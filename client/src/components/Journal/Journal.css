@@ -7,14 +7,6 @@
     margin-right: 7%;
 }
 
-.button {
-    background-color: darkgreen;
-}
-
-.button:hover {
-    background-color: green;
-}
-
 .journal-page > .general-pages-wrapper > .journal-section {
     height: 480px;
     margin-top: 60px;

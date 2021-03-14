@@ -7,14 +7,6 @@
     margin-right: 7%;
 }
 
-.button {
-    background-color: darkgreen;
-}
-
-.button:hover {
-    background-color: green;
-}
-
 .destination-page > .general-pages-wrapper > .destination-section {
     height: 480px;
     margin-top: 60px;

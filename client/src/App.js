@@ -13,6 +13,7 @@ import Login from "./components/Login/Login";
 import AddJournal from "./components/AddJournal/AddJournal";
 import AddDestination from "./components/AddDestination/AddDestination";
 import AllJournals from "./components/AllJournals/AllJournals";
+import JournalDetails from "./components/JournalDetails/JournalDetails";
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
       {/*<Login />*/}
       {/*<AddJournal />*/}
       {/*<AddDestination />*/}
-      <AllJournals />
+      {/*<AllJournals />*/}
+      <JournalDetails />
     </div>
   );
 }
