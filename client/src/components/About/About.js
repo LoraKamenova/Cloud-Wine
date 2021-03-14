@@ -8,7 +8,7 @@ const About = () => {
 
             <div className="common-page-wrapper">
                 <Aside/>
-                <article className="common-page-article">
+                <article className="common-page-article about-article">
                     <div className="common-page-heading-wrapper">
                         <span className="common-page-heading">ЗА НАС</span>
                     </div>

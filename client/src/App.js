@@ -8,19 +8,23 @@ import Bottle from "./components/Bottle/Bottle";
 import Barrel from "./components/Barrel/Barrel";
 import Destination from "./components/Destination/Destination";
 import Journal from "./components/Journal/Journal";
+import Register from "./components/Register/Register";
+import Login from "./components/Login/Login";
 
 function App() {
   return (
     <div className="app">
-      <Home />
+      {/*<Home />*/}
       {/*<About />*/}
       {/*<Vineyard />*/}
       {/*<Grape />*/}
       {/*<Wine />*/}
       {/*<Bottle />*/}
-      <Barrel />
+      {/*<Barrel />*/}
       {/*<Destination />*/}
       {/*<Journal />*/}
+      {/*<Register />*/}
+      {/*<Login />*/}
     </div>
   );
 }
