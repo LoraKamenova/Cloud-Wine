@@ -1,4 +1,5 @@
 import './Register.css'
+import FooterBottom from "../FooterBottom/FooterBottom";
 
 const Register = () => {
     return (
@@ -54,6 +55,7 @@ const Register = () => {
                     </div>
                 </form>
             </section>
+            <FooterBottom />
         </main>
     );
 };

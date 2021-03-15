@@ -30,13 +30,13 @@ function App() {
       {/*<Destination />*/}
       {/*<Journal />*/}
       {/*<Register />*/}
-      {/*<Login />*/}
+      <Login />
       {/*<AddJournal />*/}
       {/*<AddDestination />*/}
       {/*<AllJournals />*/}
       {/*<JournalDetails />*/}
       {/*<AllDestinations />*/}
-      <DestinationDetails />
+      {/*<DestinationDetails />*/}
     </div>
   );
 }

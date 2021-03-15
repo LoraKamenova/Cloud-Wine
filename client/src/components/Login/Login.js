@@ -1,4 +1,5 @@
 import './Login.css'
+import FooterBottom from "../FooterBottom/FooterBottom";
 
 const Login = () => {
     return (
@@ -40,6 +41,7 @@ const Login = () => {
                     </div>
                 </form>
             </section>
+            <FooterBottom />
         </main>
     );
 };

@@ -58,7 +58,7 @@
 }
 
 .info-button {
-    width: 200px;
+    width: 220px;
     background-color: #006666;
 }
 
@@ -166,7 +166,7 @@
     outline: none;
     padding: 10px 50px;
     border-radius: 5px;
-    background-color: #5B8A39;
+    background-color: #3C5A26;
     color: white;
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
@@ -185,7 +185,7 @@
 
 .auth-form-button:hover, .general-form-button:hover {
     cursor: pointer;
-    background-color: #3C5A26;
+    background-color: #5B8A39;
 }
 
 .general-form {

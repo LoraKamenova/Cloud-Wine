@@ -1,13 +1,16 @@
 import './Home.css'
 import Header from "../Header/Header";
 import Navigation from "../Navigation/Navigation";
-import Footer from "../Footer/Footer";
+import FooterBottom from "../FooterBottom/FooterBottom";
 
 const Home = () => {
     return (
         <main className="home-page">
-            <Header />
-            <Navigation />
+            <div className="home-main-container">
+                <Header/>
+                <Navigation/>
+            </div>
+            <FooterBottom/>
         </main>
     );
 };
