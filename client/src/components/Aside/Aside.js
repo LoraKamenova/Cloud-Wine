@@ -1,6 +1,7 @@
 import './Aside.css'
 import AsideItem from "./AsideItem/AsideItem";
 import Footer from "../Footer/Footer";
+import {NavLink} from "react-router-dom";
 
 const Aside = () => {
     return (
@@ -10,15 +11,15 @@ const Aside = () => {
 
             <div className="aside-navigation">
                 <ul className="aside-navigation-list">
-                    <AsideItem>НАЧАЛО</AsideItem>
-                    <AsideItem>ЗА НАС</AsideItem>
-                    <AsideItem>ЛОЗЯ</AsideItem>
-                    <AsideItem>ГРОЗДЕ</AsideItem>
-                    <AsideItem>ВИНО</AsideItem>
-                    <AsideItem>БЪЧВИ</AsideItem>
-                    <AsideItem>БУТИЛКИ</AsideItem>
-                    <AsideItem>ДЕСТИНАЦИИ</AsideItem>
-                    <AsideItem>ВИНОПИСИ</AsideItem>
+                    <NavLink activeClassName="selected-aside-item" exact={true} to="/"><AsideItem>НАЧАЛО</AsideItem></NavLink>
+                    <NavLink activeClassName="selected-aside-item" exact={true} to="/about"><AsideItem>ЗА НАС</AsideItem></NavLink>
+                    <NavLink activeClassName="selected-aside-item" exact={true} to="/vineyard"><AsideItem>ЛОЗЯ</AsideItem></NavLink>
+                    <NavLink activeClassName="selected-aside-item" exact={true} to="/grape"><AsideItem>ГРОЗДЕ</AsideItem></NavLink>
+                    <NavLink activeClassName="selected-aside-item" exact={true} to="/wine"><AsideItem>ВИНО</AsideItem></NavLink>
+                    <NavLink activeClassName="selected-aside-item" exact={true} to="/barrel"><AsideItem>БЪЧВИ</AsideItem></NavLink>
+                    <NavLink activeClassName="selected-aside-item" exact={true} to="/bottle"><AsideItem>БУТИЛКИ</AsideItem></NavLink>
+                    <NavLink activeClassName="selected-aside-item" exact={true} to="/destination"><AsideItem>ДЕСТИНАЦИИ</AsideItem></NavLink>
+                    <NavLink activeClassName="selected-aside-item" exact={true} to="/journal"><AsideItem>ВИНОПИСИ</AsideItem></NavLink>
                 </ul>
             </div>
 

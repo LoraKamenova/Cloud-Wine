@@ -25,7 +25,8 @@
     flex-direction: column;
     align-items: center;
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0.57) 11%, rgba(0,0,0,0.7707457983193278) 23%, rgba(0,0,0,0.7567401960784313) 79%, rgba(0,0,0,0.5718662464985995) 90%, rgba(0,0,0,0) 100%);    color: white;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4990371148459384) 24%, rgba(0,0,0,0.6082808123249299) 51%, rgba(0,0,0,0.4990371148459384) 75%, rgba(0,0,0,0) 100%);
+    color: white;
     width: 55%;
     height: 430px;
     margin-top: 90px;
@@ -114,7 +115,7 @@
 .auth-form-wrapper, .general-form-wrapper {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.85);
     color: white;
 }
 
@@ -141,7 +142,7 @@
 }
 
 .auth-form, .general-form {
-    padding: 30px 50px 40px 50px;
+    padding: 30px 50px 20px 50px;
 }
 
 .auth-form-heading-wrapper, .general-form-heading-wrapper {
@@ -156,6 +157,11 @@
     width: 100%;
     padding: 3px;
     margin-top: 3px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    height: 32px;
 }
 
 .auth-form-button-wrapper, .general-form-button-wrapper {
@@ -171,7 +177,7 @@
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
-    margin-top: 30px;
+    margin-top: 20px;
     border: none;
 }
 

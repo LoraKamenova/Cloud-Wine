@@ -9,9 +9,11 @@
     display: flex;
     flex-grow: 1;
     width: 40%;
-    margin-top: 4%;
-    margin-bottom: 4%;
-    margin-right: 7%;
+    height: 80%;
+    /*margin-top: 4%;*/
+    /*margin-bottom: 4%;*/
+    /*margin-right: 7%;*/
+    margin: 4% auto;
     padding: 20px 30px;
     align-self: flex-end;
     justify-content: center;

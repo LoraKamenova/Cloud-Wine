@@ -1,9 +1,7 @@
-.footer {
+.footer-bottom {
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
     color: white;
-    margin-top: 20px;
-    padding: 20px 30px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0.8519782913165266) 0%, rgba(0,0,0,0) 100%);
+    text-align: center;
+    margin: 0 0 3px 0;
 }
