@@ -7,7 +7,7 @@ const AllJournals = () => {
         <main className="all-pages all-journals-page">
 
             <div className="all-page-wrapper">
-                <section className="all-journals-aside-section">
+                <section >
                     <Aside/>
                 </section>
 

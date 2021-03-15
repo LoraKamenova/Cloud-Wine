@@ -6,7 +6,7 @@ const AllDestinations = () => {
         <main className="all-pages all-destinations-page">
 
             <div className="all-page-wrapper">
-                <section className="all-destinations-aside-section">
+                <section >
                     <Aside/>
                 </section>
 

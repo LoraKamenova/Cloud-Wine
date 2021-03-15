@@ -11,3 +11,7 @@
     height: 480px;
     margin-top: 60px;
 }
+
+.destination-page > .general-pages-wrapper > Aside > Footer > .footer {
+    color: black;
+}

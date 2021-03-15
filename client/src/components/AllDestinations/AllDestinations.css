@@ -66,3 +66,7 @@
 .destination-card-link:hover {
     cursor: pointer;
 }
+
+.all-destinations-page > .all-page-wrapper > section > Aside > Footer > .footer {
+    color: black;
+}

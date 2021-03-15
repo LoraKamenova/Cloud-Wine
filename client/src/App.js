@@ -15,6 +15,7 @@ import AddDestination from "./components/AddDestination/AddDestination";
 import AllJournals from "./components/AllJournals/AllJournals";
 import JournalDetails from "./components/JournalDetails/JournalDetails";
 import AllDestinations from "./components/AllDestinations/AllDestinations";
+import DestinationDetails from "./components/DestinationDetails/DestinationDetails";
 
 function App() {
   return (
@@ -34,7 +35,8 @@ function App() {
       {/*<AddDestination />*/}
       {/*<AllJournals />*/}
       {/*<JournalDetails />*/}
-      <AllDestinations />
+      {/*<AllDestinations />*/}
+      <DestinationDetails />
     </div>
   );
 }

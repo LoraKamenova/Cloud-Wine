@@ -1,22 +1,24 @@
-import './JournalDetails.css'
+import './DestinationDetails.css'
 import Aside from "../Aside/Aside";
-import JournalDetailsCard from "./JournalDetailsCard/JournalDetailsCard";
+import DestinationDetailsCard from "./DestinationDetailsCard/DestinationDetailsCard";
 
-const JournalDetails = () => {
+const DestinationDetails = () => {
     return (
-        <main className="details-pages journal-details-page">
+        <main className="details-pages destination-details-page">
 
             <div className="details-page-wrapper">
                 <section >
                     <Aside/>
                 </section>
 
-                <section className="journal-details-section">
+                <section className="destination-details-section">
 
-                    <JournalDetailsCard
+                    <DestinationDetailsCard
                         title="Шато Копса"
                         url1="https://www.andrey-andreev.com/wp-content/uploads/2018/07/IMGP7314.jpg"
                         url2="https://copsa.bg/wp-content/uploads/2018/07/shato-copsa-1.jpg"
+                        address="Сопот, ул. Първа"
+                        services="Дегустрация на вино, Разходка в лозята, Ресторант, Хотел"
                         paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Aenean id ullamcorper nisl, nec dapibus lorem. Mauris id justo turpis. Cras tincidunt velit
                             nec mi tristique tincidunt. Aliquam ullamcorper porta sagittis. Nullam neque est, hendrerit
@@ -44,4 +46,4 @@ const JournalDetails = () => {
     );
 };
 
-export default JournalDetails;
+export default DestinationDetails;

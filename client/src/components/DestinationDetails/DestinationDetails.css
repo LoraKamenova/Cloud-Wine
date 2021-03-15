@@ -1,0 +1,19 @@
+.destination-details-page {
+    background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1615655436/React%20Project/wine_map_p79f5c.jpg');
+}
+
+.destination-page-wrapper {
+    display: flex;
+}
+
+.destination-details-section {
+    width: 80%;
+    background-color: white;
+    padding: 25px;
+    margin: 5vh auto;
+    min-height: 90vh;
+}
+
+/*.destination-details-page > .details-page-wrapper > section > Aside > .aside-navigation-wrapper > Footer > .footer {*/
+/*    color: black;*/
+/*}*/
