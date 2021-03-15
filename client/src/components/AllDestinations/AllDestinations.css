@@ -1,12 +1,12 @@
-.all-journals-page {
-    background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1615655025/React%20Project/writing_z4lxds.jpg');
+.all-destinations-page {
+    background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1615655436/React%20Project/wine_map_p79f5c.jpg');
 }
 
 .all-page-wrapper {
     display: flex;
 }
 
-.journals-section {
+.destinations-section {
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -14,17 +14,17 @@
     min-height: 96vh;
 }
 
-.all-journals-button-wrapper {
+.all-destinations-button-wrapper {
     display: flex;
     height: 90px;
     justify-content: center;
     padding: 20px 0;
 }
 
-.all-journals-wrapper {
+.all-destinations-wrapper {
     display: flex;
     flex-direction: column;
-    background-image: url("https://res.cloudinary.com/dyhmxus4n/image/upload/v1615753659/React%20Project/old_paper_qjmsnl.jpg");
+    background-image: url("https://res.cloudinary.com/dyhmxus4n/image/upload/v1615769581/React%20Project/gray_paper_h7w2v0.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -34,37 +34,35 @@
     padding: 20px;
 }
 
-.peg-image {
-    margin: 0 auto;
+.suitcase-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-.all-journals-header {
+.suitcase-image {
+    margin: 0;
+}
+
+.all-destinations-header {
     font-size: 55px;
     font-family: 'Caveat', cursive;
     text-align: center;
     position: relative;
     top: -20px
 }
-.all-journals-container {
+.all-destinations-container {
     justify-content: center;
     display: flex;
     margin: 0 auto;
     flex-wrap: wrap;
 }
 
-.journal-card-link {
+.destination-card-link {
     text-decoration: none;
     color: black;
 }
 
-.journal-card-link:hover {
+.destination-card-link:hover {
     cursor: pointer;
-}
-
-.journal-card-link:nth-child(even) {
-    transform: rotate(1deg);
-}
-
-.journal-card-link:nth-child(odd) {
-    transform: rotate(-1deg);
 }

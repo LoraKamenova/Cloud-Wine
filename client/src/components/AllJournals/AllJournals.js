@@ -7,14 +7,15 @@ const AllJournals = () => {
         <main className="all-pages all-journals-page">
 
             <div className="all-page-wrapper">
-                <section className="aside-section">
+                <section className="all-journals-aside-section">
                     <Aside/>
                 </section>
 
                 <section className="journals-section">
 
-                    <div className="button-wrapper">
-                        <a className="button" href="#">Нов винопис<i className="fas fa-angle-double-right"></i></a>
+                    <div className="all-journals-button-wrapper">
+                        <a className="button my-items-button" href="#">Моите винописи<i className="fas fa-heart"></i></a>
+                        <a className="button new-item-button" href="#">Нов винопис<i className="fas fa-check"></i></a>
                     </div>
 
                     <div className="all-journals-wrapper">

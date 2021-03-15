@@ -13,9 +13,6 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    /*width: 100%;*/
-    /*height: 100vh;*/
-    /*position: fixed;*/
 }
 
 .general-pages-wrapper {
@@ -35,6 +32,9 @@
     padding: 50px 90px;
 }
 
+/*----------------------------------------------------------------------*/
+/*Shared styles for buttons*/
+
 .button {
     outline: none;
     text-decoration: none;
@@ -52,21 +52,44 @@
     cursor: pointer;
 }
 
-.fa-angle-double-right, .fas.fa-times, .fas.fa-pencil-alt {
-    padding-left: 5px;
+.fa-angle-double-right, .fas.fa-times, .fas.fa-pencil-alt, .fas.fa-check, .fas.fa-heart {
+    padding-left: 10px;
     font-size: 20px;
 }
 
 .info-button {
-    background-color: darkgreen;
+    width: 200px;
+    background-color: #006666;
 }
 
 .info-button:hover {
+    background-color: #008A8A;
+}
+
+.new-item-button, .my-items-button {
+    margin: 0 5px;
+    width: 200px;
+}
+
+.new-item-button {
+    background-color: darkgreen;
+}
+
+.new-item-button:hover {
     background-color: green;
+}
+
+.my-items-button {
+    background-color: #5B3256;
+}
+
+.my-items-button:hover {
+    background-color: #733F6D;
 }
 
 .edit-button, .delete-button {
     margin: 0 5px;
+    width: 160px;
 }
 
 .edit-button {
@@ -86,7 +109,7 @@
 }
 
 /*-------------------------------------------------------------*/
-/*General styles for forms*/
+/*Shared styles for forms*/
 
 .auth-form-wrapper, .general-form-wrapper {
     display: flex;

@@ -1,0 +1,37 @@
+.destination-card {
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+    width: 900px;
+    height: 200px ;
+    padding: 20px;
+    border-radius: 100px;
+    margin: 10px;
+    box-shadow: 0px 0px 11px -4px #000000;
+}
+
+.destination-card-image {
+    margin-right: 50px;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+}
+
+.destination-card-info-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.destination-info-item {
+    margin: 5px;
+    font-size: 20px;
+}
+
+.fab.fa-houzz, .fas.fa-map-pin, .fas.fa-wine-glass-alt {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.fab.fa-houzz {
+    margin-right: 10px;
+}
