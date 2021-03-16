@@ -1,17 +1,11 @@
 import './DestinationDetails.css'
-import Aside from "../Aside/Aside";
 import DestinationDetailsCard from "./DestinationDetailsCard/DestinationDetailsCard";
 
 const DestinationDetails = () => {
     return (
-        <main className="details-pages destination-details-page">
+        <section className="custom-section destination-details-page">
 
-            <div className="details-page-wrapper">
-                <section >
-                    <Aside/>
-                </section>
-
-                <section className="destination-details-section">
+                <div className="destination-details-section">
 
                     <DestinationDetailsCard
                         title="Шато Копса"
@@ -39,10 +33,9 @@ const DestinationDetails = () => {
                             odio mollis id. Ut et ultricies metus."
                     />
 
-                </section>
+                </div>
 
-            </div>
-        </main>
+        </section>
     );
 };
 

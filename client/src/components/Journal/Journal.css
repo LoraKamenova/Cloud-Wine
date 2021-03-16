@@ -1,17 +1,7 @@
-.journal-page {
+.journal-image-wrapper {
     background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1615655025/React%20Project/writing_z4lxds.jpg');
-    height: 100vh;
 }
 
-.journal-section {
-    margin-right: 7%;
-}
-
-.journal-page > .general-pages-wrapper > .journal-section {
-    height: 480px;
-    margin-top: 60px;
-}
-
-.journal-section > a {
+.destination-section > .content-container > .lower-part-container > .info-button-wrapper > a {
     text-decoration: none;
 }
