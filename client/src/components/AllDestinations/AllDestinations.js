@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const AllDestinations = () => {
     return (
 
-        <section className="custom-section all-destinations-section">
+        <section className="all-destinations-section">
 
             <div className="all-destinations-wrapper">
 

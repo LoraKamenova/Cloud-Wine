@@ -1,8 +1,7 @@
 .all-destinations-section {
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
-    width: 75%;
+    width: 83%;
     margin: 3% auto;
     align-items: center;
     justify-content: flex-start;
@@ -19,8 +18,9 @@
 .all-destinations-wrapper {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.70);
     justify-content: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 40px;
     width: 90%;
     padding: 10px 20px 20px 20px;
 }
@@ -63,4 +63,5 @@
 .all-destinations-container > a {
     text-decoration: none;
     color: black;
+    width: 85%;
 }

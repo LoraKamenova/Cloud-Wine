@@ -38,7 +38,7 @@ const Journal = () => {
                             Phasellus pulvinar tellus nec ante volutpat sto tellus nec ante volutpat sto. "
                     />
                     <div className="info-button-wrapper">
-                        <Link to="/all-journals"><span className="button info-button">Виж дестинациите<i
+                        <Link to="/all-journals"><span className="button info-button">Виж винописите<i
                             className="fas fa-angle-double-right"></i></span></Link>
                     </div>
                 </div>
