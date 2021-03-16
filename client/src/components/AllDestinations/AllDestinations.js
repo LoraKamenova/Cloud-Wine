@@ -53,14 +53,14 @@ const AllDestinations = () => {
                                 />
                             </Link>
 
-                            <a className="destination-card-link" href="#">
+                            <Link to="/destination-details">
                                 <DestinationCard
                                     title="Шато Копса"
                                     address="Сопот"
                                     services="Дегустрация на вино, Хотел, Ресторант"
                                     url='https://www.andrey-andreev.com/wp-content/uploads/2018/07/IMGP7314.jpg'
                                 />
-                            </a>
+                            </Link>
 
                         </div>
                     </div>

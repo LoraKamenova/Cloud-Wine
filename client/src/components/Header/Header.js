@@ -2,7 +2,7 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <h1 className="header-heading">Винописи</h1>
+        <p className="header-heading">Винописи</p>
     );
 };
 

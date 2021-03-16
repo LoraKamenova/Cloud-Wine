@@ -5,13 +5,9 @@ import FooterBottom from "../FooterBottom/FooterBottom";
 
 const Start = () => {
     return (
-        <main className="start-page">
-            <div className="start-main-container">
-                <Header/>
-                <Navigation/>
-            </div>
-            <FooterBottom/>
-        </main>
+        <section className="custom-section start-section">
+            <Header/>
+        </section>
     );
 };
 

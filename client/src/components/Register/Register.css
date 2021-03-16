@@ -1,12 +1,5 @@
-.register-page {
-    background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1615655025/React%20Project/register_ucqvmf.jpg');
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.register-form-wrapper {
-    width: 45%;
-    margin: 1% auto;
+.register-container {
+    width: 60%;
+    height: 92%;
+    margin: auto;
 }

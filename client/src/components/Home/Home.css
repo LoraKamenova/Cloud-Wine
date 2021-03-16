@@ -1,31 +1,22 @@
-.home-page {
-    background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1615655024/React%20Project/home_xcupse.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    height: 100vh;
+.home-container {
     display: flex;
     flex-direction: column;
-
-}
-
-.home-page > div > Aside > h1 {
-    color: transparent;
-}
-
-.home-section {
-    margin-right: 15%;
-    padding-top: 0;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    width: 55%;
+    height: 430px;
+    margin: auto;
+    padding: 0 80px 80px 80px;
 }
 
 .home-page-subheading {
+    position: relative;
+    bottom: -50px;
     font-family: 'Caveat', cursive;
     font-size: 40px ;
     text-align: center;
     font-weight: 400;
-    position: relative;
-    bottom: -50px;
 }
 
 .home-page-heading {
@@ -37,4 +28,6 @@
     margin: 20px;
 }
 
-
+.home-page-paragraph {
+    text-align: center;
+}

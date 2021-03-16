@@ -21,32 +21,34 @@ import AllJournals from "./components/AllJournals/AllJournals";
 import JournalDetails from "./components/JournalDetails/JournalDetails";
 import AllDestinations from "./components/AllDestinations/AllDestinations";
 import DestinationDetails from "./components/DestinationDetails/DestinationDetails";
+import Aside from "./components/Aside/Aside";
 
 function App() {
     return (
         <div className="app">
-
-            <Switch>
-                <Route path="/" exact component={Start}/>
-                <Route path="/home" exact component={Home}/>
-                <Route path="/about" exact component={About}/>
-                <Route path="/vineyard" exact component={Vineyard}/>
-                <Route path="/grape" exact component={Grape}/>
-                <Route path="/wine" exact component={Wine}/>
-                <Route path="/bottle" exact component={Bottle}/>
-                <Route path="/barrel" exact component={Barrel}/>
-                <Route path="/destination" exact component={Destination}/>
-                <Route path="/journal" exact component={Journal}/>
-                <Route path="/register" exact component={Register}/>
-                <Route path="/login" exact component={Login}/>
-                <Route path="/add-journal" exact component={AddJournal}/>
-                <Route path="/add-destination" exact component={AddDestination}/>
-                <Route path="/all-journals" exact component={AllJournals}/>
-                <Route path="/journal-details" exact component={JournalDetails}/>
-                <Route path="/all-destinations" exact component={AllDestinations}/>
-                <Route path="/destination-details" exact component={DestinationDetails}/>
-            </Switch>
-
+            <main className="page-wrapper">
+                <Aside/>
+                <Switch>
+                    <Route path="/" exact component={Start}/>
+                    <Route path="/home" exact component={Home}/>
+                    <Route path="/register" exact component={Register}/>
+                    <Route path="/login" exact component={Login}/>
+                    {/*<Route path="/about" exact component={About}/>*/}
+                    {/*<Route path="/vineyard" exact component={Vineyard}/>*/}
+                    {/*<Route path="/grape" exact component={Grape}/>*/}
+                    {/*<Route path="/wine" exact component={Wine}/>*/}
+                    {/*<Route path="/bottle" exact component={Bottle}/>*/}
+                    {/*<Route path="/barrel" exact component={Barrel}/>*/}
+                    {/*<Route path="/destination" exact component={Destination}/>*/}
+                    {/*<Route path="/journal" exact component={Journal}/>*/}
+                    {/*<Route path="/add-journal" exact component={AddJournal}/>*/}
+                    {/*<Route path="/add-destination" exact component={AddDestination}/>*/}
+                    {/*<Route path="/all-journals" exact component={AllJournals}/>*/}
+                    {/*<Route path="/journal-details" exact component={JournalDetails}/>*/}
+                    {/*<Route path="/all-destinations" exact component={AllDestinations}/>*/}
+                    {/*<Route path="/destination-details" exact component={DestinationDetails}/>*/}
+                </Switch>
+            </main>
         </div>
     );
 }

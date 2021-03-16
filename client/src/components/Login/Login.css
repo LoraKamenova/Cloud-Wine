@@ -1,20 +1,6 @@
-.login-page {
-    background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1615655024/React%20Project/login_dbmoom.jpg');
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
 
-.login-form-wrapper {
-    display: flex;
-    flex-grow: 1;
-    width: 40%;
+.login-container {
+    width: 60%;
     height: 80%;
-    /*margin-top: 4%;*/
-    /*margin-bottom: 4%;*/
-    /*margin-right: 7%;*/
-    margin: 4% auto;
-    padding: 20px 30px;
-    align-self: flex-end;
-    justify-content: center;
+    margin: auto;
 }
