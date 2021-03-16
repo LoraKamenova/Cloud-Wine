@@ -11,31 +11,31 @@ const Aside = () => {
 
             <div className="aside-navigation">
                 <ul className="aside-navigation-list">
-                    {/*<NavLink activeClassName="selected-aside-item" exact={true}*/}
-                    {/*         to="/home"><AsideItem>НАЧАЛО</AsideItem></NavLink>*/}
-                    {/*<NavLink activeClassName="selected-aside-item" exact={true}*/}
-                    {/*         to="/about"><AsideItem>ТЕРОАР</AsideItem></NavLink>*/}
-                    {/*<NavLink activeClassName="selected-aside-item" exact={true}*/}
-                    {/*         to="/vineyard"><AsideItem>ЛОЗЯ</AsideItem></NavLink>*/}
-                    {/*<NavLink activeClassName="selected-aside-item" exact={true}*/}
-                    {/*         to="/grape"><AsideItem>ГРОЗДЕ</AsideItem></NavLink>*/}
-                    {/*<NavLink activeClassName="selected-aside-item" exact={true}*/}
-                    {/*         to="/wine"><AsideItem>ВИНО</AsideItem></NavLink>*/}
-                    {/*<NavLink activeClassName="selected-aside-item" exact={true}*/}
-                    {/*         to="/barrel"><AsideItem>БЪЧВИ</AsideItem></NavLink>*/}
-                    {/*<NavLink activeClassName="selected-aside-item" exact={true}*/}
-                    {/*         to="/bottle"><AsideItem>БУТИЛКИ</AsideItem></NavLink>*/}
-                    {/*<NavLink activeClassName="selected-aside-item" exact={true}*/}
-                    {/*         to="/destination"><AsideItem>ДЕСТИНАЦИИ</AsideItem></NavLink>*/}
-                    {/*<NavLink activeClassName="selected-aside-item" exact={true}*/}
-                    {/*         to="/journal"><AsideItem>ВИНОПИСИ</AsideItem></NavLink>*/}
-                    {/*<NavLink exact={true} to="/"><AsideItem>ИЗХОД</AsideItem></NavLink>*/}
                     <NavLink activeClassName="selected-aside-item" exact={true}
-                             to="/"><AsideItem>НАЧАЛО</AsideItem></NavLink>
+                             to="/home"><AsideItem>НАЧАЛО</AsideItem></NavLink>
                     <NavLink activeClassName="selected-aside-item" exact={true}
-                             to="/login"><AsideItem>ВХОД</AsideItem></NavLink>
+                             to="/about"><AsideItem>ТЕРОАР</AsideItem></NavLink>
                     <NavLink activeClassName="selected-aside-item" exact={true}
-                             to="/register"><AsideItem>РЕГИСТРАЦИЯ</AsideItem></NavLink>
+                             to="/vineyard"><AsideItem>ЛОЗЯ</AsideItem></NavLink>
+                    <NavLink activeClassName="selected-aside-item" exact={true}
+                             to="/grape"><AsideItem>ГРОЗДЕ</AsideItem></NavLink>
+                    <NavLink activeClassName="selected-aside-item" exact={true}
+                             to="/wine"><AsideItem>ВИНО</AsideItem></NavLink>
+                    <NavLink activeClassName="selected-aside-item" exact={true}
+                             to="/barrel"><AsideItem>БЪЧВИ</AsideItem></NavLink>
+                    <NavLink activeClassName="selected-aside-item" exact={true}
+                             to="/bottle"><AsideItem>БУТИЛКИ</AsideItem></NavLink>
+                    <NavLink activeClassName="selected-aside-item" exact={true}
+                             to="/destination"><AsideItem>ДЕСТИНАЦИИ</AsideItem></NavLink>
+                    <NavLink activeClassName="selected-aside-item" exact={true}
+                             to="/journal"><AsideItem>ВИНОПИСИ</AsideItem></NavLink>
+                    <NavLink exact={true} to="/"><AsideItem>ИЗХОД</AsideItem></NavLink>
+                    {/*<NavLink activeClassName="selected-aside-item" exact={true}*/}
+                    {/*         to="/"><AsideItem>НАЧАЛО</AsideItem></NavLink>*/}
+                    {/*<NavLink activeClassName="selected-aside-item" exact={true}*/}
+                    {/*         to="/login"><AsideItem>ВХОД</AsideItem></NavLink>*/}
+                    {/*<NavLink activeClassName="selected-aside-item" exact={true}*/}
+                    {/*         to="/register"><AsideItem>РЕГИСТРАЦИЯ</AsideItem></NavLink>*/}
                 </ul>
             </div>
 

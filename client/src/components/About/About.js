@@ -1,13 +1,15 @@
 import './About.css'
-import Aside from "../Aside/Aside";
 import Article from "../Article/Article";
 
 const About = () => {
     return (
-        <main className="general-pages about-page">
-            <div className="general-pages-wrapper">
-                <Aside/>
-                <section className="general-pages-section about-section">
+
+        <section className="custom-section about-section">
+            <div className="content-container">
+                <div className="image-container">
+                    <div className="image-wrapper about-image-wrapper"></div>
+                </div>
+                <div className="article-container">
                     <Article
                         title="ТЕРОАР"
                         paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -20,9 +22,10 @@ const About = () => {
                             congue sapien. Curabitur sed lacus ut dolor auctor fermentum ac sed risus. Aliquam quis risus vel felis cursus
                             eleifend ac a enim. Curabitur dapibus diam sit amet scelerisque ultricies."
                     />
-                </section>
+                </div>
             </div>
-        </main>
+        </section>
+
     );
 };
 
