@@ -9,7 +9,7 @@ const About = () => {
                 <Aside/>
                 <section className="general-pages-section about-section">
                     <Article
-                        title="ЗА НАС"
+                        title="ТЕРОАР"
                         paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Phasellus pulvinar tellus nec ante volutpat, vel commodo nisl aliquam. Maecenas nec
                             malesuada risus, ut maximus libero. Aliquam bibendum sollicitudin nibh, ac vehicula leo

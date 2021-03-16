@@ -1,6 +1,7 @@
 import './Destination.css'
 import Aside from "../Aside/Aside";
 import Article from "../Article/Article";
+import { Link} from "react-router-dom";
 
 const Destination = () => {
     return (
@@ -20,7 +21,7 @@ const Destination = () => {
                             congue sapien. Curabitur sed lacus ut dolor auctor fermentum ac sed risus. Aliquam quis risus vel felis cursus
                             eleifend ac a enim. Curabitur dapibus diam sit amet scelerisque ultricies."
                     />
-                    <a className="button info-button" href="#">Виж дестинациите<i className="fas fa-angle-double-right"></i></a>
+                    <Link to="/all-destinations"><span className="button info-button">Виж дестинациите<i className="fas fa-angle-double-right"></i></span></Link>
                 </section>
             </div>
         </main>

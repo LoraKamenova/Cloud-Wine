@@ -1,6 +1,7 @@
 import './AllDestinations.css'
 import Aside from "../Aside/Aside";
 import DestinationCard from "./DestinationCard/DestinationCard"
+import {Link} from "react-router-dom";
 const AllDestinations = () => {
     return (
         <main className="all-pages all-destinations-page">
@@ -34,23 +35,23 @@ const AllDestinations = () => {
 
                         <div className="all-destinations-container">
 
-                            <a className="destination-card-link" href="#">
+                            <Link to="/destination-details">
                                 <DestinationCard
                                     title="Шато Копса"
                                     address="Сопот"
                                     services="Дегустрация на вино, Хотел, Ресторант"
                                     url='https://www.andrey-andreev.com/wp-content/uploads/2018/07/IMGP7314.jpg'
                                 />
-                            </a>
+                            </Link>
 
-                            <a className="destination-card-link" href="#">
+                            <Link to="/destination-details">
                                 <DestinationCard
                                     title="Шато Копса"
                                     address="Сопот"
                                     services="Дегустрация на вино, Хотел, Ресторант"
                                     url='https://www.andrey-andreev.com/wp-content/uploads/2018/07/IMGP7314.jpg'
                                 />
-                            </a>
+                            </Link>
 
                             <a className="destination-card-link" href="#">
                                 <DestinationCard

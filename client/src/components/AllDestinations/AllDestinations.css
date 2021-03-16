@@ -16,7 +16,7 @@
 
 .all-destinations-button-wrapper {
     display: flex;
-    height: 90px;
+    height: 80px;
     justify-content: center;
     padding: 20px 0;
 }
@@ -31,7 +31,7 @@
     background-size: 100% 100%;
     justify-content: center;
     width: 100%;
-    padding: 20px;
+    padding: 10px 20px 20px 20px;
 }
 
 .suitcase-image-wrapper {
@@ -65,4 +65,9 @@
 
 .destination-card-link:hover {
     cursor: pointer;
+}
+
+.all-destinations-container > a {
+    text-decoration: none;
+    color: black;
 }

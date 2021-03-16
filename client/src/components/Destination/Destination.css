@@ -12,6 +12,6 @@
     margin-top: 60px;
 }
 
-.destination-page > .general-pages-wrapper > Aside > Footer > .footer {
-    color: black;
+.destination-section > a {
+    text-decoration: none;
 }

@@ -24,12 +24,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4990371148459384) 24%, rgba(0,0,0,0.6082808123249299) 51%, rgba(0,0,0,0.4990371148459384) 75%, rgba(0,0,0,0) 100%);
+    background-color: rgba(0, 0, 0, 0.65);
     color: white;
     width: 55%;
     height: 430px;
-    margin-top: 90px;
+    margin-top: 95px;
     padding: 50px 90px;
 }
 
@@ -157,9 +156,8 @@
     width: 100%;
     padding: 3px;
     margin-top: 3px;
-    background-color: transparent;
-    color: white;
-    border: 1px solid white;
+    background-color: #F0F8FF;
+    color: black;
     border-radius: 3px;
     height: 32px;
 }

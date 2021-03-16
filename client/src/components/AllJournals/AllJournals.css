@@ -16,7 +16,7 @@
 
 .all-journals-button-wrapper {
     display: flex;
-    height: 90px;
+    height: 80px;
     justify-content: center;
     padding: 20px 0;
 }
@@ -67,4 +67,9 @@
 
 .journal-card-link:nth-child(odd) {
     transform: rotate(-1deg);
+}
+
+.all-journals-container > a {
+    text-decoration: none;
+    color: black;
 }

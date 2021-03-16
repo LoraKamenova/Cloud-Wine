@@ -3,6 +3,7 @@ import './App.css';
 
 import {Route, Switch} from "react-router-dom"
 
+import Start from "./components/Start/Start";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Vineyard from "./components/Vineyard/Vineyard";
@@ -26,7 +27,8 @@ function App() {
         <div className="app">
 
             <Switch>
-                <Route path="/" exact component={Home}/>
+                <Route path="/" exact component={Start}/>
+                <Route path="/home" exact component={Home}/>
                 <Route path="/about" exact component={About}/>
                 <Route path="/vineyard" exact component={Vineyard}/>
                 <Route path="/grape" exact component={Grape}/>

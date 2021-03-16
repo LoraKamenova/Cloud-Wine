@@ -7,12 +7,34 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
+
 }
 
-.home-main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-grow: 1
+.home-page > div > Aside > h1 {
+    color: transparent;
 }
+
+.home-section {
+    margin-right: 15%;
+    padding-top: 0;
+}
+
+.home-page-subheading {
+    font-family: 'Caveat', cursive;
+    font-size: 40px ;
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+    bottom: -50px;
+}
+
+.home-page-heading {
+    font-family: 'Caveat', cursive;
+    font-size: 85px ;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 10px;
+    margin: 20px;
+}
+
+
