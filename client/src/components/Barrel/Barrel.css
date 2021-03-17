@@ -1,3 +1,8 @@
-.barrel-image-wrapper {
+.barrel-content-container {
+    width: 90%;
+    margin: 3% auto;
+}
+
+.barrel-section > .barrel-content-container > .dictionary-article > .dictionary-article-header{
     background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1615655024/React%20Project/barrels_qwenmw.jpg');
 }

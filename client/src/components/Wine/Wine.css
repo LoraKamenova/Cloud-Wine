@@ -1,3 +1,8 @@
-.wine-image-wrapper {
+.wine-content-container {
+    width: 90%;
+    margin: 3% auto;
+}
+
+.wine-section > .wine-content-container > .dictionary-article > .dictionary-article-header{
     background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1615685490/React%20Project/wine_gxmm6t.jpg');
 }

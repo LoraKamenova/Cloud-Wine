@@ -1,3 +1,9 @@
-.vineyard-image-wrapper {
+.vineyard-content-container {
+    width: 90%;
+    margin: 3% auto;
+}
+
+.vineyard-section > .vineyard-content-container > .dictionary-article > .dictionary-article-header{
     background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1615682580/React%20Project/vineyeard_hp3wxc.jpg');
 }
+
