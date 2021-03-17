@@ -2,8 +2,9 @@ import './Home.css'
 
 const Home = () => {
     return (
-            <section className="custom-section home-section">
-                <div className="home-container">
+        <section className="custom-section home-section">
+            <div className="home-wrapper">
+                <div className="home-content-container">
                     <div className="heading-wrapper">
                         <h3 className="home-page-subheading">Добре дошли във</h3>
                         <h1 className="home-page-heading">Винописи</h1>
@@ -17,7 +18,8 @@ const Home = () => {
                         maximus vitae. Aenean vitae metus luctus, molestie leo ac, ullamcorper justo.
                     </p>
                 </div>
-            </section>
+            </div>
+        </section>
     );
 };
 

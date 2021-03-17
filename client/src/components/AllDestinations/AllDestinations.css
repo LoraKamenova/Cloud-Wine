@@ -7,22 +7,14 @@
     justify-content: flex-start;
 }
 
-.all-destinations-button-wrapper {
-    display: flex;
-    height: 80px;
-    justify-content: center;
-    padding: 20px 0;
-    margin: 10px 0 0 0;
-}
-
 .all-destinations-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.75);
-    border-radius: 40px;
+    background-color: #FFFACC;
     width: 90%;
     padding: 10px 20px 20px 20px;
+    border-radius: 5px;
 }
 
 .suitcase-image-wrapper {
@@ -41,7 +33,7 @@
     text-align: center;
     position: relative;
     top: -20px;
-    color: white;
+    color: black;
 }
 
 .all-destinations-container {
@@ -64,4 +56,12 @@
     text-decoration: none;
     color: black;
     width: 85%;
+}
+
+.all-destinations-button-wrapper {
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    padding: 20px 0;
+    margin: 10px 0 0 0;
 }

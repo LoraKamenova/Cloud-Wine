@@ -1,7 +1,7 @@
 .journal-image-wrapper {
-    background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1615655025/React%20Project/writing_z4lxds.jpg');
+    background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1615990671/React%20Project/write_tjtfgj.jpg');
 }
 
-.journal-section > .content-container > .lower-part-container > .info-button-wrapper > a {
+.journal-section > .journal-content-container > .journal-article-wrapper > .info-button-wrapper > a {
     text-decoration: none;
 }

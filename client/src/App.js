@@ -6,6 +6,7 @@ import {Route, Switch} from "react-router-dom"
 import Start from "./components/Start/Start";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
+import Dictionary from "./components/Dictionary/Dictionary";
 import Vineyard from "./components/Vineyard/Vineyard";
 import Grape from "./components/Grape/Grape";
 import Wine from "./components/Wine/Wine";
@@ -33,6 +34,7 @@ function App() {
                     <Route path="/home" exact component={Home}/>
                     <Route path="/register" exact component={Register}/>
                     <Route path="/login" exact component={Login}/>
+                    <Route path="/dictionary" exact component={Dictionary}/>
                     <Route path="/about" exact component={About}/>
                     <Route path="/vineyard" exact component={Vineyard}/>
                     <Route path="/grape" exact component={Grape}/>

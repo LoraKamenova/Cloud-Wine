@@ -1,7 +1,6 @@
 import './Barrel.css'
 import Aside from "../Aside/Aside";
 import Article from "../Article/Article";
-import SubArticle from "../SubArticle/SubArticle";
 
 const Barrel = () => {
     return (
@@ -27,19 +26,7 @@ const Barrel = () => {
                     </div>
                 </div>
                 <div className="lower-part-container">
-                    <SubArticle
-                        paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus pulvinar tellus nec ante volutpat, vel commodo nisl aliquam. Maecenas nec
-                            malesuada risus, ut maximus libero. Aliquam bibendum sollicitudin nibh, ac vehicula leo
-                            maximus vitae. Aenean vitae metus luctus, molestie leo ac, ullamcorper justo. Class aptent
-                            taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris vitae arcu orci.
-                            Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus pulvinar tellus nec ante volutpat, vel commodo nisl aliquam. Maecenas nec
-                            malesuada risus, ut maximus libero. Aliquam bibendum sollicitudin nibh, ac vehicula leo
-                            maximus vitae. Aenean vitae metus luctus, molestie leo ac, ullamcorper justo. Class aptent
-                            taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris vitae arcu orci.
-                            Suspendisse potenti. Class aptent taciti sociosqu ad litora torquent per."
-                    />
+
                 </div>
             </div>
         </section>

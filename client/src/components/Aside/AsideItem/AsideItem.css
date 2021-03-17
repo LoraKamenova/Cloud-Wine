@@ -2,7 +2,8 @@
     margin: 5px;
 }
 .aside-navigation-link {
-    color: black;
+    /*color: black;*/
+    color: white;
     font-size: 25px;
 }
 

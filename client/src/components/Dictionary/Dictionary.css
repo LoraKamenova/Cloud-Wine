@@ -1,0 +1,43 @@
+.dictionary-section {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 3% auto;
+    justify-content: flex-start;
+}
+
+.dictionary-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFACC;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.books-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.dictionary-header {
+    font-size: 55px;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    position: relative;
+    top: -20px;
+    color: black;
+}
+
+.dictionary-cards-container {
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+
+
