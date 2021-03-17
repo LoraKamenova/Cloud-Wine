@@ -5,7 +5,7 @@
     background-color: rgba(0, 0, 0, 0.65);
     color: white;
     width: 55%;
-    height: 430px;
+    height: 80%;
     margin: auto;
     padding: 0 80px 80px 80px;
 }
@@ -14,7 +14,7 @@
     position: relative;
     bottom: -50px;
     font-family: 'Caveat', cursive;
-    font-size: 40px ;
+    font-size: 50px ;
     text-align: center;
     font-weight: 400;
     color: #FCB269;
@@ -22,7 +22,7 @@
 
 .home-page-heading {
     font-family: 'Caveat', cursive;
-    font-size: 85px ;
+    font-size: 95px ;
     text-align: center;
     font-weight: 400;
     letter-spacing: 10px;

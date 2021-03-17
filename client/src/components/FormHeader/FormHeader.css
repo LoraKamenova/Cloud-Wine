@@ -1,0 +1,21 @@
+.auth-form-site-name-wrapper, .general-form-site-name-wrapper {
+    margin: 0 auto;
+    border-bottom: 2px solid #5A8839;
+}
+
+.auth-form-site-name-text, .general-form-site-name-text {
+    position: relative;
+    bottom: -25px;
+    /*left: 15px*/
+}
+
+.auth-form-site-name, .general-form-site-name {
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+    color: #9F61B1;
+}
+
+.auth-form-pic, .general-form-pic {
+    width: 400px;
+    height: 70px;
+}

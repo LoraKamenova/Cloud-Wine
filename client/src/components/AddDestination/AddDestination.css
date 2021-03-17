@@ -2,3 +2,7 @@
     width: 65%;
     margin: auto;
 }
+
+.add-destination-form-wrapper > .auth-form-site-name-wrapper > .auth-form-site-name-text {
+    left: -60px;
+}

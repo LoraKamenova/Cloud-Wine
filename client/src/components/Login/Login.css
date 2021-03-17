@@ -4,3 +4,7 @@
     height: 80%;
     margin: auto;
 }
+
+.login-form-wrapper > .auth-form-site-name-wrapper > .auth-form-site-name-text {
+    left: 90px
+}

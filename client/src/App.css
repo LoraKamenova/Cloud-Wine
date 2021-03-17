@@ -4,17 +4,7 @@
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
 
-/*shared styles*/
-
-/*-------------------------------------------------------------------*/
-/*background image*/
-body {
-    background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1615655024/React%20Project/home_xcupse.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-}
+/*shared styles between pages and forms*/
 
 /*------------------------------------------------------------------*/
 /*general pages*/
@@ -49,8 +39,7 @@ body {
 
 .image-container {
     width: 40%;
-    margin-left: 15px;
-    margin-bottom: 10px;
+    margin: 50px 0 10px 15px;
 }
 
 .image-wrapper {
@@ -159,32 +148,12 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.85);
-}
+    justify-content: center;
 
-.auth-form-site-name-wrapper, .general-form-site-name-wrapper {
-    margin: 0 auto;
-    border-bottom: 2px solid #5A8839;
-}
-
-.auth-form-site-name-text, .general-form-site-name-text {
-    position: relative;
-    bottom: -25px;
-    left: 50px
-}
-
-.auth-form-site-name, .general-form-site-name {
-    font-family: 'Caveat', cursive;
-    font-size: 50px;
-    color: #9F61B1;
-}
-
-.auth-form-pic, .general-form-pic {
-    width: 400px;
-    height: 70px;
 }
 
 .auth-form, .general-form {
-    padding: 30px 50px 20px 50px;
+    padding: 10px 50px 50px 50px;
 }
 
 .auth-form-heading-wrapper, .general-form-heading-wrapper {
@@ -197,7 +166,7 @@ body {
 
 .auth-form-field-input, .general-form-field-input {
     width: 100%;
-    padding: 3px;
+    padding: 7px;
     margin-top: 3px;
     background-color: #F0F8FF;
     color: black;
@@ -217,7 +186,7 @@ body {
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
-    margin-top: 20px;
+    margin-top: 30px;
     border: none;
 }
 

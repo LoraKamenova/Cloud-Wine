@@ -3,3 +3,12 @@
     padding: 0;
     margin: 0;
 }
+
+/*background image*/
+body {
+    background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1615655024/React%20Project/home_xcupse.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}

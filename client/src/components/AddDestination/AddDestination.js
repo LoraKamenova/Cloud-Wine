@@ -1,24 +1,14 @@
 import './AddDestination.css'
+import FormHeader from "../FormHeader/FormHeader";
 
 const AddDestination = () => {
     return (
 
         <section className="general-form-wrapper add-destination-form-wrapper">
 
-            <div className="general-form-site-name-wrapper">
-                <div className="general-form-site-name-text">
-                    <h1 className="general-form-site-name">Винoписи</h1>
-                </div>
-                <div className="general-form-site-name-pic">
-                    <img className="general-form-pic"
-                         src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1615712293/React%20Project/grape_border_ogd8gq.png"/>
-                </div>
-            </div>
+            <FormHeader title="Нова дестинация"/>
 
             <form className="general-form" action="" method="">
-                <div className="general-form-heading-wrapper">
-                    <h1 className="general-form-heading">НОВА ДЕСТИНАЦИЯ</h1>
-                </div>
 
                 <section className="general-form-main-section">
 
@@ -56,7 +46,7 @@ const AddDestination = () => {
                             <div className="general-form-field-heading">
                                 <label htmlFor="text">Текст:</label>
                             </div>
-                            <textarea className="general-form-field-input" rows="10" id="text" name="text"/>
+                            <textarea className="general-form-field-input" rows="11" id="text" name="text"/>
                         </div>
                         <div className="general-form-field-wrapper">
                             <div className="general-form-field-heading">

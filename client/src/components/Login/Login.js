@@ -1,4 +1,5 @@
 import './Login.css'
+import FormHeader from "../FormHeader/FormHeader";
 
 const Login = () => {
     return (
@@ -6,22 +7,11 @@ const Login = () => {
 
             <div className="login-container">
 
-                <div className="auth-form-wrapper">
+                <div className="auth-form-wrapper login-form-wrapper">
 
-                    <div className="auth-form-site-name-wrapper">
-                        <div className="auth-form-site-name-text">
-                            <h1 className="auth-form-site-name">Винoписи</h1>
-                        </div>
-                        <div className="auth-form-site-name-pic">
-                            <img className="auth-form-pic"
-                                 src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1615712293/React%20Project/grape_border_ogd8gq.png"/>
-                        </div>
-                    </div>
+                    <FormHeader title="Вход"/>
 
                     <form className="auth-form" action="" method="">
-                        <div className="auth-form-heading-wrapper">
-                            <h1 className="auth-form-heading">ВХОД</h1>
-                        </div>
 
                         <div className="auth-form-field-wrapper">
                             <div className="auth-form-field-heading">

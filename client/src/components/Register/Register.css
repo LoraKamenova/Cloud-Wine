@@ -3,3 +3,7 @@
     height: 92%;
     margin: auto;
 }
+
+.register-form-wrapper > .auth-form-site-name-wrapper > .auth-form-site-name-text {
+    left: 25px
+}
