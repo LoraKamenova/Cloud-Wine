@@ -8,7 +8,7 @@ const Journal = () => {
             <div className="journal-content-container">
                 <div className="journal-article-wrapper">
                     <Article
-                        title="ВИНОПИСИ"
+                        title="ПЪТЕПИСИ"
                         paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Phasellus pulvinar tellus nec ante volutpat, vel commodo nisl aliquam. Maecenas nec
                             malesuada risus, ut maximus libero. Aliquam bibendum sollicitudin nibh, ac vehicula leo
@@ -16,7 +16,7 @@ const Journal = () => {
                             taciti sociosqu ad litora torquent per conubia nostra, per"
                     />
                     <div className="info-button-wrapper">
-                        <Link to="/all-journals"><span className="button info-button">Виж винописите<i
+                        <Link to="/all-journals"><span className="button info-button">Виж пътеписите<i
                             className="fas fa-angle-double-right"></i></span></Link>
                     </div>
                 </div>

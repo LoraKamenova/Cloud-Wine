@@ -5,7 +5,7 @@ const AddJournal = () => {
     return (
         <section className="general-form-wrapper add-journal-form-wrapper">
 
-            <FormHeader title="Нов винепис"/>
+            <FormHeader title="Нов пътепис"/>
 
             <form className="general-form" action="" method="">
 

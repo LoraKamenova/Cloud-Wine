@@ -30,7 +30,7 @@ const Aside = () => {
                     <NavLink activeClassName="selected-aside-item" exact={true}
                              to="/destination"><AsideItem>ПЪТЕВОДИТЕЛ</AsideItem></NavLink>
                     <NavLink activeClassName="selected-aside-item" exact={true}
-                             to="/journal"><AsideItem>ВИНОПИСИ</AsideItem></NavLink>
+                             to="/journal"><AsideItem>ПЪТЕПИСИ</AsideItem></NavLink>
                     <NavLink exact={true} to="/"><AsideItem>ИЗХОД</AsideItem></NavLink>
                     {/*<NavLink activeClassName="selected-aside-item" exact={true}*/}
                     {/*         to="/"><AsideItem>НАЧАЛО</AsideItem></NavLink>*/}

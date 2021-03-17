@@ -12,7 +12,7 @@ const AllJournals = () => {
                 <img className="peg-image"
                      src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1615730431/React%20Project/new_gt98oa.png"
                      width="300px" height="50px"/>
-                <div className="all-journals-header">Всички винописи</div>
+                <div className="all-journals-header">Всички пътеписи</div>
 
                 <div className="all-journals-container">
 
@@ -46,8 +46,8 @@ const AllJournals = () => {
 
                 </div>
                 <div className="all-journals-button-wrapper">
-                    <Link className="button my-items-button" href="#">Моите винописи<i className="fas fa-heart"></i></Link>
-                    <Link className="button new-item-button" to="/add-journal">Нов винопис<i className="fas fa-check"></i></Link>
+                    <Link className="button my-items-button" href="#">Моите пътеписи<i className="fas fa-heart"></i></Link>
+                    <Link className="button new-item-button" to="/add-journal">Нов пътепис<i className="fas fa-check"></i></Link>
                 </div>
             </div>
         </section>
