@@ -1,9 +1,9 @@
 .register-container {
     width: 60%;
-    height: 92%;
+    height: 87%;
     margin: auto;
 }
 
 .register-form-wrapper > .auth-form-site-name-wrapper > .auth-form-site-name-text {
-    left: 25px
+    left: 15px
 }

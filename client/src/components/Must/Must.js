@@ -1,12 +1,12 @@
-import './About.css'
+import './Must.css'
 import DictionaryArticle from "../Dictionary/DictionaryArticle/DictionaryArticle";
 
-const About = () => {
+const Must = () => {
     return (
-        <section className="dictionary-pages about-section">
-            <div className="about-content-container">
+        <section className="dictionary-pages must-section">
+            <div className="must-content-container">
                 <DictionaryArticle
-                    title="ТЕРОАР"
+                    title="ШИРА"
                     paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Phasellus pulvinar tellus nec ante volutpat, vel commodo nisl aliquam. Maecenas nec
                             malesuada risus, ut maximus libero. Aliquam bibendum sollicitudin nibh, ac vehicula leo
@@ -31,4 +31,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default Must;

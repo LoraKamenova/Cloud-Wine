@@ -14,13 +14,14 @@
     font-family: 'Rubik', sans-serif;
 }
 
+/*--------------------------------------------------------------*/
+/*destination and journal pages*/
+
 .custom-section {
     display: flex;
     flex-grow: 1;
     justify-content: center;
 }
-/*--------------------------------------------------------------*/
-/*destination and journal pages*/
 
 .destination-content-container, .journal-content-container {
     display: flex;
@@ -55,6 +56,14 @@
 .info-button-wrapper {
     display: flex;
     justify-content: flex-end;
+}
+
+/*----------------------------------------------------------------------*/
+/*dictionary-pages*/
+
+.dictionary-pages {
+    width: 70%;
+    margin: 3% auto;
 }
 
 /*----------------------------------------------------------------------*/

@@ -23,6 +23,12 @@ import JournalDetails from "./components/JournalDetails/JournalDetails";
 import AllDestinations from "./components/AllDestinations/AllDestinations";
 import DestinationDetails from "./components/DestinationDetails/DestinationDetails";
 import Aside from "./components/Aside/Aside";
+import Tasting from "./components/Tasting/Tasting";
+import Fermentation from "./components/Fermentation/Fermentation";
+import Must from "./components/Must/Must";
+import Yeast from "./components/Yeast/Yeast";
+import Cork from "./components/Cork/Cork";
+import Blending from "./components/Blending/Blending";
 
 function App() {
     return (
@@ -49,6 +55,12 @@ function App() {
                     <Route path="/all-journals" exact component={AllJournals}/>
                     <Route path="/add-journal" exact component={AddJournal}/>
                     <Route path="/journal-details" exact component={JournalDetails}/>
+                    <Route path="/tasting" exact component={Tasting}/>
+                    <Route path="/fermentation" exact component={Fermentation}/>
+                    <Route path="/must" exact component={Must}/>
+                    <Route path="/yeast" exact component={Yeast}/>
+                    <Route path="/cork" exact component={Cork}/>
+                    <Route path="/blending" exact component={Blending}/>
                 </Switch>
             </main>
         </div>

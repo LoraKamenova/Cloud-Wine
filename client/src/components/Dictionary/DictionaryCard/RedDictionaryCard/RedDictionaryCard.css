@@ -46,8 +46,11 @@
     letter-spacing: 1px;
     color: firebrick;
     background-color: white;
+    font-weight: bold;
 }
 
 .red-dictionary-card-button:hover {
     cursor: pointer;
+    color: white;
+    background-color: gray;
 }

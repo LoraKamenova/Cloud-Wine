@@ -44,8 +44,11 @@
     letter-spacing: 1px;
     color: white;
     background-color: black;
+    font-weight: bold;
 }
 
 .white-dictionary-card-button:hover {
     cursor: pointer;
+    color: white;
+    background-color: firebrick;
 }

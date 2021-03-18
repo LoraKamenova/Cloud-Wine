@@ -4,7 +4,9 @@ import Header from "../Header/Header";
 const Start = () => {
     return (
         <section className="custom-section start-section">
-            <Header/>
+            <div className="header-container">
+                <Header/>
+            </div>
         </section>
     );
 };

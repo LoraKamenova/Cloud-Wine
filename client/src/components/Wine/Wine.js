@@ -3,7 +3,7 @@ import DictionaryArticle from "../Dictionary/DictionaryArticle/DictionaryArticle
 
 const Wine = () => {
     return (
-        <section className="dictionary-section wine-section">
+        <section className="dictionary-pages wine-section">
             <div className="wine-content-container">
                 <DictionaryArticle
                     title="ВИНО"

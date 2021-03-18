@@ -1,6 +1,7 @@
 .add-destination-form-wrapper {
     width: 65%;
     margin: auto;
+    height: 70%;
 }
 
 .add-destination-form-wrapper > .auth-form-site-name-wrapper > .auth-form-site-name-text {

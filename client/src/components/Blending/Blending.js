@@ -1,12 +1,12 @@
-import './About.css'
+import './Blending.css'
 import DictionaryArticle from "../Dictionary/DictionaryArticle/DictionaryArticle";
 
-const About = () => {
+const Blending = () => {
     return (
-        <section className="dictionary-pages about-section">
-            <div className="about-content-container">
+        <section className="dictionary-pages blending-section">
+            <div className="blending-content-container">
                 <DictionaryArticle
-                    title="ТЕРОАР"
+                    title="КУПАЖ"
                     paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Phasellus pulvinar tellus nec ante volutpat, vel commodo nisl aliquam. Maecenas nec
                             malesuada risus, ut maximus libero. Aliquam bibendum sollicitudin nibh, ac vehicula leo
@@ -31,4 +31,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default Blending;

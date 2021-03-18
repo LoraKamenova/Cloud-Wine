@@ -45,7 +45,7 @@ const Dictionary = () => {
                         link="/grape"
                     />
                     <WhiteDictionaryCard
-                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616001940/React%20Project/barrel-_kkgip1.jpg"
+                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616010588/React%20Project/barrel_datjas.png"
                         title="Бъчви"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar ..."
                         link="/barrel"
@@ -63,6 +63,47 @@ const Dictionary = () => {
                         title="Бутилки"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar ..."
                         link="/bottle"
+                    />
+
+                    <RedDictionaryCard
+                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616016154/React%20Project/bubbles_yupxpo.png"
+                        title="Ферментация"
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar ..."
+                        link="/fermentation"
+                    />
+
+                    <WhiteDictionaryCard
+                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616016154/React%20Project/wine_16-512_h7gxzj.png"
+                        title="Корк"
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar ..."
+                        link="/cork"
+                    />
+
+                    <RedDictionaryCard
+                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616016122/React%20Project/flask_teogko.png"
+                        title="Купаж"
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit amet, consectetur adipiscing elit. Phasellus pulvinar ..."
+                        link="/blending"
+                    />
+                    <WhiteDictionaryCard
+                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616016285/React%20Project/press-machine-2662195-2213044_xaunb7.png"
+                        title="Шира"
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar ..."
+                        link="/must"
+                    />
+
+                    <RedDictionaryCard
+                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616016922/React%20Project/pen-2_xwtkif.png"
+                        title="Дегустация"
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar ..."
+                        link="/tasting"
+                    />
+
+                    <WhiteDictionaryCard
+                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616016561/React%20Project/yeast_pda8ib.png"
+                        title="Дрожди"
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar ..."
+                        link="/yeast"
                     />
 
                 </div>
