@@ -40,27 +40,31 @@ function App() {
                     <Route path="/home" exact component={Home}/>
                     <Route path="/register" exact component={Register}/>
                     <Route path="/login" exact component={Login}/>
+
                     <Route path="/dictionary" exact component={Dictionary}/>
-                    <Route path="/about" exact component={About}/>
-                    <Route path="/vineyard" exact component={Vineyard}/>
-                    <Route path="/grape" exact component={Grape}/>
-                    <Route path="/wine" exact component={Wine}/>
-                    <Route path="/barrel" exact component={Barrel}/>
-                    <Route path="/bottle" exact component={Bottle}/>
+                    <Route path="/dictionary/about" exact component={About}/>
+                    <Route path="/dictionary/vineyard" exact component={Vineyard}/>
+                    <Route path="/dictionary/grape" exact component={Grape}/>
+                    <Route path="/dictionary/wine" exact component={Wine}/>
+                    <Route path="/dictionary/barrel" exact component={Barrel}/>
+                    <Route path="/dictionary/bottle" exact component={Bottle}/>
+                    <Route path="/dictionary/tasting" exact component={Tasting}/>
+                    <Route path="/dictionary/fermentation" exact component={Fermentation}/>
+                    <Route path="/dictionary/must" exact component={Must}/>
+                    <Route path="/dictionary/yeast" exact component={Yeast}/>
+                    <Route path="/dictionary/cork" exact component={Cork}/>
+                    <Route path="/dictionary/blending" exact component={Blending}/>
+
                     <Route path="/destination" exact component={Destination}/>
-                    <Route path="/journal" exact component={Journal}/>
                     <Route path="/all-destinations" exact component={AllDestinations}/>
-                    <Route path="/add-destination" exact component={AddDestination}/>
                     <Route path="/destination-details" exact component={DestinationDetails}/>
+                    <Route path="/add-destination" exact component={AddDestination}/>
+
+                    <Route path="/journal" exact component={Journal}/>
                     <Route path="/all-journals" exact component={AllJournals}/>
-                    <Route path="/add-journal" exact component={AddJournal}/>
                     <Route path="/journal-details" exact component={JournalDetails}/>
-                    <Route path="/tasting" exact component={Tasting}/>
-                    <Route path="/fermentation" exact component={Fermentation}/>
-                    <Route path="/must" exact component={Must}/>
-                    <Route path="/yeast" exact component={Yeast}/>
-                    <Route path="/cork" exact component={Cork}/>
-                    <Route path="/blending" exact component={Blending}/>
+                    <Route path="/add-journal" exact component={AddJournal}/>
+
                 </Switch>
             </main>
         </div>
