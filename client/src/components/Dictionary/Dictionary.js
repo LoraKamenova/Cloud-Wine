@@ -25,34 +25,34 @@ const Dictionary = () => {
                 <div className="dictionary-cards-container">
 
                     <RedDictionaryCard
-                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616001401/React%20Project/sun_qn96yt.png"
+                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616189944/React%20Project/sun_1_blpbuy.png"
                         title="Тероар"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar ..."
                         link="/dictionary/about"
                     />
 
                     <WhiteDictionaryCard
-                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1615998984/React%20Project/361700-200_eewlut.png"
+                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616189587/React%20Project/vineyard_g4wywg.png"
                         title="Лозя"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar ..."
                         link="/dictionary/vineyard"
                     />
 
                     <RedDictionaryCard
-                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1615999640/React%20Project/grape_br7bbj.png"
+                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616190045/React%20Project/grapes_1_maw6m2.png"
                         title="Грозде"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit amet, consectetur adipiscing elit. Phasellus pulvinar ..."
                         link="/dictionary/grape"
                     />
                     <WhiteDictionaryCard
-                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616010588/React%20Project/barrel_datjas.png"
+                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616189507/React%20Project/barrel_uejthz.png"
                         title="Бъчви"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar ..."
                         link="/dictionary/barrel"
                     />
 
                     <RedDictionaryCard
-                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616000069/React%20Project/wine-glass_h04ilm.png"
+                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616190130/React%20Project/glass-with-wine_xhztse.png"
                         title="Вино"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar ..."
                         link="/dictionary/wine"
@@ -66,27 +66,27 @@ const Dictionary = () => {
                     />
 
                     <RedDictionaryCard
-                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616016154/React%20Project/bubbles_yupxpo.png"
+                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616189848/React%20Project/cork_1_pfeuo2.png"
                         title="Ферментация"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar ..."
                         link="/dictionary/fermentation"
                     />
 
                     <WhiteDictionaryCard
-                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616016154/React%20Project/wine_16-512_h7gxzj.png"
+                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616189848/React%20Project/cork_1_pfeuo2.png"
                         title="Корк"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar ..."
                         link="/dictionary/cork"
                     />
 
                     <RedDictionaryCard
-                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616016122/React%20Project/flask_teogko.png"
+                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616189586/React%20Project/flask_edlnyc.png"
                         title="Купаж"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit amet, consectetur adipiscing elit. Phasellus pulvinar ..."
                         link="/dictionary/blending"
                     />
                     <WhiteDictionaryCard
-                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616016285/React%20Project/press-machine-2662195-2213044_xaunb7.png"
+                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616189586/React%20Project/press_j9pmxh.png"
                         title="Шира"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar ..."
                         link="/dictionary/must"
