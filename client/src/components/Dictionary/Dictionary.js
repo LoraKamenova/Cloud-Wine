@@ -59,28 +59,28 @@ const Dictionary = () => {
                     />
 
                     <WhiteDictionaryCard
-                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616001738/React%20Project/bottle_xgawvr.png"
+                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616189587/React%20Project/wine-bottle_sz1qth.png"
                         title="Бутилки"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar ..."
                         link="/dictionary/bottle"
                     />
 
                     <RedDictionaryCard
-                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616189848/React%20Project/cork_1_pfeuo2.png"
+                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616190266/React%20Project/clean_e94emx.png"
                         title="Ферментация"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar ..."
                         link="/dictionary/fermentation"
                     />
 
                     <WhiteDictionaryCard
-                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616189848/React%20Project/cork_1_pfeuo2.png"
+                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616189586/React%20Project/cork_ivm0qp.png"
                         title="Корк"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar ..."
                         link="/dictionary/cork"
                     />
 
                     <RedDictionaryCard
-                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616189586/React%20Project/flask_edlnyc.png"
+                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616190420/React%20Project/flask_2_qikwzy.png"
                         title="Купаж"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit amet, consectetur adipiscing elit. Phasellus pulvinar ..."
                         link="/dictionary/blending"
@@ -93,14 +93,14 @@ const Dictionary = () => {
                     />
 
                     <RedDictionaryCard
-                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616016922/React%20Project/pen-2_xwtkif.png"
+                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616190493/React%20Project/wine-tasting_1_dilykf.png"
                         title="Дегустация"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar ..."
                         link="/dictionary/tasting"
                     />
 
                     <WhiteDictionaryCard
-                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616016561/React%20Project/yeast_pda8ib.png"
+                        url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616189587/React%20Project/yeast_nlmatu.png"
                         title="Дрожди"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar ..."
                         link="/dictionary/yeast"
