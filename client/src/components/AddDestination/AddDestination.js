@@ -22,6 +22,31 @@ const AddDestination = () => {
 
                         <div className="general-form-field-wrapper">
                             <div className="general-form-field-heading">
+                                <label htmlFor="address">Адрес:</label>
+                            </div>
+                            <input className="general-form-field-input" type="text" id="address" name="address"/>
+                        </div>
+
+                        <div className="general-form-field-wrapper">
+                            <div className="general-form-field-heading">
+                                <label htmlFor="text">Текст:</label>
+                            </div>
+                            <textarea className="general-form-field-input" rows="6" id="text" name="text"/>
+                        </div>
+
+                    </section>
+
+                    <section className="general-form-sub-section">
+
+                        <div className="general-form-field-wrapper">
+                            <div className="general-form-field-heading">
+                                <label htmlFor="services">Услуги:</label>
+                            </div>
+                            <input className="general-form-field-input" type="text" id="services" name="services"/>
+                        </div>
+
+                        <div className="general-form-field-wrapper">
+                            <div className="general-form-field-heading">
                                 <label htmlFor="url1">URL към снимка 1:</label>
                             </div>
                             <input className="general-form-field-input" type="text" id="url1" name="url1"/>
@@ -33,27 +58,14 @@ const AddDestination = () => {
                             </div>
                             <input className="general-form-field-input" type="text" id="url2" name="url2"/>
                         </div>
-                        <div className="general-form-field-wrapper">
-                            <div className="general-form-field-heading">
-                                <label htmlFor="address">Адрес:</label>
-                            </div>
-                            <input className="general-form-field-input" type="text" id="address" name="address"/>
-                        </div>
-                    </section>
 
-                    <section className="general-form-sub-section">
                         <div className="general-form-field-wrapper">
                             <div className="general-form-field-heading">
-                                <label htmlFor="text">Текст:</label>
+                                <label htmlFor="map">URL към карта:</label>
                             </div>
-                            <textarea className="general-form-field-input" rows="11" id="text" name="text"/>
+                            <input className="general-form-field-input" type="text" id="map" name="map"/>
                         </div>
-                        <div className="general-form-field-wrapper">
-                            <div className="general-form-field-heading">
-                                <label htmlFor="services">Услуги:</label>
-                            </div>
-                            <input className="general-form-field-input" type="text" id="services" name="services"/>
-                        </div>
+
                     </section>
 
                 </section>

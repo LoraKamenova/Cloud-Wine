@@ -15,6 +15,7 @@ const DestinationDetailsCard = (props) => {
                 <img className="destination-details-card-image non-floating-image" src={props.url2}/>
 
                 <div className="info-wrapper">
+                    <img className="destination-details-card-map" src={props.map} />
                     <div className="text-wrapper">
                         <p className="destination-details-card-address">Адрес: {props.address}</p>
                         <div className="destination-details-card-services">Услуги: {props.services}</div>

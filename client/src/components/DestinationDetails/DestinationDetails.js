@@ -11,6 +11,7 @@ const DestinationDetails = () => {
                         title="Шато Копса"
                         url1="https://www.andrey-andreev.com/wp-content/uploads/2018/07/IMGP7314.jpg"
                         url2="https://copsa.bg/wp-content/uploads/2018/07/shato-copsa-1.jpg"
+                        map="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616201754/React%20Project/Sopot_mcxg26.jpg"
                         address="Сопот, ул. Първа"
                         services="Дегустрация на вино, Разходка в лозята, Ресторант, Хотел"
                         paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
