@@ -26,11 +26,13 @@
     font-size: 16px;
 }
 
-.fab.fa-houzz, .fas.fa-map-pin, .fas.fa-wine-glass-alt {
-    font-size: 30px;
-    margin-right: 20px;
+.destination-card-line-wrapper {
+    display: flex;
+    margin: 5px 0;
 }
 
-.fab.fa-houzz {
+.destination-card-pic {
+    width: 25px;
+    height: 25px;
     margin-right: 10px;
 }
