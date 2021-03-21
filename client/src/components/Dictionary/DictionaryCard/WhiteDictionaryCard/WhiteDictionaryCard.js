@@ -6,7 +6,7 @@ const WhiteDictionaryCard = (props) => {
         <article className="white-dictionary-card">
             <div className="white-dictionary-card-content-wrapper">
                 <div className="white-dictionary-image-wrapper">
-                    <img className="white-dictionary-image" src={props.url}></img>
+                    <img className="white-dictionary-image" src={props.url} alt="icon"></img>
                 </div>
                 <h3 className="white-dictionary-card-title">{props.title}</h3>
                 <p className="white-dictionary-card-text">{props.text}</p>

@@ -18,6 +18,10 @@ const DestinationSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    logoUrl: {
+        type: String,
+        required: true
+    },
     imageUrl1: {
         type: String,
         required: true

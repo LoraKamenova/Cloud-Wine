@@ -15,7 +15,7 @@ function auth(req, res, next) {
     }
 
     next();
-};
+}
 
 function isAuth(req, res, next) {
     if (!req.user) {
@@ -23,7 +23,7 @@ function isAuth(req, res, next) {
     }
     
     next();
-};
+}
 
 module.exports = {
     isAuth,

@@ -11,13 +11,13 @@ const Dictionary = () => {
                 <div className="books-image-wrapper">
                     <img className="book-image"
                          src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1615993155/React%20Project/brown_dict_k2ybth.png"
-                         width="70px" height="50px"/>
+                         width="70px" height="50px" alt="book" />
                     <img className="book-image"
                          src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1615993156/React%20Project/red_dict_a37bhx.png"
-                         width="100px" height="70px"/>
+                         width="100px" height="70px" alt="bigger book" />
                     <img className="book-image"
                          src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1615993155/React%20Project/brown_dict_k2ybth.png"
-                         width="70px" height="50px"/>
+                         width="70px" height="50px" alt="book"/>
                 </div>
 
                 <div className="dictionary-header">Винен речник</div>

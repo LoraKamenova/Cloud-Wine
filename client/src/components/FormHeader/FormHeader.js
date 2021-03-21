@@ -8,7 +8,7 @@ const FormHeader = (props) => {
             </div>
             <div className="auth-form-site-name-pic">
                 <img className="auth-form-pic"
-                     src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1615712293/React%20Project/grape_border_ogd8gq.png"/>
+                     src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1615712293/React%20Project/grape_border_ogd8gq.png" alt="vine"/>
             </div>
         </div>
     );

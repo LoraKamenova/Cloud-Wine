@@ -17,13 +17,41 @@ router.get('/details/:id', (req, res) => {
         })
 });
 
-// router.post('/', isAuth, (req, res) => {
-//     let movie = new Movie(req.body);
-//
-//     movie.save()
-//         .then(createdMovie => {
-//             res.status(201).json({_id: createdMovie._id});
-//         });
-// });
+router.post('/create', (req, res) => {
+    const {
+        name,
+        description,
+        address,
+        services,
+        logoUrl,
+        imageUrl1,
+        imageUrl2,
+        mapUrl
+    } = req.body;
+
+    const destination = new Destination({
+        name,
+        description,
+        address,
+        services,
+        logoUrl,
+        imageUrl1,
+        imageUrl2,
+        mapUrl
+    })
+
+    destination.save()
+        .then(createdDestination => {
+            res.status(201).json({_id: createdDestination._id});
+        });
+});
+
+router.delete('/:id', (req, res) => {
+    const { id } = req.params;
+    Destination.findByIdAndDelete(id)
+        .then(res.status(200).json({
+            message: "Destination deleted successfully"
+        }));
+});
 
 module.exports = router;

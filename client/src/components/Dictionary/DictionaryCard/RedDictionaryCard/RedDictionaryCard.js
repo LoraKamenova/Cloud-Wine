@@ -6,7 +6,7 @@ const RedDictionaryCard = (props) => {
         <article className="red-dictionary-card">
             <div className="red-dictionary-card-content-wrapper">
                 <div className="red-dictionary-image-wrapper">
-                    <img className="red-dictionary-image" src={props.url}></img>
+                    <img className="red-dictionary-image" src={props.url} alt="icon"></img>
                 </div>
                 <h3 className="red-dictionary-card-title">{props.title}</h3>
                 <p className="red-dictionary-card-text">{props.text}</p>

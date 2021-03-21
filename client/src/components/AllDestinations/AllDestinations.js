@@ -1,7 +1,7 @@
 import './AllDestinations.css'
 import DestinationCard from "./DestinationCard/DestinationCard"
-import {Link} from "react-router-dom";
-import {Component} from "react/cjs/react.production.min";
+import { Link } from "react-router-dom";
+import { Component } from 'react';
 import * as destinationService from '../../services/destinationService';
 
 class AllDestinations extends Component {
@@ -29,13 +29,13 @@ class AllDestinations extends Component {
                     <div className="suitcase-image-wrapper">
                         <img className="suitcase-image"
                              src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1615768194/React%20Project/suitcase_mch1ru.png"
-                             width="70px" height="50px"/>
+                             width="70px" height="50px" alt="suitcase"/>
                         <img className="suitcase-image"
                              src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1615768194/React%20Project/suitcase_mch1ru.png"
-                             width="100px" height="70px"/>
+                             width="100px" height="70px" alt="bigger suitcase"/>
                         <img className="suitcase-image"
                              src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1615768194/React%20Project/suitcase_mch1ru.png"
-                             width="70px" height="50px"/>
+                             width="70px" height="50px" alt="suitcase"/>
                     </div>
 
                     <div className="all-destinations-header">Всички дестинации</div>
@@ -49,7 +49,7 @@ class AllDestinations extends Component {
                                     title={x.name}
                                     address={x.address}
                                     services={x.services}
-                                    imageUrl1={x.imageUrl1}
+                                    logoUrl={x.logoUrl}
                                 />
                             </Link>
 

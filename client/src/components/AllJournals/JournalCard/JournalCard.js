@@ -5,7 +5,7 @@ const JournalCard = (props) => {
         <article className="journal-card">
             <div className="journal-card-image-wrapper">
                 <img className="journal-card-image"
-                     src={props.imageUrl1}/>
+                     src={props.imageUrl1} alt="journal"/>
             </div>
             <div className="journal-card-title-wrapper">
                 <h3 className="journal-card-title">{props.title}</h3>

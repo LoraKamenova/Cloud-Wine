@@ -1,7 +1,7 @@
 import './AllJournals.css'
 import JournalCard from "./JournalCard/JournalCard";
-import {Link} from "react-router-dom";
-import {Component} from "react/cjs/react.production.min";
+import { Link } from "react-router-dom";
+import { Component } from 'react';
 import * as journalService from "../../services/journalService";
 
 class AllJournals extends Component {
@@ -27,7 +27,7 @@ class AllJournals extends Component {
 
                     <img className="peg-image"
                          src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1615730431/React%20Project/new_gt98oa.png"
-                         width="300px" height="50px"/>
+                         width="300px" height="50px" alt="pegs"/>
                     <div className="all-journals-header">Всички пътеписи</div>
 
                     <div className="all-journals-container">

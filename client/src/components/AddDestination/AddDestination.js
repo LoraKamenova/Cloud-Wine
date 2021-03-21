@@ -31,7 +31,7 @@ const AddDestination = () => {
                             <div className="general-form-field-heading">
                                 <label htmlFor="text">Текст:</label>
                             </div>
-                            <textarea className="general-form-field-input" rows="6" id="text" name="text"/>
+                            <textarea className="general-form-field-input" rows="11" id="text" name="text"/>
                         </div>
 
                     </section>
@@ -66,7 +66,16 @@ const AddDestination = () => {
                             <input className="general-form-field-input" type="text" id="map" name="map"/>
                         </div>
 
+                        <div className="general-form-field-wrapper">
+                            <div className="general-form-field-heading">
+                                <label htmlFor="logoUrl">URL към лого:</label>
+                            </div>
+                            <input className="general-form-field-input" type="text" id="logoUrl" name="logoUrl"/>
+                        </div>
+
                     </section>
+
+
 
                 </section>
 
