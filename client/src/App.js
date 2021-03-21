@@ -57,7 +57,7 @@ function App() {
 
                     <Route path="/destination" exact component={Destination}/>
                     <Route path="/all-destinations" exact component={AllDestinations}/>
-                    <Route path="/destination-details" exact component={DestinationDetails}/>
+                    <Route path="/destination/details/:id" exact component={DestinationDetails}/>
                     <Route path="/add-destination" exact component={AddDestination}/>
 
                     <Route path="/journal" exact component={Journal}/>

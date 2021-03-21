@@ -4,7 +4,7 @@ const DestinationCard = (props) => {
     return (
         <article className="destination-card">
             <div className="destination-card-image-wrapper">
-                <img className="destination-card-image" src={props.url}/>
+                <img className="destination-card-image" src={props.imageUrl1}/>
             </div>
 
             <div className="destination-card-info-wrapper">

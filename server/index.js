@@ -2,7 +2,7 @@ const express = require('express');
 
 const cors = require('cors');
 
-const routes = require('./config/routes');
+const routes = require('./routes');
 const { auth } = require('./middlewares/auth');
 const errorHandler = require('./middlewares/errorHandler');
 const { PORT } = require('./config/config')
