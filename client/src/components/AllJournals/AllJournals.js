@@ -34,7 +34,7 @@ class AllJournals extends Component {
 
                         {this.state.journals.map(x =>
 
-                            <Link key={x.id} {...x} to={`/journals/details/${x._id}`}>
+                            <Link key={x.id} {...x} to={`/journal/details/${x._id}`}>
                                 <JournalCard
                                     title={x.title}
                                     imageUrl1={x.imageUrl1}

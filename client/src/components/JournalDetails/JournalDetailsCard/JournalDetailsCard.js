@@ -9,11 +9,11 @@ const JournalDetailsCard = (props) => {
             </header>
 
             <div className="journal-details-card-image-wrapper">
-                <img className="journal-details-card-image" src={props.url1}/>
-                <img className="journal-details-card-image" src={props.url2}/>
+                <img className="journal-details-card-image" src={props.imageUrl1} alt="journal"/>
+                <img className="journal-details-card-image" src={props.imageUrl2} alt="journal"/>
             </div>
 
-            <div className="journal-details-card-text">{props.paragraph}</div>
+            <div className="journal-details-card-text">{props.description}</div>
 
             <div className="journal-details-card-button-wrapper">
                 <a className="button edit-button" href="#">Редактирай<i className="fas fa-pencil-alt"></i></a>

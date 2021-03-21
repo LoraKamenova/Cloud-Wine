@@ -11,7 +11,7 @@ router.get('/all', (req, res) => {
 
 router.get('/details/:id', (req, res) => {
     const { id } = req.params;
-    Journal.find({ _id: id })
+    Journal.findById(id)
         .then(journal => {
             res.json(journal);
         })

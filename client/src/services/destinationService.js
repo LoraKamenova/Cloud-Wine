@@ -1,17 +1,14 @@
-const basicUrl = 'http://localhost:5000/api/';
+const basicUrl = 'http://localhost:5000/api/destinations';
 
 export const getAll = () => {
-    let url = basicUrl + 'destinations/all';
 
-    return fetch(url)
+    return fetch(`${basicUrl}/all`)
         .then(res => res.json())
         .catch(error => console.log(error));
 }
 
-export const getOne = (id) => {
-    let url = basicUrl + `destinations/details/${id}`;
-
-    return fetch(url)
+export const getOne = (destinationId) => {
+    return fetch(`${basicUrl}/details/${destinationId}`)
         .then(res => res.json())
         .catch(error => console.log(error));
 }

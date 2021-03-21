@@ -57,12 +57,12 @@ function App() {
 
                     <Route path="/destination" exact component={Destination}/>
                     <Route path="/all-destinations" exact component={AllDestinations}/>
-                    <Route path="/destination/details/:id" exact component={DestinationDetails}/>
+                    <Route path="/destination/details/:destinationId" component={DestinationDetails}/>
                     <Route path="/add-destination" exact component={AddDestination}/>
 
                     <Route path="/journal" exact component={Journal}/>
                     <Route path="/all-journals" exact component={AllJournals}/>
-                    <Route path="/journal-details" exact component={JournalDetails}/>
+                    <Route path="/journal/details/:journalId" component={JournalDetails}/>
                     <Route path="/add-journal" exact component={AddJournal}/>
 
                 </Switch>

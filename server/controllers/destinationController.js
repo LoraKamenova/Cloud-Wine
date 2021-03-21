@@ -11,7 +11,7 @@ router.get('/all', (req, res) => {
 
 router.get('/details/:id', (req, res) => {
     const { id } = req.params;
-    Destination.find({ _id: id })
+    Destination.findById(id)
         .then(destination => {
             res.json(destination);
         })
