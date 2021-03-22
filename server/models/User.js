@@ -15,9 +15,8 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    userType: {
+    type: {
         type: String,
-        default: "user",
     },
     journals: [{
         type: ObjectId,

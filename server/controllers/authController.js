@@ -2,6 +2,13 @@ const router = require('express').Router();
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 
+router.get('/all', (req, res) => {
+    User.find()
+        .then(users => {
+            res.json(users);
+        });
+});
+
 router.post('/register', (req, res) => {
     // TODO: Check if user exists
 
@@ -9,9 +16,7 @@ router.post('/register', (req, res) => {
 
     user.save()
         .then(createdUser => {
-            console.log(createdUser);
-
-            res.status(201).json({_id: createdUser._id});
+            res.status(201).json({ message: "New user created successfully"});
         });
 
 });
