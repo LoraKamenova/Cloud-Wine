@@ -18,6 +18,8 @@ const JournalDetails = ( {match} ) => {
 
             <JournalDetailsCard
                 title={journal.title}
+                place={journal.place}
+                time={journal.time}
                 imageUrl1={journal.imageUrl1}
                 imageUrl2={journal.imageUrl2}
                 description={journal.description}

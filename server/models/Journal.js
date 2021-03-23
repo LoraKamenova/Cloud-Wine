@@ -10,6 +10,14 @@ const JournalSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    place: {
+        type: String,
+        required: true,
+    },
+    time: {
+        type: String,
+        required: true,
+    },
     imageUrl1: {
         type: String,
         required: true

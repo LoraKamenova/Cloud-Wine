@@ -1,8 +1,8 @@
-
 .journal-details-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 20px 50px 30px 50px;
 }
 
 .journal-details-card-header {
@@ -10,10 +10,24 @@
 }
 
 .journal-details-card-heading {
-    font-size: 35px;
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
 }
 
-.journal-details-card-image-wrapper {
+.journal-details-card-subheading {
+    font-size: 30px;
+    font-family: 'Caveat', cursive;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.journal-details-card-wrapper, .journal-details-card-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.journal-details-card-image-container {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
@@ -27,7 +41,6 @@
 }
 
 .journal-details-card-text {
-    padding: 20px 40px;
     text-align: justify;
 }
 

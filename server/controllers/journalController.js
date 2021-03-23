@@ -37,6 +37,8 @@ router.post('/create', (req, res) => {
     const {
         title,
         description,
+        place,
+        time,
         imageUrl1,
         imageUrl2,
         creatorId
@@ -45,6 +47,8 @@ router.post('/create', (req, res) => {
     const journal = new Journal({
         title,
         description,
+        place,
+        time,
         imageUrl1,
         imageUrl2,
         creatorId
@@ -71,6 +75,8 @@ router.patch('/edit/:id', (req, res) => {
     const {
         title,
         description,
+        place,
+        time,
         imageUrl1,
         imageUrl2,
         creatorId
@@ -82,6 +88,8 @@ router.patch('/edit/:id', (req, res) => {
 
     title && (newData.title = title);
     description && (newData.description = description);
+    place && (newData.place = place);
+    time && (newData.time = time);
     imageUrl1 && (newData.imageUrl1 = imageUrl1);
     imageUrl2 && (newData.imageUrl2 = imageUrl2);
     creatorId && (newData.creatorId = creatorId);
