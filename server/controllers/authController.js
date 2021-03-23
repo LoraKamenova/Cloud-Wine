@@ -14,7 +14,7 @@ router.post('/register', (req, res) => {
     let role = "user";
 
     User.countDocuments((err, count) => {
-        if (( err ) || (count === 0)) {
+        if ((err) || (count === 0)) {
             role = "root";
         }
     });
@@ -25,7 +25,7 @@ router.post('/register', (req, res) => {
                 message: "User already exists"
             })
         } else {
-            const { username, password } = req.body;
+            const {username, password} = req.body;
             let user = new User({username, password, role});
             user.save()
                 .then(createdUser => {
@@ -36,27 +36,26 @@ router.post('/register', (req, res) => {
 
 });
 
+router.post('/login', (req, res, next) => {
+    const {username, password} = req.body;
 
-// router.post('/login', (req, res, next) => {
-//     const {login: username, password} = req.body;
-//
-//     User.where({username, password})
-//         .findOne()
-//         .then(user => {
-//             let token = jwt.sign({
-//                 _id: user._id,
-//                 username: user.username,
-//             }, 'SOMESUPERSECRET', {expiresIn: '1h'});
-//
-//             res.status(200).json({
-//                 _id: user._id,
-//                 username: user.username,
-//                 token
-//             })
-//         })
-//         .catch(err => {
-//             next({status: 404, message: 'No such user or password!', type: 'ERROR'})
-//         })
-// });
+    User.where({username, password})
+        .findOne()
+        .then(user => {
+            let token = jwt.sign({
+                _id: user._id,
+                username: user.username,
+            }, 'SOMESUPERSECRET', {expiresIn: '1h'});
+
+            res.status(200).json({
+                _id: user._id,
+                username: user.username,
+                token
+            })
+        })
+        .catch(err => {
+            next({status: 404, message: 'No such user or password!', type: 'ERROR'})
+        })
+});
 
 module.exports = router;

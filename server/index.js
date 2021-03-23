@@ -6,6 +6,8 @@ const routes = require('./routes');
 const { auth } = require('./middlewares/auth');
 const errorHandler = require('./middlewares/errorHandler');
 const { PORT } = require('./config/config')
+const cookieParser = require('cookie-parser');
+const secret = 'secret';
 
 const app = express();
 
@@ -22,5 +24,6 @@ app.get('/', (req, res) => {
 
 app.use('/api', routes);
 app.use(errorHandler);
+app.use(cookieParser(secret));
 
 app.listen(PORT, console.log.bind(console, `Server is listening on port ${PORT}...`));
