@@ -1,0 +1,53 @@
+.top-wines-section {
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    margin: 3% auto;
+    justify-content: flex-start;
+}
+
+.top-wines-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFACC;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.top-wines-header {
+    display: flex;
+    justify-content: center;
+}
+
+.top-wines-header > a {
+    text-decoration: none;
+}
+
+.top-wines-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.top-wines-heading, .all-wines-heading-button {
+    font-size: 55px;
+    font-family: 'Caveat', cursive;
+    margin: 0 20px;
+}
+
+.all-wines-heading-button {
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.all-wines-heading-button:hover {
+    color: black;
+}
+
+.top-wines-container > a {
+    text-decoration: none;
+    color: #465945;
+}

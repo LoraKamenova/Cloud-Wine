@@ -46,8 +46,7 @@ class AllJournals extends Component {
                     </div>
                     <div className="all-journals-button-wrapper">
                         <Link className="button my-items-button" href="#">Моите пътеписи<i className="fas fa-heart"></i></Link>
-                        <Link className="button new-item-button" to="/add-journal">Нов пътепис<i
-                            className="fas fa-check"></i></Link>
+                        <Link className="button new-item-button" to="/add-journal">Нов пътепис<i className="fas fa-check"></i></Link>
                     </div>
                 </div>
             </section>

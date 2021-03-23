@@ -42,24 +42,10 @@
     flex-wrap: wrap;
 }
 
-.journal-card-link {
-    text-decoration: none;
-    color: black;
-}
-
-.journal-card-link:hover {
-    cursor: pointer;
-}
-
 .all-journals-container > a:nth-child(even) {
     transform: rotate(1deg);
 }
 
 .all-journals-container > a:nth-child(odd) {
     transform: rotate(-1deg);
-}
-
-.all-journals-container > a {
-    text-decoration: none;
-    color: black;
 }

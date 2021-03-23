@@ -29,6 +29,8 @@ import Must from "./components/Must/Must";
 import Yeast from "./components/Yeast/Yeast";
 import Cork from "./components/Cork/Cork";
 import Blending from "./components/Blending/Blending";
+import WineList from "./components/Winelist/WineList";
+import TopWines from "./components/TopWines/TopWines";
 
 function App() {
     return (
@@ -64,6 +66,9 @@ function App() {
                     <Route path="/all-journals" exact component={AllJournals}/>
                     <Route path="/journal/details/:journalId" component={JournalDetails}/>
                     <Route path="/add-journal" exact component={AddJournal}/>
+
+                    <Route path="/wineList" exact component={WineList}/>
+                    <Route path="/topWines" exact component={TopWines}/>
 
                 </Switch>
             </main>
