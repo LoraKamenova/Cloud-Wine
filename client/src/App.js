@@ -31,6 +31,7 @@ import Cork from "./components/Cork/Cork";
 import Blending from "./components/Blending/Blending";
 import WineList from "./components/Winelist/WineList";
 import TopWines from "./components/TopWines/TopWines";
+import WineListDetails from "./components/WIneListDetails/WineListDetails";
 
 function App() {
     return (
@@ -69,6 +70,7 @@ function App() {
 
                     <Route path="/wineList" exact component={WineList}/>
                     <Route path="/topWines" exact component={TopWines}/>
+                    <Route path="/wineList/details/:wineListId" component={WineListDetails}/>
 
                 </Switch>
             </main>

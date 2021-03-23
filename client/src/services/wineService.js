@@ -6,8 +6,8 @@ export const getAllWines = () => {
         .catch(error => console.log(error));
 }
 
-export const getOneWine = (wineId) => {
-    return fetch(`${basicUrl}/details/${wineId}`)
+export const getOneWine = (wineListId) => {
+    return fetch(`${basicUrl}/details/${wineListId}`)
         .then(res => res.json())
         .catch(error => console.log(error));
 }

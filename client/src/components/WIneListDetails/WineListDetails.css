@@ -1,0 +1,8 @@
+.wine-list-details-section {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    background-color: white;
+    padding: 30px;
+    margin: 1% auto;
+}
