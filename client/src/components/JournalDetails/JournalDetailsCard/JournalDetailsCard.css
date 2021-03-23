@@ -2,59 +2,81 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px 50px 30px 50px;
+    margin: 50px 0;
 }
 
-.journal-details-card-header {
+.jdc-first-section {
+    margin: 0 80px 0 100px;
+}
+
+.jdc-heading {
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
     text-align: center;
 }
 
-.journal-details-card-heading {
-    font-family: 'Caveat', cursive;
-    font-size: 50px;
+.jdc-subsection {
+    display: flex;
+    flex-direction: column;
 }
 
-.journal-details-card-subheading {
+.jdc-subheading {
     font-size: 30px;
     font-family: 'Caveat', cursive;
     text-decoration: underline;
+    margin: 20px 0 10px 0px;
+}
+
+.jdc-text {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.jdc-image-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.jdc-image-and-tape-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jdc-subheading.image-and-tape-heading {
+    margin-left: 100px;
+    margin-bottom: 0;
+}
+
+.tape {
+    position: relative;
+    bottom: -20px;
+    width: 250px;
+    height: 80px;
+    background-image: url("https://res.cloudinary.com/dyhmxus4n/image/upload/v1616498543/React%20Project/tape_rel617.png");
+}
+
+.jdc-image {
+    width: 550px;
+    height: 350px;
+    box-shadow: 0px 0px 11px -3px #000000;
     margin-bottom: 10px;
 }
 
-.journal-details-card-wrapper, .journal-details-card-image-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-}
-
-.journal-details-card-image-container {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
-}
-
-.journal-details-card-image {
-    width: 420px;
-    height: 250px;
-    box-shadow: 0px 0px 11px -3px #000000;
-    margin: 10px;
-}
-
-.journal-details-card-text {
-    text-align: justify;
-}
-
-.journal-details-card-button-wrapper {
+.jdc-button-wrapper {
     display: flex;
     justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 40px;
 }
 
-@media only screen and (max-width: 1024px) {
-    .journal-details-card-image-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-    .journal-details-card-button-wrapper {
-        justify-content: center;
-    }
-}
+/*@media only screen and (max-width: 1024px) {*/
+/*    .journal-details-card-image-wrapper {*/
+/*        flex-direction: column;*/
+/*        align-items: center;*/
+/*    }*/
+/*    .journal-details-card-button-wrapper {*/
+/*        justify-content: center;*/
+/*    }*/
+/*}*/
