@@ -26,9 +26,9 @@ const JournalDetailsCard = (props) => {
             <section className="jdc-second-section">
                 <h3 className="jdc-subheading image-and-tape-heading">Какво снимахме</h3>
                 <div className="jdc-image-and-tape-wrapper">
-                    <div className="tape"></div>
+                    <div className="tape left-tape"></div>
                     <img className="jdc-image" src={props.imageUrl1} alt="journal"/>
-                    <div className="tape"></div>
+                    <div className="tape right-tape"></div>
                     <img className="jdc-image" src={props.imageUrl2} alt="journal"/>
                 </div>
             </section>

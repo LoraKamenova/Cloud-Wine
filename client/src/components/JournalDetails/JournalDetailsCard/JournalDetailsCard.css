@@ -71,6 +71,14 @@
     margin-top: 40px;
 }
 
+.left-tape {
+    transform: rotate(5deg);
+}
+
+.right-tape {
+    transform: rotate(-5deg);
+}
+
 /*@media only screen and (max-width: 1024px) {*/
 /*    .journal-details-card-image-wrapper {*/
 /*        flex-direction: column;*/
