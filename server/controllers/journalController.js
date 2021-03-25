@@ -11,7 +11,7 @@ router.get('/all', (req, res) => {
 });
 
 router.get('/my', (req, res) => {
-    const { _id: id } = req.body;
+    const { id } = req.body;
     Journal.find({creatorId: id})
         .then(journal => {
             res.json(journal);
