@@ -10,7 +10,7 @@ router.get('/all', (req, res) => {
         });
 });
 
-router.get('/my', (req, res) => {
+router.post('/my', (req, res) => {
     const { id } = req.body;
     Journal.find({creatorId: id})
         .then(journal => {

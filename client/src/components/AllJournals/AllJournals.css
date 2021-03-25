@@ -49,3 +49,9 @@
 .all-journals-container > a:nth-child(odd) {
     transform: rotate(-1deg);
 }
+
+.all-journals-container > a {
+    text-decoration: none;
+    color: black;
+
+}

@@ -32,6 +32,7 @@ import Blending from "./components/Blending/Blending";
 import WineList from "./components/Winelist/WineList";
 import TopWines from "./components/TopWines/TopWines";
 import WineListDetails from "./components/WIneListDetails/WineListDetails";
+import MyJournals from "./components/AllJournals/MyJournals";
 
 function App() {
     return (
@@ -65,6 +66,7 @@ function App() {
 
                     <Route path="/journal" exact component={Journal}/>
                     <Route path="/all-journals" exact component={AllJournals}/>
+                    <Route path="/my-journals" exact component={MyJournals}/>
                     <Route path="/journal/details/:journalId" component={JournalDetails}/>
                     <Route path="/add-journal" exact component={AddJournal}/>
 

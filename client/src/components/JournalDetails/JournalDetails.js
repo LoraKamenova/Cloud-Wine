@@ -8,7 +8,7 @@ const JournalDetails = ( {match} ) => {
     let [journal, setJournal] = useState({});
 
     useEffect(() => {
-        journalService.getOne(match.params.journalId)
+        journalService.getOneJournal(match.params.journalId)
             .then(res => setJournal(res));
     }, []);
 
