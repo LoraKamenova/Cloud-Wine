@@ -4,7 +4,7 @@ const User = require('../models/User');
 // const { isAuth } = require('../middlewares/auth');
 
 router.get('/all', (req, res) => {
-    Journal.find()
+    Journal.find().populate('creatorId')
         .then(journals => {
             res.json(journals);
         });
@@ -67,7 +67,7 @@ router.delete('/:id', (req, res) => {
     const {id} = req.params;
     Journal.findByIdAndDelete(id)
         .then(res.status(200).json({
-            message: "Journal deleted successfully"
+            message: "JournalPage deleted successfully"
         }));
 });
 
@@ -96,7 +96,7 @@ router.patch('/edit/:id', (req, res) => {
 
     Journal.findByIdAndUpdate(id, newData)
         .then(res.status(200).json({
-            message: "Journal updated successfully"
+            message: "JournalPage updated successfully"
         }));
 })
 

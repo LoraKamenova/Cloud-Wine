@@ -50,7 +50,7 @@ router.delete('/:id', (req, res) => {
     const { id } = req.params;
     Destination.findByIdAndDelete(id)
         .then(res.status(200).json({
-            message: "Destination deleted successfully"
+            message: "DestinationPage deleted successfully"
         }));
 });
 
@@ -81,7 +81,7 @@ router.patch('/edit/:id', (req, res) => {
 
     Destination.findByIdAndUpdate(id, newData)
         .then(res.status(200).json({
-            message: "Destination updated successfully"
+            message: "DestinationPage updated successfully"
         }));
 })
 

@@ -3,36 +3,36 @@ import './App.css';
 
 import {Route, Switch} from "react-router-dom"
 
-import Start from "./components/Start/Start";
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import Dictionary from "./components/Dictionary/Dictionary";
-import Vineyard from "./components/Vineyard/Vineyard";
-import Grape from "./components/Grape/Grape";
-import Wine from "./components/Wine/Wine";
-import Bottle from "./components/Bottle/Bottle";
-import Barrel from "./components/Barrel/Barrel";
-import Destination from "./components/Destination/Destination";
-import Journal from "./components/Journal/Journal";
-import Register from "./components/Register/Register";
-import Login from "./components/Login/Login";
-import AddJournal from "./components/AddJournal/AddJournal";
-import AddDestination from "./components/AddDestination/AddDestination";
-import AllJournals from "./components/AllJournals/AllJournals";
-import JournalDetails from "./components/JournalDetails/JournalDetails";
-import AllDestinations from "./components/AllDestinations/AllDestinations";
-import DestinationDetails from "./components/DestinationDetails/DestinationDetails";
-import Aside from "./components/Aside/Aside";
-import Tasting from "./components/Tasting/Tasting";
-import Fermentation from "./components/Fermentation/Fermentation";
-import Must from "./components/Must/Must";
-import Yeast from "./components/Yeast/Yeast";
-import Cork from "./components/Cork/Cork";
-import Blending from "./components/Blending/Blending";
-import WineList from "./components/Winelist/WineList";
-import TopWines from "./components/TopWines/TopWines";
-import WineListDetails from "./components/WIneListDetails/WineListDetails";
-import MyJournals from "./components/AllJournals/MyJournals";
+import Start from "./components/StartPage/Start";
+import Home from "./components/HomePage/Home";
+import About from "./components/Dictionary/DictionaryEntries/About/About";
+import DictionaryPage from "./components/Dictionary/DictionaryPage/DictionaryPage";
+import Vineyard from "./components/Dictionary/DictionaryEntries/Vineyard/Vineyard";
+import Grape from "./components/Dictionary/DictionaryEntries/Grape/Grape";
+import Wine from "./components/Dictionary/DictionaryEntries/Wine/Wine";
+import Bottle from "./components/Dictionary/DictionaryEntries/Bottle/Bottle";
+import Barrel from "./components/Dictionary/DictionaryEntries/Barrel/Barrel";
+import Destination from "./components/Destination/DestinationPage/Destination";
+import Journal from "./components/Journal/JournalPage/Journal";
+import Register from "./components/Auth/Register/Register";
+import Login from "./components/Auth/Login/Login";
+import AddJournal from "./components/Journal/AddJournal/AddJournal";
+import AddDestination from "./components/Destination/AddDestination/AddDestination";
+import AllJournals from "./components/Journal/AllJournals/AllJournals";
+import JournalDetails from "./components/Journal/JournalDetails/JournalDetails";
+import AllDestinations from "./components/Destination/AllDestinations/AllDestinations";
+import DestinationDetails from "./components/Destination/DestinationDetails/DestinationDetails";
+import Aside from "./components/Navigation/Aside/Aside";
+import Tasting from "./components/Dictionary/DictionaryEntries/Tasting/Tasting";
+import Fermentation from "./components/Dictionary/DictionaryEntries/Fermentation/Fermentation";
+import Must from "./components/Dictionary/DictionaryEntries/Must/Must";
+import Yeast from "./components/Dictionary/DictionaryEntries/Yeast/Yeast";
+import Cork from "./components/Dictionary/DictionaryEntries/Cork/Cork";
+import Blending from "./components/Dictionary/DictionaryEntries/Blending/Blending";
+import WineList from "./components/Winelist/WinelistPage/WineList";
+import TopWines from "./components/Winelist/TopWines/TopWines";
+import WineListDetails from "./components/Winelist/WInelistDetails/WineListDetails";
+import MyJournals from "./components/Journal/AllJournals/MyJournals";
 
 function App() {
     return (
@@ -45,7 +45,7 @@ function App() {
                     <Route path="/register" exact component={Register}/>
                     <Route path="/login" exact component={Login}/>
 
-                    <Route path="/dictionary" exact component={Dictionary}/>
+                    <Route path="/dictionary" exact component={DictionaryPage}/>
                     <Route path="/dictionary/about" exact component={About}/>
                     <Route path="/dictionary/vineyard" exact component={Vineyard}/>
                     <Route path="/dictionary/grape" exact component={Grape}/>
