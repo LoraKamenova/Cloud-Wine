@@ -1,12 +1,26 @@
+.jdc-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    background-image:
+            linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+            linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.7em;
+}
+
 .journal-details-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 50px 0;
 }
 
 .jdc-first-section {
-    margin: 0 80px 0 100px;
+    margin: 0 40px 0 100px;
+}
+
+.jdc-second-section {
+    margin-bottom: 60px;
 }
 
 .jdc-heading {
@@ -57,20 +71,6 @@
     background-image: url("https://res.cloudinary.com/dyhmxus4n/image/upload/v1616498543/React%20Project/tape_rel617.png");
 }
 
-.jdc-image {
-    width: 550px;
-    height: 350px;
-    box-shadow: 0px 0px 11px -3px #000000;
-    margin-bottom: 10px;
-}
-
-.jdc-button-wrapper {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 50px;
-    margin-top: 40px;
-}
-
 .left-tape {
     transform: rotate(5deg);
 }
@@ -78,6 +78,20 @@
 .right-tape {
     transform: rotate(-5deg);
 }
+
+.jdc-image {
+    width: 550px;
+    height: 350px;
+    box-shadow: 0px 0px 9px -3px #000000;
+    margin-bottom: 10px;
+}
+
+.jdc-button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+
 
 /*@media only screen and (max-width: 1024px) {*/
 /*    .journal-details-card-image-wrapper {*/
