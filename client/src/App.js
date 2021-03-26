@@ -37,6 +37,8 @@ import EditDestination from "./components/Destination/EditDestination/EditDestin
 import DeleteDestination from "./components/Destination/DeleteDestination/DeleteDestination";
 import EditWine from "./components/Winelist/EditWine/EditWine";
 import DeleteWine from "./components/Winelist/DeleteWine/DeleteWine";
+import EditJournal from "./components/Journal/EditJournal/EditJournal";
+import DeleteJournal from "./components/Journal/DeleteJournal/DeleteJournal";
 
 function App() {
     return (
@@ -71,10 +73,12 @@ function App() {
                     <Route path="/destination/delete/:destinationId" exact component={DeleteDestination}/>
 
                     <Route path="/journal" exact component={Journal}/>
-                    <Route path="/all-journals" exact component={AllJournals}/>
-                    <Route path="/my-journals" exact component={MyJournals}/>
+                    <Route path="/journal/all" exact component={AllJournals}/>
+                    <Route path="/journal/my" exact component={MyJournals}/>
                     <Route path="/journal/details/:journalId" component={JournalDetails}/>
-                    <Route path="/add-journal" exact component={AddJournal}/>
+                    <Route path="/journal/create" exact component={AddJournal}/>
+                    <Route path="/journal/edit/:journalId" exact component={EditJournal}/>
+                    <Route path="/journal/delete/:journalId" exact component={DeleteJournal}/>
 
                     <Route path="/wine/all" exact component={WineList}/>
                     <Route path="/wine/top" exact component={TopWines}/>

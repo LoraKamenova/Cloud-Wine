@@ -1,52 +1,52 @@
 import './AllJournals.css'
 import JournalCard from "./JournalCard/JournalCard";
-import { Link } from "react-router-dom";
-import { Component } from 'react';
+import {Link} from "react-router-dom";
+import React, { useContext, useEffect, useState} from 'react';
 import * as journalService from "../../../services/journalService";
+import UserContext from "../../../Context";
 
-class MyJournals extends Component {
-    constructor(props) {
-        super(props);
+const MyJournals = () => {
 
-        this.state = {
-            myJournals: [],
-        }
-    }
+    const context = useContext(UserContext)
+    const role = context.user.role;
+    const userId = context.user.id;
 
-    componentDidMount() {
-        journalService.getMyJournals("605915d4fc52ec4f28275b22")
-            .then(res => this.setState({myJournals: res}))
-    }
+    const [journals, setJournals] = useState([]);
 
-    render() {
-        return (
+    useEffect(() => {
+        journalService.getMy(userId)
+            .then(res => setJournals(res));
+    }, []);
 
-            <section className="journals-section">
+    return (
 
-                <div className="all-journals-wrapper">
+        <section className="journals-section">
 
-                    <img className="peg-image"
-                         src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1615730431/React%20Project/new_gt98oa.png"
-                         width="300px" height="50px" alt="pegs"/>
-                    <div className="all-journals-header">Моите пътеписи</div>
+            <div className="all-journals-wrapper">
 
-                    <div className="all-journals-container">
+                <img className="peg-image"
+                     src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1615730431/React%20Project/new_gt98oa.png"
+                     width="300px" height="50px" alt="pegs"/>
+                <div className="all-journals-header">Моите пътеписи</div>
 
-                        {this.state.myJournals.map(x =>
-
-                            <Link key={x.id} {...x} to={`/journal/details/${x._id}`}>
-                                <JournalCard
-                                    title={x.title}
-                                    imageUrl1={x.imageUrl1}
-                                />
-                            </Link>
-                        )}
-
-                    </div>
+                <div className="all-journals-container">
+                    {journals.map(x =>
+                        <Link key={x.id} {...x} to={`/journal/details/${x._id}`}>
+                            <JournalCard
+                                title={x.title}
+                                imageUrl1={x.imageUrl1}
+                            />
+                        </Link>
+                    )}
                 </div>
-            </section>
-        );
-    }
+
+                <div className="all-journals-button-wrapper">
+                    <Link className="button new-item-button" to="/journal/create">Нов пътепис<i
+                        className="fas fa-check"></i></Link>
+                </div>
+            </div>
+        </section>
+    );
 }
 
 export default MyJournals;

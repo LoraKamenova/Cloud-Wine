@@ -1,6 +1,6 @@
 import './Journal.css'
 import Article from "../../Other/Article/Article";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Journal = () => {
     return (
@@ -16,8 +16,7 @@ const Journal = () => {
                             taciti sociosqu ad litora torquent per conubia nostra, per"
                     />
                     <div className="info-button-wrapper">
-                        <Link to="/all-journals"><span className="button info-button">Виж пътеписите<i
-                            className="fas fa-angle-double-right"></i></span></Link>
+                        <Link to="/journal/all"><span className="button info-button">Виж пътеписите<i className="fas fa-angle-double-right"></i></span></Link>
                     </div>
                 </div>
                 <div className="journal-image-container">

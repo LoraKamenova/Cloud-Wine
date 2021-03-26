@@ -2,13 +2,14 @@ import './JournalDetails.css'
 import JournalDetailsCard from "./JournalDetailsCard/JournalDetailsCard";
 import {useEffect, useState} from "react";
 import * as journalService from "../../../services/journalService";
+import {Link} from "react-router-dom";
 
 const JournalDetails = ({match}) => {
 
     let [journal, setJournal] = useState({});
 
     useEffect(() => {
-        journalService.getOneJournal(match.params.journalId)
+        journalService.getOne(match.params.journalId)
             .then(res => setJournal(res));
     }, []);
 
@@ -27,6 +28,11 @@ const JournalDetails = ({match}) => {
                 />
 
             </section>
+
+            <div className="jdc-button-wrapper">
+                <Link className="button edit-button" to={`/journal/edit/${journal._id}`}>Редактирай<i className="fas fa-pencil-alt"></i></Link>
+                <Link className="button delete-button" to={`/journal/delete/${journal._id}`}>Изтрий<i className="fas fa-times"></i></Link>
+            </div>
         </div>
     );
 };
