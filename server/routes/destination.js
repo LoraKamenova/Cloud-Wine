@@ -5,10 +5,10 @@ const { auth } = require('../utils');
 router.get('/all', destinationController.get.all);
 router.get('/details/:id', destinationController.get.details);
 
-// router.post('/', auth(), controllers.origami.post);
-//
-// router.put('/:id', auth(), controllers.origami.put);
-//
-// router.delete('/:id', auth(), controllers.origami.delete);
+router.post('/', destinationController.post);
+
+router.put('/:id', destinationController.put);
+
+router.delete('/:id', destinationController.delete);
 
 module.exports = router;

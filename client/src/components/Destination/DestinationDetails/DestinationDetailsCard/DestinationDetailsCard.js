@@ -23,10 +23,6 @@ const DestinationDetailsCard = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="destination-details-card-button-wrapper">
-                <a className="button edit-button" href="#">Редактирай<i className="fas fa-pencil-alt"></i></a>
-                <a className="button delete-button" href="#">Изтрий<i className="fas fa-times"></i></a>
-            </div>
         </div>
     );
 };

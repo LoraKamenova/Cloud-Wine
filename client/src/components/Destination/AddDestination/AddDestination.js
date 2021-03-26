@@ -1,23 +1,44 @@
 import './AddDestination.css'
 import FormHeader from "../../Other/FormHeader/FormHeader";
+import * as destinationService from "../../../services/destinationService";
+import { useHistory } from "react-router-dom"
 
 const AddDestination = () => {
+    const history = useHistory();
+
+        const onCreateDestinationSubmitHandler = (e) => {
+            e.preventDefault();
+            console.log(e.target.name.value)
+
+            const { name, description, address, services, logoUrl, imageUrl1, imageUrl2, mapUrl } = e.target;
+
+            destinationService.create(
+                name.value,
+                description.value,
+                address.value,
+                services.value,
+                logoUrl.value,
+                imageUrl1.value,
+                imageUrl2.value,
+                mapUrl.value)
+                .then(() => {
+                    history.push('/all-destinations')
+                })
+        };
+
     return (
 
         <section className="general-form-wrapper add-destination-form-wrapper">
-
             <FormHeader title="Нова дестинация"/>
 
-            <form className="general-form" action="" method="">
-
+            <form className="general-form" onSubmit={onCreateDestinationSubmitHandler}>
                 <section className="general-form-main-section">
 
-                    <section className="general-form-sub-section">
                         <div className="general-form-field-wrapper">
                             <div className="general-form-field-heading">
-                                <label htmlFor="title">Име:</label>
+                                <label htmlFor="name">Име:</label>
                             </div>
-                            <input className="general-form-field-input" type="text" id="title" name="title"/>
+                            <input className="general-form-field-input" type="text" id="name" name="name"/>
                         </div>
 
                         <div className="general-form-field-wrapper">
@@ -29,14 +50,11 @@ const AddDestination = () => {
 
                         <div className="general-form-field-wrapper">
                             <div className="general-form-field-heading">
-                                <label htmlFor="text">Текст:</label>
+                                <label htmlFor="description">Текст:</label>
                             </div>
-                            <textarea className="general-form-field-input" rows="11" id="text" name="text"/>
+                            <textarea className="general-form-field-input" rows="11" id="description" name="description"/>
                         </div>
 
-                    </section>
-
-                    <section className="general-form-sub-section">
 
                         <div className="general-form-field-wrapper">
                             <div className="general-form-field-heading">
@@ -47,23 +65,23 @@ const AddDestination = () => {
 
                         <div className="general-form-field-wrapper">
                             <div className="general-form-field-heading">
-                                <label htmlFor="url1">URL към снимка 1:</label>
+                                <label htmlFor="imageUrl1">URL към снимка 1:</label>
                             </div>
-                            <input className="general-form-field-input" type="text" id="url1" name="url1"/>
+                            <input className="general-form-field-input" type="text" id="imageUrl1" name="imageUrl1"/>
                         </div>
 
                         <div className="general-form-field-wrapper">
                             <div className="general-form-field-heading">
-                                <label htmlFor="url2">URL към снимка 2:</label>
+                                <label htmlFor="imageUrl2">URL към снимка 2:</label>
                             </div>
-                            <input className="general-form-field-input" type="text" id="url2" name="url2"/>
+                            <input className="general-form-field-input" type="text" id="imageUrl2" name="imageUrl2"/>
                         </div>
 
                         <div className="general-form-field-wrapper">
                             <div className="general-form-field-heading">
-                                <label htmlFor="map">URL към карта:</label>
+                                <label htmlFor="mapUrl">URL към карта:</label>
                             </div>
-                            <input className="general-form-field-input" type="text" id="map" name="map"/>
+                            <input className="general-form-field-input" type="text" id="mapUrl" name="mapUrl"/>
                         </div>
 
                         <div className="general-form-field-wrapper">
@@ -73,14 +91,11 @@ const AddDestination = () => {
                             <input className="general-form-field-input" type="text" id="logoUrl" name="logoUrl"/>
                         </div>
 
-                    </section>
-
-
 
                 </section>
 
                 <div className="general-form-button-wrapper">
-                    <button className="general-form-button" type="submit">ИЗПРАТИ</button>
+                    <input className="general-form-button" type="submit" value="ИЗПРАТИ"/>
                 </div>
             </form>
         </section>

@@ -88,6 +88,7 @@
 // module.exports = router;
 
 const Destination = require('../models/Destination');
+const User = require('../models/User');
 
 module.exports = {
     // get: (req, res, next) => {
@@ -116,28 +117,47 @@ module.exports = {
     },
 
     post: (req, res, next) => {
-        // const {description} = req.body;
-        // const {_id} = req.user;
-        //
-        // models.Origami.create({description, author: _id})
-        //     .then((createdOrigami) => {
-        //         return Promise.all([
-        //             models.User.updateOne({_id}, {$push: {posts: createdOrigami}}),
-        //             models.Origami.findOne({_id: createdOrigami._id})
-        //         ]);
-        //     })
-        //     .then(([modifiedObj, origamiObj]) => {
-        //         res.send(origamiObj);
-        //     })
-        //     .catch(next);
+        const {
+            name,
+            description,
+            address,
+            services,
+            logoUrl,
+            imageUrl1,
+            imageUrl2,
+            mapUrl
+        } = req.body;
+
+        Destination.create({name, description, address, services, logoUrl, imageUrl1, imageUrl2, mapUrl})
+            .then((createdDestination) => {
+                return Promise.all([
+                    Destination.findOne({_id: createdDestination._id})
+                ]);
+            })
+            .then(([modifiedObj, destinationObj]) => {
+                res.send(destinationObj);
+            })
+            .catch(next);
     },
 
     put: (req, res, next) => {
-        // const id = req.params.id;
-        // const {description} = req.body;
-        // models.Origami.updateOne({_id: id}, {description})
-        //     .then((updatedOrigami) => res.send(updatedOrigami))
-        //     .catch(next)
+        const id = req.params.id;
+        const {
+            name,
+            description,
+            address,
+            services,
+            logoUrl,
+            imageUrl1,
+            imageUrl2,
+            mapUrl
+        } = req.body;
+
+        console.log(description);
+
+        Destination.updateOne({_id: id}, {name, description, address, services, logoUrl, imageUrl1, imageUrl2, mapUrl})
+            .then((updatedDestination) => res.send(updatedDestination))
+            .catch(next);
     },
 
     delete: (req, res, next) => {

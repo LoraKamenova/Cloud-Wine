@@ -2,20 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter as Router} from "react-router-dom";
 import './index.css';
-import Navigation from './Navigation';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ScrollToTop from "./components/Other/ScrollToTop/ScrollToTop";
-import App from "./App";
+import Global from "./Global";
 
 ReactDOM.render(
     <React.StrictMode>
-        <App>
+        <Global>
             <Router>
                 <ScrollToTop>
-                    <Navigation/>
+                    <App/>
                 </ScrollToTop>
             </Router>
-        </App>
+        </Global>
     </React.StrictMode>,
     document.getElementById('root')
 );

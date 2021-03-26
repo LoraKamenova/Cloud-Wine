@@ -11,7 +11,7 @@ const Login = () => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const context = useContext(UserContext);
-    const history = useHistory()
+    const history = useHistory();
 
     const handleSubmit = async (event) => {
         event.preventDefault()
