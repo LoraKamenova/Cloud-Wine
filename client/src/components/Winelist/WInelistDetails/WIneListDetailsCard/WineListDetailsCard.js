@@ -17,10 +17,6 @@ const WineListDetailsCard = (props) => {
 
             </section>
 
-            <div className="wdc-button-wrapper">
-                <a className="button edit-button" href="#">Редактирай<i className="fas fa-pencil-alt"></i></a>
-                <a className="button delete-button" href="#">Изтрий<i className="fas fa-times"></i></a>
-            </div>
         </div>
     );
 };

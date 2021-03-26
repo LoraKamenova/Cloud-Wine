@@ -31,9 +31,12 @@ import Blending from "./components/Dictionary/DictionaryEntries/Blending/Blendin
 import WineList from "./components/Winelist/WinelistPage/WineList";
 import TopWines from "./components/Winelist/TopWines/TopWines";
 import WineListDetails from "./components/Winelist/WInelistDetails/WineListDetails";
+import AddWine from "./components/Winelist/AddWine/AddWine";
 import MyJournals from "./components/Journal/AllJournals/MyJournals";
 import EditDestination from "./components/Destination/EditDestination/EditDestination";
 import DeleteDestination from "./components/Destination/DeleteDestination/DeleteDestination";
+import EditWine from "./components/Winelist/EditWine/EditWine";
+import DeleteWine from "./components/Winelist/DeleteWine/DeleteWine";
 
 function App() {
     return (
@@ -73,9 +76,12 @@ function App() {
                     <Route path="/journal/details/:journalId" component={JournalDetails}/>
                     <Route path="/add-journal" exact component={AddJournal}/>
 
-                    <Route path="/wineList" exact component={WineList}/>
-                    <Route path="/topWines" exact component={TopWines}/>
-                    <Route path="/wineList/details/:wineListId" component={WineListDetails}/>
+                    <Route path="/wine/all" exact component={WineList}/>
+                    <Route path="/wine/top" exact component={TopWines}/>
+                    <Route path="/wine/details/:wineId" component={WineListDetails}/>
+                    <Route path="/wine/create" exact component={AddWine}/>
+                    <Route path="/wine/edit/:wineId" exact component={EditWine}/>
+                    <Route path="/wine/delete/:wineId" exact component={DeleteWine}/>
 
                 </Switch>
             </main>

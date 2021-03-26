@@ -8,12 +8,10 @@ import {useState} from "react";
 
 const AddDestination = () => {
     const history = useHistory();
-
     const [errorMessage, setErrorMessage] = useState('');
 
     const onCreateDestinationSubmitHandler = (e) => {
         e.preventDefault();
-        console.log(e.target.name.value)
 
         const {
             name,

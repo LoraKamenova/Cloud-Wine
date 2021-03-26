@@ -36,8 +36,3 @@
     text-decoration: underline;
 }
 
-.wdc-button-wrapper {
-    margin: 10px 0;
-    display: flex;
-    justify-content: flex-end;
-}

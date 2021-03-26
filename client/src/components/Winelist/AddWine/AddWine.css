@@ -1,0 +1,9 @@
+.add-wine-form-wrapper {
+    width: 60%;
+    margin: 3% auto;
+    padding: 20px 30px;
+}
+
+.add-wine-form-wrapper > .auth-form-site-name-wrapper > .auth-form-site-name-text {
+    left: 60px;
+}

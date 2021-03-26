@@ -1,6 +1,6 @@
 import './AllDestinations.css'
 import DestinationCard from "./DestinationCard/DestinationCard"
-import {Link, useHistory} from "react-router-dom";
+import { Link } from "react-router-dom";
 import * as destinationService from '../../../services/destinationService';
 
 import React, {useContext, useState, useEffect} from 'react';
@@ -26,7 +26,6 @@ const AllDestinations = () => {
     }
 
     return (
-
         <section className="all-destinations-section">
 
             <div className="all-destinations-wrapper">

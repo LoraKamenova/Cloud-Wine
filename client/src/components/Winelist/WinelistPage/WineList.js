@@ -1,55 +1,55 @@
 import './WineList.css'
 import WineCard from "./WineCard/WineCard";
-import {Link} from "react-router-dom";
-import {Component} from 'react';
+
 import * as wineService from "../../../services/wineService";
 
-class WineList extends Component {
-    constructor(props) {
-        super(props);
+import {Link} from "react-router-dom";
+import React, {useContext, useState, useEffect} from 'react';
+import UserContext from "../../../Context";
 
-        this.state = {
-            allWines: []
-        }
+const WineList = () => {
+    const context = useContext(UserContext)
+    const role = context.user.role;
+
+    const [wines, setWines] = useState([]);
+
+    useEffect(() => {
+        wineService.getAll()
+            .then(res => setWines(res));
+    }, []);
+
+    let button;
+    if (role === "root") {
+        button = <div className="wine-list-button-wrapper">
+            <Link className="button new-item-button" to="/wine/create">Ново вино<i className="fas fa-check"></i></Link>
+        </div>;
     }
 
-    componentDidMount() {
-        wineService.getAllWines()
-            .then(res => this.setState({allWines: res}))
-    }
+    return (
+        <section className="wine-list-section">
+            <div className="wine-list-wrapper">
 
-    render() {
-        return (
-            <section className="wine-list-section">
-                <div className="wine-list-wrapper">
-
-                    <div className="wine-list-header">
-                        <span className="wine-list-heading">Всички вина</span>
-                        <Link to="/topWines">
-                            <span className="top-wines-heading-button">Избрано</span></Link>
-                    </div>
-
-                    <div className="all-wines-container">
-
-                        {this.state.allWines.map(x =>
-
-                            <Link key={x.id} {...x} to={`/wineList/details/${x._id}`}>
-                                <WineCard
-                                    name={x.name}
-                                    imageUrl1={x.imageUrl1}
-                                />
-                            </Link>
-                        )}
-
-                    </div>
-                    <div className="wine-list-button-wrapper">
-                        <Link className="button new-item-button" to="/add-wine-item">Ново вино<i className="fas fa-check"></i></Link>
-                    </div>
-
+                <div className="wine-list-header">
+                    <span className="wine-list-heading">Всички вина</span>
+                    <Link to="/wine/top">
+                        <span className="top-wines-heading-button">Избрано</span></Link>
                 </div>
-            </section>
-        )
-    }
-}
 
+                <div className="all-wines-container">
+                    {wines.map(x =>
+                        <Link key={x.id} {...x} to={`/wine/details/${x._id}`}>
+                            <WineCard
+                                name={x.name}
+                                imageUrl1={x.imageUrl1}
+                            />
+                        </Link>
+                    )}
+                </div>
+
+                {button}
+
+            </div>
+        </section>
+    )
+}
 export default WineList;
