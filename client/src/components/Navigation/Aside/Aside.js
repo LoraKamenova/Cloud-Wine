@@ -4,8 +4,8 @@ import Footer from "../Footer/Footer";
 import {NavLink} from "react-router-dom";
 
 import React, { useContext } from 'react';
-import { useHistory } from 'react-router-dom';
 import UserContext from "../../../Context";
+import { useHistory } from 'react-router-dom';
 
 const Aside = () => {
     const context = useContext(UserContext)

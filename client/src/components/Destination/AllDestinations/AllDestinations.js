@@ -1,71 +1,71 @@
 import './AllDestinations.css'
 import DestinationCard from "./DestinationCard/DestinationCard"
-import { Link } from "react-router-dom";
-import { Component } from 'react';
+import {Link, useHistory} from "react-router-dom";
 import * as destinationService from '../../../services/destinationService';
 
-class AllDestinations extends Component {
+import React, {useContext, useState, useEffect} from 'react';
+import UserContext from "../../../Context";
 
-    constructor(props) {
-        super(props);
+const AllDestinations = () => {
+    const context = useContext(UserContext)
+    const role = context.user.role;
 
-        this.state = {
-            destinations: [],
-        }
-    }
+    const [destinations, setDestinations] = useState([]);
 
-    componentDidMount() {
+    useEffect(() => {
         destinationService.getAll()
-            .then(res => this.setState({destinations: res}))
+            .then(res => setDestinations(res));
+    }, []);
+
+
+    let button;
+    if (role === "root") {
+        button = <div className="all-destinations-button-wrapper">
+            <Link className="button new-item-button" to="add-destination">Нова дестинация<i className="fas fa-check"></i></Link>
+        </div>;
     }
 
-    render() {
-        return (
+    return (
 
-            <section className="all-destinations-section">
+        <section className="all-destinations-section">
 
-                <div className="all-destinations-wrapper">
+            <div className="all-destinations-wrapper">
 
-                    <div className="suitcase-image-wrapper">
-                        <img className="suitcase-image"
-                             src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1615768194/React%20Project/suitcase_mch1ru.png"
-                             width="70px" height="50px" alt="suitcase"/>
-                        <img className="suitcase-image"
-                             src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1615768194/React%20Project/suitcase_mch1ru.png"
-                             width="100px" height="70px" alt="bigger suitcase"/>
-                        <img className="suitcase-image"
-                             src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1615768194/React%20Project/suitcase_mch1ru.png"
-                             width="70px" height="50px" alt="suitcase"/>
-                    </div>
-
-                    <div className="all-destinations-header">Всички дестинации</div>
-
-                    <div className="all-destinations-container">
-
-                        {this.state.destinations.map(x =>
-
-                            <Link key={x.id} {...x} to={`/destination/details/${x._id}`}>
-                                <DestinationCard
-                                    title={x.name}
-                                    address={x.address}
-                                    services={x.services}
-                                    logoUrl={x.logoUrl}
-                                />
-                            </Link>
-
-                        )}
-
-                    </div>
-                    <div className="all-destinations-button-wrapper">
-                        <Link className="button new-item-button" to="add-destination">Нова дестинация<i
-                            className="fas fa-check"></i></Link>
-                    </div>
+                <div className="suitcase-image-wrapper">
+                    <img className="suitcase-image"
+                         src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1615768194/React%20Project/suitcase_mch1ru.png"
+                         width="70px" height="50px" alt="suitcase"/>
+                    <img className="suitcase-image"
+                         src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1615768194/React%20Project/suitcase_mch1ru.png"
+                         width="100px" height="70px" alt="bigger suitcase"/>
+                    <img className="suitcase-image"
+                         src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1615768194/React%20Project/suitcase_mch1ru.png"
+                         width="70px" height="50px" alt="suitcase"/>
                 </div>
 
-            </section>
+                <div className="all-destinations-header">Всички дестинации</div>
 
-        );
-    }
+                <div className="all-destinations-container">
+
+                    {destinations.map((x) => (
+                        <Link key={x._id} {...x} to={`/destination/details/${x._id}`}>
+                            <DestinationCard
+                                title={x.name}
+                                address={x.address}
+                                services={x.services}
+                                logoUrl={x.logoUrl}
+                            />
+                        </Link>
+                        )
+                    )}
+
+                </div>
+                {button}
+            </div>
+
+        </section>
+
+    );
 }
 
 export default AllDestinations;
