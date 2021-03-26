@@ -32,7 +32,7 @@ const DestinationDetails = ({match}) => {
 
                 <div className="destination-details-button-wrapper">
                     <Link className="button edit-button" to={`/destination/edit/${destination._id}`}>Редактирай<i className="fas fa-pencil-alt"></i></Link>
-                    <a className="button delete-button" href="#">Изтрий<i className="fas fa-times"></i></a>
+                    <Link className="button delete-button" to={`/destination/delete/${destination._id}`}>Изтрий<i className="fas fa-times"></i></Link>
                 </div>
 
             </div>

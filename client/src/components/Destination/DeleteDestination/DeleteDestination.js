@@ -1,69 +1,48 @@
-import './EditDestination.css'
+import './DeleteDestination.css'
 import FormHeader from "../../Other/FormHeader/FormHeader";
-import InputError from "../../Other/InputError/InputError";
 import * as destinationService from "../../../services/destinationService";
 
-import {useEffect, useState} from 'react';
-import {useHistory} from "react-router-dom"
+import { useEffect, useState } from 'react';
+import { useHistory } from "react-router-dom"
 
-const EditDestination = ({match}) => {
+const DeleteDestination = ( { match } ) => {
     const history = useHistory();
     let destinationId = match.params.destinationId;
 
     const [destination, setDestination] = useState({});
-    const [errorMessage, setErrorMessage] = useState('');
 
     useEffect(() => {
         destinationService.getOne(destinationId)
             .then(res => setDestination(res));
     }, [])
 
-    const onEditDestinationSubmitHandler = (e) => {
+    const onDeleteDestinationSubmitHandler = (e) => {
         e.preventDefault();
 
-        let updatedDestination = {
-            ...destination,
-            name: e.target.name.value,
-            description: e.target.description.value,
-            address: e.target.address.value,
-            services: e.target.services.value,
-            logoUrl: e.target.logoUrl.value,
-            imageUrl1: e.target.imageUrl1.value,
-            imageUrl2: e.target.imageUrl2.value,
-            mapUrl: e.target.mapUrl.value,
-        };
 
-        destinationService.update(destinationId, updatedDestination)
+        destinationService.deleteDestination(destinationId)
             .then(() => {
-                history.push(`/destination/details/${destinationId}`);
+                history.push('/destination/all');
                 return null;
             });
     }
 
-    const onChangeDescriptionHandler = (e) => {
-        if (e.target.value.length < 100) {
-            setErrorMessage('Описанието трябва да е минимум 100 символа');
-        } else {
-            setErrorMessage('');
-        }
-    };
-
     return (
-        <section className="general-form-wrapper edit-destination-form-wrapper">
-            <FormHeader title="Редактирай дестинация"/>
+        <section className="general-form-wrapper delete-destination-form-wrapper">
+            <FormHeader title="Изтрий дестинация"/>
 
-            <form className="general-form" onSubmit={onEditDestinationSubmitHandler}>
+            <form className="general-form" onSubmit={onDeleteDestinationSubmitHandler}>
                 <section className="general-form-main-section">
 
                     <div className="general-form-field-wrapper">
                         <div className="general-form-field-heading">
                             <label htmlFor="name">Име:</label>
                         </div>
-                        <input className="general-form-field-input"
+                        <input className="general-form-field-input delete-input"
                                type="text"
                                id="name"
                                name="name"
-                               required
+                               readOnly
                                defaultValue={destination.name}/>
                     </div>
 
@@ -71,24 +50,23 @@ const EditDestination = ({match}) => {
                         <div className="general-form-field-heading">
                             <label htmlFor="description">Описание:</label>
                         </div>
-                        <textarea className="general-form-field-input"
+                        <textarea className="general-form-field-input delete-input"
                                   rows="11"
                                   id="description"
                                   name="description"
-                                  required
-                                  onBlur={onChangeDescriptionHandler}
+                                  readOnly
                                   defaultValue={destination.description}/>
-                        <InputError>{errorMessage}</InputError>
                     </div>
 
                     <div className="general-form-field-wrapper">
                         <div className="general-form-field-heading">
                             <label htmlFor="address">Адрес:</label>
                         </div>
-                        <input className="general-form-field-input"
+                        <input className="general-form-field-input delete-input"
                                type="text"
                                id="address"
                                name="address"
+                               readOnly
                                defaultValue={destination.address}/>
                     </div>
 
@@ -96,10 +74,11 @@ const EditDestination = ({match}) => {
                         <div className="general-form-field-heading">
                             <label htmlFor="services">Услуги:</label>
                         </div>
-                        <input className="general-form-field-input"
+                        <input className="general-form-field-input delete-input"
                                type="text"
                                id="services"
                                name="services"
+                               readOnly
                                defaultValue={destination.services}/>
                     </div>
 
@@ -107,10 +86,11 @@ const EditDestination = ({match}) => {
                         <div className="general-form-field-heading">
                             <label htmlFor="logoUrl">URL лого:</label>
                         </div>
-                        <input className="general-form-field-input"
+                        <input className="general-form-field-input delete-input"
                                type="text"
                                id="logoUrl"
                                name="logoUrl"
+                               readOnly
                                defaultValue={destination.logoUrl}/>
                     </div>
 
@@ -118,10 +98,11 @@ const EditDestination = ({match}) => {
                         <div className="general-form-field-heading">
                             <label htmlFor="imageUrl1">URL снимка 1:</label>
                         </div>
-                        <input className="general-form-field-input"
+                        <input className="general-form-field-input delete-input"
                                type="text"
                                id="imageUrl1"
                                name="imageUrl1"
+                               readOnly
                                defaultValue={destination.imageUrl1}/>
                     </div>
 
@@ -129,10 +110,11 @@ const EditDestination = ({match}) => {
                         <div className="general-form-field-heading">
                             <label htmlFor="imageUrl2">URL снимка 2:</label>
                         </div>
-                        <input className="general-form-field-input"
+                        <input className="general-form-field-input delete-input"
                                type="text"
                                id="imageUrl2"
                                name="imageUrl2"
+                               readOnly
                                defaultValue={destination.imageUrl2}/>
                     </div>
 
@@ -140,10 +122,11 @@ const EditDestination = ({match}) => {
                         <div className="general-form-field-heading">
                             <label htmlFor="mapUrl">URL карта:</label>
                         </div>
-                        <input className="general-form-field-input"
+                        <input className="general-form-field-input delete-input"
                                type="text"
                                id="mapUrl"
                                name="mapUrl"
+                               readOnly
                                defaultValue={destination.mapUrl}/>
                     </div>
                 </section>
@@ -156,4 +139,4 @@ const EditDestination = ({match}) => {
     );
 };
 
-export default EditDestination;
+export default DeleteDestination;

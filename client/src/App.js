@@ -1,6 +1,5 @@
 import './App.css';
 
-
 import {Route, Switch} from "react-router-dom"
 
 import Start from "./components/StartPage/Start";
@@ -34,6 +33,7 @@ import TopWines from "./components/Winelist/TopWines/TopWines";
 import WineListDetails from "./components/Winelist/WInelistDetails/WineListDetails";
 import MyJournals from "./components/Journal/AllJournals/MyJournals";
 import EditDestination from "./components/Destination/EditDestination/EditDestination";
+import DeleteDestination from "./components/Destination/DeleteDestination/DeleteDestination";
 
 function App() {
     return (
@@ -61,10 +61,11 @@ function App() {
                     <Route path="/dictionary/blending" exact component={Blending}/>
 
                     <Route path="/destination" exact component={Destination}/>
-                    <Route path="/all-destinations" exact component={AllDestinations}/>
+                    <Route path="/destination/all" exact component={AllDestinations}/>
                     <Route path="/destination/details/:destinationId" component={DestinationDetails}/>
-                    <Route path="/add-destination" exact component={AddDestination}/>
+                    <Route path="/destination/create" exact component={AddDestination}/>
                     <Route path="/destination/edit/:destinationId" exact component={EditDestination}/>
+                    <Route path="/destination/delete/:destinationId" exact component={DeleteDestination}/>
 
                     <Route path="/journal" exact component={Journal}/>
                     <Route path="/all-journals" exact component={AllJournals}/>

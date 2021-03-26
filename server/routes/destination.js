@@ -3,6 +3,7 @@ const router = require('express').Router();
 const { auth } = require('../utils');
 
 router.get('/all', destinationController.get.all);
+
 router.get('/details/:id', destinationController.get.details);
 
 router.post('/', destinationController.post);

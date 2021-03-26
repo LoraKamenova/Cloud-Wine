@@ -47,3 +47,14 @@ export const update = (destinationId, destination) => {
         body: JSON.stringify(destination)
     })
 }
+
+export const deleteDestination = (destinationId) => {
+    return fetch(`${basicUrl}/${destinationId}`, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': getCookie('x-auth-token')
+        },
+        // body: JSON.stringify(destination)
+    })
+}

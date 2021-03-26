@@ -21,7 +21,7 @@ const AllDestinations = () => {
     let button;
     if (role === "root") {
         button = <div className="all-destinations-button-wrapper">
-            <Link className="button new-item-button" to="add-destination">Нова дестинация<i className="fas fa-check"></i></Link>
+            <Link className="button new-item-button" to="/destination/create">Нова дестинация<i className="fas fa-check"></i></Link>
         </div>;
     }
 

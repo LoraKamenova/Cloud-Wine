@@ -8,7 +8,7 @@ const Destination = () => {
             <div className="destination-content-container">
                     <div className="destination-article-wrapper">
                         <Article
-                            title="ПЪТЕВОДИТЕЛ"
+                            title="ДЕСТИНАЦИИ"
                             paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Phasellus pulvinar tellus nec ante volutpat, vel commodo nisl aliquam. Maecenas nec
                             malesuada risus, ut maximus libero. Aliquam bibendum sollicitudin nibh, ac vehicula leo
@@ -16,8 +16,7 @@ const Destination = () => {
                             taciti sociosqu ad litora torquent per conubia nostra, per"
                         />
                         <div className="info-button-wrapper">
-                            <Link to="/all-destinations"><span className="button info-button">Виж дестинациите<i
-                                className="fas fa-angle-double-right"></i></span></Link>
+                            <Link to="/destination/all"><span className="button info-button">Виж дестинациите<i className="fas fa-angle-double-right"></i></span></Link>
                         </div>
                     </div>
                     <div className="destination-image-container">
