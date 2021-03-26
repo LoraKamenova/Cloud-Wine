@@ -1,29 +1,51 @@
-const express = require('express');
+// const express = require('express');
+//
+// const cors = require('cors');
+//
+// const routes = require('./routes');
+// const { auth } = require('./middlewares/auth');
+// const errorHandler = require('./middlewares/errorHandler');
+// const { PORT } = require('./config/config')
+// const cookieParser = require('cookie-parser');
+// const secret = 'secret';
+//
+// const app = express();
+//
+// require('./config/database')
+//
+// app.use(cors({
+//     exposedHeaders: 'Authorization'
+// }));
+// app.use(express.json()); // IMPORTANT FOR REST API!!!
+//
+// app.use(auth);
+//
+// app.get('/', (req, res) => {
+//     res.json({ message: 'It\'s working!'});
+// });
+//
+// app.use('/api', routes);
+// app.use(errorHandler);
+// app.use(cookieParser(secret));
+//
+// app.listen(PORT, console.log.bind(console, `Server is listening on port ${PORT}...`));
 
-const cors = require('cors');
+const config = require('./config/config');
+const dbConnection = require('./config/database');
 
-const routes = require('./routes');
-const { auth } = require('./middlewares/auth');
-const errorHandler = require('./middlewares/errorHandler');
-const { PORT } = require('./config/config')
-const cookieParser = require('cookie-parser');
-const secret = 'secret';
+const app = require('express')();
 
-const app = express();
+dbConnection().then(() => {
 
-require('./config/mongoose')
+    require('./config/express')(app);
 
-app.use(cors());
-app.use(express.json()); // IMPORTANT FOR REST API!!!
+    require('./config/routes')(app);
 
-app.use(auth);
+    app.use(function (err, req, res, next) {
+        console.error(err);
+        res.status(500).send(err.message);
+    });
 
-app.get('/', (req, res) => {
-    res.json({ message: 'It\'s working!'});
-});
+    app.listen(config.port, console.log(`Listening on port ${config.port}!`))
 
-app.use('/api', routes);
-app.use(errorHandler);
-app.use(cookieParser(secret));
-
-app.listen(PORT, console.log.bind(console, `Server is listening on port ${PORT}...`));
+}).catch(console.error);

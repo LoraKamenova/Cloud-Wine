@@ -3,39 +3,66 @@ import AsideItem from "./AsideItem/AsideItem";
 import Footer from "../Footer/Footer";
 import {NavLink} from "react-router-dom";
 
+import React, { useContext } from 'react';
+import { useHistory } from 'react-router-dom';
+import UserContext from "../../../Context";
+
 const Aside = () => {
-    return (
-        <aside className="aside-navigation-wrapper">
+    const context = useContext(UserContext)
+    const history = useHistory()
 
-            <h1 className="site-name">Винoписи</h1>
+    const loggedIn = context.user && context.user.loggedIn;
 
-            <div className="aside-navigation">
-                <ul className="aside-navigation-list">
-                    <NavLink activeClassName="selected-aside-item" exact={true}
-                             to="/home"><AsideItem>НАЧАЛО</AsideItem></NavLink>
-                    <NavLink activeClassName="selected-aside-item" exact={true}
-                             to="/dictionary"><AsideItem>РЕЧНИК</AsideItem></NavLink>
-                    <NavLink activeClassName="selected-aside-item" exact={true}
-                             to="/destination"><AsideItem>ПЪТЕВОДИТЕЛ</AsideItem></NavLink>
-                    <NavLink activeClassName="selected-aside-item" exact={true}
-                             to="/topWines"><AsideItem>ВИНЕН ЛИСТ</AsideItem></NavLink>
-                    <NavLink activeClassName="selected-aside-item" exact={true}
-                             to="/journal"><AsideItem>ПЪТЕПИСИ</AsideItem></NavLink>
-                    <NavLink exact={true} to="/"><AsideItem>ИЗХОД</AsideItem></NavLink>
+    const logOut = () => {
+        context.logOut()
+        history.push('/')
+    }
 
-                    {/*<NavLink activeClassName="selected-aside-item" exact={true}*/}
-                    {/*         to="/"><AsideItem>НАЧАЛО</AsideItem></NavLink>*/}
-                    {/*<NavLink activeClassName="selected-aside-item" exact={true}*/}
-                    {/*         to="/login"><AsideItem>ВХОД</AsideItem></NavLink>*/}
-                    {/*<NavLink activeClassName="selected-aside-item" exact={true}*/}
-                    {/*         to="/register"><AsideItem>РЕГИСТРАЦИЯ</AsideItem></NavLink>*/}
-                </ul>
-            </div>
+    if (loggedIn) {
+        return (
+            <aside className="aside-navigation-wrapper">
+                <h1 className="site-name">Винoписи</h1>
 
-            <Footer/>
+                <div className="aside-navigation">
+                    <ul className="aside-navigation-list">
+                        <NavLink activeClassName="selected-aside-item" exact={true}
+                                 to="/home"><AsideItem>НАЧАЛО</AsideItem></NavLink>
+                        <NavLink activeClassName="selected-aside-item" exact={true}
+                                 to="/dictionary"><AsideItem>РЕЧНИК</AsideItem></NavLink>
+                        <NavLink activeClassName="selected-aside-item" exact={true}
+                                 to="/destination"><AsideItem>ПЪТЕВОДИТЕЛ</AsideItem></NavLink>
+                        <NavLink activeClassName="selected-aside-item" exact={true}
+                                 to="/topWines"><AsideItem>ВИНЕН ЛИСТ</AsideItem></NavLink>
+                        <NavLink activeClassName="selected-aside-item" exact={true}
+                                 to="/journal"><AsideItem>ПЪТЕПИСИ</AsideItem></NavLink>
+                        {/*<button className="aside-navigation-link" onClick={logOut}>ИЗХОД</button>*/}
+                        <NavLink onClick={logOut} to="/"><AsideItem>ИЗХОД</AsideItem></NavLink>
+                    </ul>
+                </div>
 
-        </aside>
-    );
+                <Footer/>
+            </aside>
+        );
+    } else {
+        return (
+            <aside className="aside-navigation-wrapper">
+                <h1 className="site-name">Винoписи</h1>
+
+                <div className="aside-navigation">
+                    <ul className="aside-navigation-list">
+                        <NavLink activeClassName="selected-aside-item" exact={true}
+                                 to="/"><AsideItem>НАЧАЛО</AsideItem></NavLink>
+                        <NavLink activeClassName="selected-aside-item" exact={true}
+                                 to="/login"><AsideItem>ВХОД</AsideItem></NavLink>
+                        <NavLink activeClassName="selected-aside-item" exact={true}
+                                 to="/register"><AsideItem>РЕГИСТРАЦИЯ</AsideItem></NavLink>
+                    </ul>
+                </div>
+
+                <Footer/>
+            </aside>
+        );
+    }
 };
 
 export default Aside;
