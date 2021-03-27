@@ -138,21 +138,26 @@
 .user-journals-list {
     display: flex;
     flex-direction: column;
-    margin: 20px 0;
+    margin: 5px 0 20px 0;
+}
+
+.user-journal-li-wrapper {
+    margin: 15px 0;
+    border: 1px solid black;
 }
 
 .user-journal-list-item {
     display: flex;
-    flex-grow: 1;
-    margin: 10px 0;
-    background-color: wheat;
     padding: 15px 40px;
-    clip-path: polygon(4% 0, 96% 0, 100% 50%, 96% 100%, 4% 100%, 0% 50%);
-    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.8);
+    border: 1px solid black;
+    position: relative;
+    top: 7px;
+    right: 7px;
 }
 
 .user-journal-list-item:hover {
-    background-color: blanchedalmond;
+    background-color: #3B7A57;
+    color: white;
 }
 
 .user-journals-list > a {
@@ -164,4 +169,9 @@
     display: flex;
     justify-content: center;
     margin-top: 30px;
+}
+
+.no-journals-info {
+    text-align: center;
+    margin: 10px 0 30px 0;
 }

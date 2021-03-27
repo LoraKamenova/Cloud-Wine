@@ -146,7 +146,7 @@ module.exports = {
             Journal.create({title, description, place, time, imageUrl1, imageUrl2, creatorId})
                 .then((createdJournal) => {
                     return Promise.all([
-                        User.updateOne({creatorId}, {$push: {journals: createdJournal}}),
+                        User.updateOne({_id: creatorId}, {$push: {journals: createdJournal}}),
                         Journal.findOne({_id: createdJournal._id})
                     ]);
                 })

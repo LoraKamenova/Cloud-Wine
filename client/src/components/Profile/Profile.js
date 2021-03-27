@@ -41,6 +41,11 @@ const Profile = () => {
         badge = 'Начинаещ'
     }
 
+    let noJournals;
+    if (journals.length === 0) {
+        noJournals = <div className="no-journals-info">Нямате пътеписи...</div>;
+    }
+
     return (
         <section className="profile-section">
             <div className="profile-content-wrapper">
@@ -53,7 +58,7 @@ const Profile = () => {
                             <p className="data-wrapper-paragraph">{user.username}</p>
                         </div>
                         <div className="data-wrapper-section">
-                            <div className="data-wrapper-subtitle tooltip">Значка
+                            <div className="data-wrapper-subtitle tooltip">Значка:
                                 <span
                                     className="tooltip-text">Определя се от броя на публикуваните пътеписи</span>
                             </div>
@@ -83,12 +88,14 @@ const Profile = () => {
                     </div>
                     <div className="user-journals-container">
                         <ul className="user-journals-list">
-
+                            {noJournals}
                             {journals.map(x =>
                                 <Link key={x.id} {...x} to={`/journal/details/${x._id}`}>
-                                    <li className="user-journal-list-item">
-                                        <span className="user-journal-list-item-text">{x.title}</span>
-                                    </li>
+                                    <div className="user-journal-li-wrapper">
+                                        <li className="user-journal-list-item">
+                                            <span className="user-journal-list-item-text">{x.title}</span>
+                                        </li>
+                                    </div>
                                 </Link>
                             )}
 

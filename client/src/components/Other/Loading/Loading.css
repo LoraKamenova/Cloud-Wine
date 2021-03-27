@@ -1,0 +1,9 @@
+.loading-heading {
+    font-family: 'Caveat', cursive;
+    font-size: 150px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 10px;
+    position: relative;
+    margin-left: -10%;
+}

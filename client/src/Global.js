@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import UserContext from './Context'
 import getCookie from './utils/cookie'
+import Loading from "./components/Other/Loading/Loading";
 
 const Global = (props) => {
 
@@ -54,7 +55,7 @@ const Global = (props) => {
 
     if (loading) {
         return (
-            <div>Loading....</div>
+            <Loading />
         )
     }
 

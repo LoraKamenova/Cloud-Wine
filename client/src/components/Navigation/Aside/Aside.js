@@ -54,9 +54,10 @@ const Aside = () => {
                         <NavLink activeClassName="selected-aside-item" exact={true}
                                  to="/"><AsideItem>НАЧАЛО</AsideItem></NavLink>
                         <NavLink activeClassName="selected-aside-item" exact={true}
-                                 to="/register"><AsideItem>РЕГИСТРАЦИЯ</AsideItem></NavLink>
-                        <NavLink activeClassName="selected-aside-item" exact={true}
                                  to="/login"><AsideItem>ВХОД</AsideItem></NavLink>
+                        <NavLink activeClassName="selected-aside-item" exact={true}
+                                 to="/register"><AsideItem>РЕГИСТРАЦИЯ</AsideItem></NavLink>
+
                     </ul>
                 </div>
 

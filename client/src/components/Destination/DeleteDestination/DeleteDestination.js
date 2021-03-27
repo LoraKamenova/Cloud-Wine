@@ -132,7 +132,7 @@ const DeleteDestination = ( { match } ) => {
                 </section>
 
                 <div className="general-form-button-wrapper">
-                    <input className="general-form-button" type="submit" value="ИЗПРАТИ"/>
+                    <input className="general-form-button" type="submit" value="ИЗТРИЙ"/>
                 </div>
             </form>
         </section>
