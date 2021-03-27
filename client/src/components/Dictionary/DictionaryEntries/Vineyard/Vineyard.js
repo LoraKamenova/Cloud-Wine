@@ -1,5 +1,5 @@
 import './Vineyard.css'
-import DictionaryArticle from "../DictionaryArticle/DictionaryArticle";
+import DictionaryArticle from "../../DictionaryArticle/DictionaryArticle";
 
 const Vineyard = () => {
     return (

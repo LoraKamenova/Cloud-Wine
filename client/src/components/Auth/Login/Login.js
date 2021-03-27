@@ -1,5 +1,5 @@
 import './Login.css'
-import FormHeader from "../../Other/FormHeader/FormHeader";
+import FormHeader from "../../Shared/FormHeader/FormHeader";
 
 import React, {useState, useContext} from 'react'
 import {useHistory} from "react-router-dom"
@@ -29,15 +29,15 @@ const Login = () => {
     }
 
     return (
-        <section className="auth-form-wrapper login-form-wrapper">
+        <section className="form-wrapper login-form-wrapper">
             <FormHeader title="Вход"/>
 
-            <form className="auth-form" onSubmit={handleSubmit}>
-                <div className="auth-form-field-wrapper">
-                    <div className="auth-form-field-heading">
+            <form className="form-container" onSubmit={handleSubmit}>
+                <div className="form-field-wrapper">
+                    <div className="form-field-heading">
                         <label htmlFor="username">Потребителско име:</label>
                     </div>
-                    <input className="auth-form-field-input"
+                    <input className="form-field-input"
                            type="text"
                            id="username"
                            name="username"
@@ -45,11 +45,11 @@ const Login = () => {
                            onChange={e => setUsername(e.target.value)}/>
                 </div>
 
-                <div className="auth-form-field-wrapper">
-                    <div className="auth-form-field-heading">
+                <div className="form-field-wrapper">
+                    <div className="form-field-heading">
                         <label htmlFor="password">Парола:</label>
                     </div>
-                    <input className="auth-form-field-input"
+                    <input className="form-field-input"
                            type="password"
                            id="password"
                            name="password"
@@ -57,12 +57,11 @@ const Login = () => {
                            onChange={e => setPassword(e.target.value)}/>
                 </div>
 
-                <div className="auth-form-button-wrapper">
-                    <input className="auth-form-button" type="submit" value="ИЗПРАТИ"/>
+                <div className="form-button-wrapper">
+                    <input className="form-button" type="submit" value="ИЗПРАТИ"/>
                 </div>
             </form>
         </section>
-
     )
 }
 

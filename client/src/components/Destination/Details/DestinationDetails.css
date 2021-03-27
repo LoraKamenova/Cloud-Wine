@@ -1,0 +1,16 @@
+.destination-details-section {
+    width: 70%;
+    background-color: white;
+    padding: 60px;
+}
+
+.destination-details-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.destination-details-button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}

@@ -1,5 +1,5 @@
 import './Blending.css'
-import DictionaryArticle from "../DictionaryArticle/DictionaryArticle";
+import DictionaryArticle from "../../DictionaryArticle/DictionaryArticle";
 
 const Blending = () => {
     return (

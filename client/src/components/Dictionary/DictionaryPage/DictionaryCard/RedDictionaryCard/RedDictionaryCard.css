@@ -1,56 +1,17 @@
 .red-dictionary-card {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: 300px;
-    padding: 20px;
-    box-shadow: 0px 0px 11px -4px #000000;
-    justify-content: space-between;
-    align-items: center;
-    margin: 30px;
     background-color: firebrick;
 }
 
 .red-dictionary-card-content-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     color: white;
-}
-
-.red-dictionary-image {
-    width: 60px;
-    height: 60px;
-}
-
-.red-dictionary-card-title {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
-}
-
-.red-dictionary-card-text {
-    text-align: justify;
-    font-size: 14px;
-    margin-bottom: 10px;
 }
 
 .red-dictionary-card-button {
-    border-radius: 30px;
     border: none;
-    outline: none;
-    padding: 7px 30px;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     color: firebrick;
     background-color: white;
-    font-weight: bold;
 }
 
 .red-dictionary-card-button:hover {
-    cursor: pointer;
-    color: white;
     background-color: gray;
 }

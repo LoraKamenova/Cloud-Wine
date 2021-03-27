@@ -1,7 +1,9 @@
 .start-section {
     display: flex;
     flex-direction: column;
-    align-self: flex-start;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
 }
 
 .header-container {

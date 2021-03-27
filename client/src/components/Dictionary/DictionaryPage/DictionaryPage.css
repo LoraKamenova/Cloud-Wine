@@ -1,17 +1,13 @@
 .dictionary-section {
-    display: flex;
-    flex-direction: column;
     width: 70%;
-    margin: 3% auto;
-    justify-content: flex-start;
 }
 
 .dictionary-wrapper {
     display: flex;
     flex-direction: column;
-    background-color: #FFFACC;
     justify-content: center;
     width: 100%;
+    background-color: #FFFACC;
     padding: 20px;
     border-radius: 5px;
 }
@@ -24,20 +20,17 @@
 }
 
 .dictionary-header {
-    font-size: 55px;
-    font-family: 'Caveat', cursive;
-    text-align: center;
     position: relative;
     top: -20px;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 55px;
     color: black;
 }
 
 .dictionary-cards-container {
-    justify-content: center;
     display: flex;
-    margin: 0 auto;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
 }
-
-
-

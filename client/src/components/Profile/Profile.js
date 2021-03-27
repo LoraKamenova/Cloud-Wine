@@ -47,7 +47,7 @@ const Profile = () => {
     }
 
     return (
-        <section className="profile-section">
+        <section className="common-all-section profile-section">
             <div className="profile-content-wrapper">
                 <h1 className="profile-heading">Моят профил</h1>
                 <div className="profile-user-info-container">
@@ -101,8 +101,7 @@ const Profile = () => {
 
                         </ul>
                         <div className="add-journal-profile-button-wrapper">
-                            <Link className="button new-item-button" to="/journal/create">Нов пътепис<i
-                                className="fas fa-check"></i></Link>
+                            <Link className="button new-item-button" to="/journal/create">Нов пътепис<i className="fas fa-check"></i></Link>
                         </div>
                     </div>
                 </div>

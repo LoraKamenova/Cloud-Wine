@@ -1,0 +1,19 @@
+.article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.article-heading {
+    font-size: 30px;
+    border-bottom: 5px solid red;
+}
+
+.article-paragraph {
+    text-align: justify;
+    text-indent: 25px;
+    line-height: 1.5;
+    margin-top: 30px;
+}
+
+

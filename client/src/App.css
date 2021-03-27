@@ -8,7 +8,6 @@
 
 /*------------------------------------------------------------------*/
 /*all pages*/
-
 .page-wrapper {
     display: flex;
     font-family: 'Rubik', sans-serif;
@@ -16,8 +15,7 @@
 
 /*--------------------------------------------------------------*/
 /*destination and journal pages*/
-
-.custom-section {
+.destination-section, .journal-section {
     display: flex;
     flex-grow: 1;
     justify-content: center;
@@ -59,16 +57,7 @@
 }
 
 /*----------------------------------------------------------------------*/
-/*dictionary-pages*/
-
-.dictionary-pages {
-    width: 70%;
-    margin: 3% auto;
-}
-
-/*----------------------------------------------------------------------*/
 /*Shared styles for buttons*/
-
 .button {
     outline: none;
     text-decoration: none;
@@ -144,49 +133,29 @@
 
 /*-------------------------------------------------------------*/
 /*Shared styles for forms*/
-
-.auth-form-wrapper, .general-form-wrapper {
+.form-wrapper {
     display: flex;
     flex-direction: column;
     color: white;
     width: 60%;
     background-color: rgba(0, 0, 0, 0.85);
     justify-content: center;
-    margin: 3% auto;
+    margin: 1% auto;
     padding: 20px 30px;
 }
 
-.auth-form-heading-wrapper, .general-form-heading-wrapper {
-    text-align: center;
-}
-
-.auth-form, .general-form {
+.form-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px 50px;
 }
 
-.auth-form {
-    padding: 10px 50px;
-}
-
-.general-form {
-    padding: 0 50px;
-}
-
-.general-form-main-section {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 100%;
-}
-
-.auth-form-field-wrapper, .general-form-field-wrapper {
+.form-field-wrapper {
     margin-top: 20px;
 }
 
-.auth-form-field-input, .general-form-field-input {
+.form-field-input {
     width: 100%;
     padding: 7px;
     background-color: #F0F8FF;
@@ -194,17 +163,21 @@
     border-radius: 3px;
 }
 
-.delete-input {
+.form-field-input.textarea {
+   resize: none;
+}
+
+.form-field-input-delete {
     color: gray;
 }
 
-.auth-form-button-wrapper, .general-form-button-wrapper {
+.form-button-wrapper {
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
-.auth-form-button, .general-form-button {
+.form-button {
     outline: none;
     padding: 10px 50px;
     border-radius: 5px;
@@ -217,22 +190,93 @@
     border: none;
 }
 
-.auth-form-button {
-    padding: 10px 50px;
-}
-
-.general-form-button {
-    padding: 10px 100px;
-}
-
-.auth-form-button:hover, .general-form-button:hover {
+.form-button:hover {
     cursor: pointer;
     background-color: #5B8A39;
 }
 
-.form-info {
+.form-info-span {
     font-style: oblique;
     margin-top: 5px;
     font-size: 14px;
     color: #9F61B1;
+}
+/*--------------------------------------*/
+/*shared styles for all and destails pages*/
+
+.common-all-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 3% auto;
+}
+
+.custom-details-section {
+    display: flex;
+    flex-direction: column;
+    margin: 3% auto;
+}
+
+/*----------------------------------*/
+/*shared styles for dictiory cards*/
+
+.white-dictionary-card, .red-dictionary-card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    padding: 20px;
+    box-shadow: 0px 0px 11px -4px #000000;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    background-color: white;
+}
+
+.red-dictionary-card-content-wrapper, .white-dictionary-card-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.red-dictionary-image, .white-dictionary-image {
+    width: 60px;
+    height: 60px;
+}
+
+.red-dictionary-card-title, .white-dictionary-card-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.red-dictionary-card-text, white-dictionary-card-text {
+    text-align: justify;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.red-dictionary-card-button, .white-dictionary-card-button {
+    border-radius: 30px;
+    outline: none;
+    padding: 7px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.red-dictionary-card-button:hover, white-dictionary-card-button {
+    cursor: pointer;
+    color: white;
+}
+
+/*----------------------------------------------------------------------*/
+/*dictionary-entries*/
+
+.dictionary-pages {
+    width: 70%;
+    margin: 3% auto;
 }

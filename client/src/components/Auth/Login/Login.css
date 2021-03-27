@@ -1,3 +1,9 @@
-.login-form-wrapper > .auth-form-site-name-wrapper > .auth-form-site-name-text {
+.login-form-wrapper > .form-header-wrapper > .form-header-heading-container > .form-header-heading {
+    bottom: -25px;
     left: 90px
+}
+
+.form-wrapper.login-form-wrapper {
+    height: 60%;
+    margin: auto;
 }

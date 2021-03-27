@@ -1,18 +1,14 @@
 .profile-section {
-    display: flex;
-    flex-direction: column;
     width: 70%;
-    margin: 3% auto;
-    justify-content: flex-start;
 }
 
 .profile-content-wrapper {
     display: flex;
     flex-direction: column;
-    background-color: #FFFACC;
     justify-content: center;
     align-items: center;
     width: 100%;
+    background-color: #FFFACC;
     padding: 20px;
     border-radius: 5px;
 }
@@ -51,14 +47,14 @@
 
 .tooltip .tooltip-text {
     visibility: hidden;
+    position: absolute;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5970763305322129) 100%);
     width: 150px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5970763305322129) 100%);;
-    color: #fff;
-    font-size: 15px;
     text-align: center;
+    font-size: 15px;
+    color: #fff;
     border-radius: 6px;
     padding: 10px;
-    position: absolute;
     z-index: 1;
 }
 
@@ -69,14 +65,14 @@
 .avatar-image-wrapper {
     display: flex;
     flex-direction: column;
-    width: 25%;
     align-items: center;
+    width: 25%;
 }
 
 .avatar-image-container {
-    background-color: white;
     width: 200px;
     height: 200px;
+    background-color: white;
     overflow: hidden;
     object-fit: contain;
 }
@@ -111,26 +107,24 @@
     background: rgb(0, 0, 0);
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5970763305322129) 100%);
     width: 25px;
-    height: 35px;
-    margin: 2px;
     color: white;
     font-size: 20px;
+    height: 35px;
+    margin: 2px;
     border-radius: 3px;
 }
 
 .user-journals-wrapper {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 80%;
     margin: 5% auto;
-    /*border: 2px dashed black;*/
-    padding: 30px 50px;
 }
 
 .user-journals-header {
     display: flex;
-    width: 100%;
     justify-content: center;
+    width: 100%;
     font-family: 'Caveat', cursive;
     font-size: 25px;
 }
@@ -147,12 +141,12 @@
 }
 
 .user-journal-list-item {
-    display: flex;
-    padding: 15px 40px;
-    border: 1px solid black;
     position: relative;
     top: 7px;
     right: 7px;
+    display: flex;
+    padding: 15px 40px;
+    border: 1px solid black;
 }
 
 .user-journal-list-item:hover {

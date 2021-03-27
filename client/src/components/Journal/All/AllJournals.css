@@ -1,0 +1,53 @@
+.journals-section {
+    width: 82%;
+}
+
+.all-journals-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: #FFFACC;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.peg-image {
+    margin: 0 auto;
+}
+
+.all-journals-heading {
+    position: relative;
+    top: -20px;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 55px;
+    color: black;
+}
+
+.all-journals-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.all-journals-container > a:nth-child(even) {
+    transform: rotate(1deg);
+}
+
+.all-journals-container > a:nth-child(odd) {
+    transform: rotate(-1deg);
+}
+
+.all-journals-container > a {
+    text-decoration: none;
+    color: black;
+}
+
+.all-journals-button-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    padding: 20px 0;
+}

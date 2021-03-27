@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import UserContext from './Context'
 import getCookie from './utils/cookie'
-import Loading from "./components/Other/Loading/Loading";
+import Loading from "./components/Shared/Loading/Loading";
 
 const Global = (props) => {
 

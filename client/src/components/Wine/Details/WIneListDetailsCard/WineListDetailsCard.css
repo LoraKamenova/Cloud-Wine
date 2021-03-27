@@ -1,0 +1,38 @@
+.wine-list-details-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wdc-image-wrapper {
+    width: 50%;
+    max-width: 450px;
+    max-height: 450px;
+}
+
+.wdc-image {
+    width: 100%;
+    height: 100%;
+}
+
+.wdc-content-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.wdc-facts-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    border-left: 1px solid black;
+}
+
+.wdc-fact {
+    margin: 10px 0;
+}
+
+.fact-title {
+    text-decoration: underline;
+}

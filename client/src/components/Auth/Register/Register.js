@@ -1,6 +1,8 @@
 import './Register.css'
+import FormHeader from "../../Shared/FormHeader/FormHeader";
+
 import {Component} from 'react';
-import FormHeader from "../../Other/FormHeader/FormHeader";
+
 import authenticate from "../../../utils/authenticate";
 import UserContext from "../../../Context";
 
@@ -56,15 +58,15 @@ class Register extends Component {
         } = this.state
 
         return (
-            <section className="auth-form-wrapper register-form-wrapper">
+            <section className="form-wrapper register-form-wrapper">
                 <FormHeader title="Регистрация"/>
-                <form className="auth-form" onSubmit={this.handleSubmit}>
+                <form className="form-container" onSubmit={this.handleSubmit}>
 
-                    <div className="auth-form-field-wrapper">
-                        <div className="auth-form-field-heading">
-                            <label htmlFor="username">Потребителско име*:</label>
+                    <div className="form-field-wrapper">
+                        <div className="form-field-heading">
+                            <label htmlFor="username">Потребителско име:*</label>
                         </div>
-                        <input className="auth-form-field-input"
+                        <input className="form-field-input"
                                type="text"
                                id="username"
                                name="username"
@@ -73,11 +75,11 @@ class Register extends Component {
                                onChange={(e) => this.onChange(e, 'username')}/>
                     </div>
 
-                    <div className="auth-form-field-wrapper">
-                        <div className="auth-form-field-heading">
+                    <div className="form-field-wrapper">
+                        <div className="form-field-heading">
                             <label htmlFor="avatarUrl">URL профилна снимка:</label>
                         </div>
-                        <input className="auth-form-field-input"
+                        <input className="form-field-input"
                                type="avatarUrl"
                                id="avatarUrl"
                                name="avatarUrl"
@@ -85,11 +87,11 @@ class Register extends Component {
                                onChange={(e) => this.onChange(e, 'avatarUrl')}/>
                     </div>
 
-                    <div className="auth-form-field-wrapper">
-                        <div className="auth-form-field-heading">
-                            <label htmlFor="password">Парола*:</label>
+                    <div className="form-field-wrapper">
+                        <div className="form-field-heading">
+                            <label htmlFor="password">Парола:*</label>
                         </div>
-                        <input className="auth-form-field-input"
+                        <input className="form-field-input"
                                type="password"
                                id="password"
                                name="password"
@@ -98,11 +100,11 @@ class Register extends Component {
                                onChange={(e) => this.onChange(e, 'password')}/>
                     </div>
 
-                    <div className="auth-form-field-wrapper">
-                        <div className="auth-form-field-heading">
-                            <label htmlFor="rePassword">Повторете паролата*:</label>
+                    <div className="form-field-wrapper">
+                        <div className="form-field-heading">
+                            <label htmlFor="rePassword">Повторете паролата:*</label>
                         </div>
-                        <input className="auth-form-field-input"
+                        <input className="form-field-input"
                                type="password"
                                id="rePassword"
                                name="rePassword"
@@ -110,13 +112,12 @@ class Register extends Component {
                                value={rePassword}
                                onChange={(e) => this.onChange(e, 'rePassword')}/>
                     </div>
-                    <span className="form-info">Полетата, отбелязани със (*) са задъжлителни</span>
+                    <span className="form-info-span">Полетата, отбелязани със (*) са задъжлителни</span>
 
-                    <div className="auth-form-button-wrapper">
-                        <input className="auth-form-button" type="submit" value="ИЗПРАТИ"/>
+                    <div className="form-button-wrapper">
+                        <input className="form-button" type="submit" value="ИЗПРАТИ"/>
                     </div>
                 </form>
-
             </section>
         )
     }

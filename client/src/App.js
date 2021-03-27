@@ -4,23 +4,23 @@ import {Route, Switch} from "react-router-dom"
 
 import Start from "./components/StartPage/Start";
 import Home from "./components/HomePage/Home";
-import About from "./components/Dictionary/DictionaryEntries/About/About";
+import Terroir from "./components/Dictionary/DictionaryEntries/Terroir/Terroir";
 import DictionaryPage from "./components/Dictionary/DictionaryPage/DictionaryPage";
 import Vineyard from "./components/Dictionary/DictionaryEntries/Vineyard/Vineyard";
 import Grape from "./components/Dictionary/DictionaryEntries/Grape/Grape";
 import Wine from "./components/Dictionary/DictionaryEntries/Wine/Wine";
 import Bottle from "./components/Dictionary/DictionaryEntries/Bottle/Bottle";
 import Barrel from "./components/Dictionary/DictionaryEntries/Barrel/Barrel";
-import Destination from "./components/Destination/DestinationPage/Destination";
-import Journal from "./components/Journal/JournalPage/Journal";
+import Destination from "./components/Destination/Page/Destination";
+import Journal from "./components/Journal/Page/Journal";
 import Register from "./components/Auth/Register/Register";
 import Login from "./components/Auth/Login/Login";
-import AddJournal from "./components/Journal/AddJournal/AddJournal";
-import AddDestination from "./components/Destination/AddDestination/AddDestination";
-import AllJournals from "./components/Journal/AllJournals/AllJournals";
-import JournalDetails from "./components/Journal/JournalDetails/JournalDetails";
-import AllDestinations from "./components/Destination/AllDestinations/AllDestinations";
-import DestinationDetails from "./components/Destination/DestinationDetails/DestinationDetails";
+import CreateJournal from "./components/Journal/Create/CreateJournal";
+import CreateDestination from "./components/Destination/Create/CreateDestination";
+import AllJournals from "./components/Journal/All/AllJournals";
+import JournalDetails from "./components/Journal/Details/JournalDetails";
+import AllDestinations from "./components/Destination/All/AllDestinations";
+import DestinationDetails from "./components/Destination/Details/DestinationDetails";
 import Aside from "./components/Navigation/Aside/Aside";
 import Tasting from "./components/Dictionary/DictionaryEntries/Tasting/Tasting";
 import Fermentation from "./components/Dictionary/DictionaryEntries/Fermentation/Fermentation";
@@ -28,17 +28,16 @@ import Must from "./components/Dictionary/DictionaryEntries/Must/Must";
 import Yeast from "./components/Dictionary/DictionaryEntries/Yeast/Yeast";
 import Cork from "./components/Dictionary/DictionaryEntries/Cork/Cork";
 import Blending from "./components/Dictionary/DictionaryEntries/Blending/Blending";
-import WineList from "./components/Winelist/WinelistPage/WineList";
-import TopWines from "./components/Winelist/TopWines/TopWines";
-import WineListDetails from "./components/Winelist/WInelistDetails/WineListDetails";
-import AddWine from "./components/Winelist/AddWine/AddWine";
-import MyJournals from "./components/Journal/AllJournals/MyJournals";
-import EditDestination from "./components/Destination/EditDestination/EditDestination";
-import DeleteDestination from "./components/Destination/DeleteDestination/DeleteDestination";
-import EditWine from "./components/Winelist/EditWine/EditWine";
-import DeleteWine from "./components/Winelist/DeleteWine/DeleteWine";
-import EditJournal from "./components/Journal/EditJournal/EditJournal";
-import DeleteJournal from "./components/Journal/DeleteJournal/DeleteJournal";
+import AllWines from "./components/Wine/All/AllWines";
+import TopWines from "./components/Wine/Top/TopWines";
+import WineDetails from "./components/Wine/Details/WineDetails";
+import CreateWine from "./components/Wine/Create/CreateWine";
+import EditDestination from "./components/Destination/Edit/EditDestination";
+import DeleteDestination from "./components/Destination/Delete/DeleteDestination";
+import EditWine from "./components/Wine/Edit/EditWine";
+import DeleteWine from "./components/Wine/Delete/DeleteWine";
+import EditJournal from "./components/Journal/Edit/EditJournal";
+import DeleteJournal from "./components/Journal/Delete/DeleteJournal";
 import Profile from "./components/Profile/Profile";
 
 function App() {
@@ -53,7 +52,7 @@ function App() {
                     <Route path="/login" exact component={Login}/>
 
                     <Route path="/dictionary" exact component={DictionaryPage}/>
-                    <Route path="/dictionary/about" exact component={About}/>
+                    <Route path="/dictionary/terroir" exact component={Terroir}/>
                     <Route path="/dictionary/vineyard" exact component={Vineyard}/>
                     <Route path="/dictionary/grape" exact component={Grape}/>
                     <Route path="/dictionary/wine" exact component={Wine}/>
@@ -69,22 +68,21 @@ function App() {
                     <Route path="/destination" exact component={Destination}/>
                     <Route path="/destination/all" exact component={AllDestinations}/>
                     <Route path="/destination/details/:destinationId" component={DestinationDetails}/>
-                    <Route path="/destination/create" exact component={AddDestination}/>
+                    <Route path="/destination/create" exact component={CreateDestination}/>
                     <Route path="/destination/edit/:destinationId" exact component={EditDestination}/>
                     <Route path="/destination/delete/:destinationId" exact component={DeleteDestination}/>
 
-                    <Route path="/wine/all" exact component={WineList}/>
+                    <Route path="/wine/all" exact component={AllWines}/>
                     <Route path="/wine/top" exact component={TopWines}/>
-                    <Route path="/wine/details/:wineId" component={WineListDetails}/>
-                    <Route path="/wine/create" exact component={AddWine}/>
+                    <Route path="/wine/details/:wineId" component={WineDetails}/>
+                    <Route path="/wine/create" exact component={CreateWine}/>
                     <Route path="/wine/edit/:wineId" exact component={EditWine}/>
                     <Route path="/wine/delete/:wineId" exact component={DeleteWine}/>
 
                     <Route path="/journal" exact component={Journal}/>
                     <Route path="/journal/all" exact component={AllJournals}/>
-                    <Route path="/journal/my" exact component={MyJournals}/>
                     <Route path="/journal/details/:journalId" component={JournalDetails}/>
-                    <Route path="/journal/create" exact component={AddJournal}/>
+                    <Route path="/journal/create" exact component={CreateJournal}/>
                     <Route path="/journal/edit/:journalId" exact component={EditJournal}/>
                     <Route path="/journal/delete/:journalId" exact component={DeleteJournal}/>
 

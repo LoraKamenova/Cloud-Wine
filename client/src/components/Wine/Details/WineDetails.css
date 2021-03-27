@@ -1,0 +1,12 @@
+.wine-details-wrapper {
+    width: 80%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.wine-details-button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+}

@@ -4,7 +4,7 @@ import {BrowserRouter as Router} from "react-router-dom";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ScrollToTop from "./components/Other/ScrollToTop/ScrollToTop";
+import ScrollToTop from "./components/Shared/ScrollToTop/ScrollToTop";
 import Global from "./Global";
 
 ReactDOM.render(

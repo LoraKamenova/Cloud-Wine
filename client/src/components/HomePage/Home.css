@@ -1,4 +1,10 @@
-.home-wrapper {
+.home-section {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.home-content-wrapper {
     display: flex;
     width: 60%;
     height: 70%;
@@ -10,10 +16,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.65);
-    color: white;
     width: 97%;
     height: 95%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.65);
     margin: auto;
     padding: 0 80px 80px 80px;
 }
@@ -21,21 +27,21 @@
 .home-page-subheading {
     position: relative;
     bottom: -50px;
+    text-align: center;
     font-family: 'Caveat', cursive;
     font-size: 40px ;
-    text-align: center;
     font-weight: 400;
     color: #FCB269;
 }
 
 .home-page-heading {
-    font-family: 'Caveat', cursive;
-    font-size: 80px ;
     text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 80px;
     font-weight: 400;
+    color: #FCB269;
     letter-spacing: 10px;
     margin: 20px;
-    color: #FCB269;
 }
 
 .home-page-paragraph {

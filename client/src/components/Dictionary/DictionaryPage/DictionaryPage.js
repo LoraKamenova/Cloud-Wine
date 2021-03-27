@@ -5,7 +5,7 @@ import WhiteDictionaryCard from "./DictionaryCard/WhiteDictionaryCard/WhiteDicti
 const DictionaryPage = () => {
     return (
 
-        <section className="dictionary-section">
+        <section className="common-all-section dictionary-section">
 
             <div className="dictionary-wrapper">
                 <div className="books-image-wrapper">
@@ -28,7 +28,7 @@ const DictionaryPage = () => {
                         url="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616189944/React%20Project/sun_1_blpbuy.png"
                         title="Тероар"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar ..."
-                        link="/dictionary/about"
+                        link="/dictionary/terroir"
                     />
 
                     <WhiteDictionaryCard

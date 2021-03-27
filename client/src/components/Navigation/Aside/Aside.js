@@ -1,15 +1,15 @@
 import './Aside.css'
 import AsideItem from "./AsideItem/AsideItem";
 import Footer from "../Footer/Footer";
-import {NavLink} from "react-router-dom";
 
+import {NavLink} from "react-router-dom";
 import React, { useContext } from 'react';
 import UserContext from "../../../Context";
 import { useHistory } from 'react-router-dom';
 
 const Aside = () => {
-    const context = useContext(UserContext)
-    const history = useHistory()
+    const context = useContext(UserContext);
+    const history = useHistory();
 
     const loggedIn = context.user && context.user.loggedIn;
 
@@ -43,7 +43,7 @@ const Aside = () => {
 
                 <Footer/>
             </aside>
-        );
+        )
     } else {
         return (
             <aside className="aside-navigation-wrapper">
@@ -63,8 +63,8 @@ const Aside = () => {
 
                 <Footer/>
             </aside>
-        );
+        )
     }
-};
+}
 
 export default Aside;

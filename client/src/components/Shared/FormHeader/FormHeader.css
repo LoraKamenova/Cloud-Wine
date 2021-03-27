@@ -1,0 +1,16 @@
+.form-header-wrapper {
+    margin: 0 auto;
+    border-bottom: 2px solid #5A8839;
+}
+
+.form-header-heading {
+    position: relative;
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+    color: #9F61B1;
+}
+
+.form-header-image {
+    width: 400px;
+    height: 70px;
+}

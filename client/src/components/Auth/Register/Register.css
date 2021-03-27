@@ -1,3 +1,9 @@
-.register-form-wrapper > .auth-form-site-name-wrapper > .auth-form-site-name-text {
+.register-form-wrapper > .form-header-wrapper > .form-header-heading-container > .form-header-heading {
+    bottom: -25px;
     left: 15px
+}
+
+.form-wrapper.register-form-wrapper {
+    height: 90%;
+    margin: auto;
 }

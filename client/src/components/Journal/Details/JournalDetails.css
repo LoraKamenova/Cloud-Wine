@@ -1,0 +1,11 @@
+.journal-details-section-wrapper {
+    width: 70%;
+    background-color: #fff;
+    padding: 70px 10px 30px 0;
+}
+
+.jdc-button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+}

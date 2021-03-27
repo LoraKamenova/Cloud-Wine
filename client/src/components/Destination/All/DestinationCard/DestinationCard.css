@@ -1,0 +1,38 @@
+.destination-card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 170px ;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 100px;
+    box-shadow: 0px 0px 11px -4px #000000;
+}
+
+.destination-card-image {
+    width: 130px;
+    height: 130px;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+.destination-card-info-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.destination-card-line-wrapper {
+    display: flex;
+    margin: 5px 0;
+}
+
+.destination-card-pic {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.destination-info-item {
+    font-size: 16px;
+}

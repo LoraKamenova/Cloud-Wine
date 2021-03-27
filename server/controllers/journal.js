@@ -67,7 +67,7 @@
 //     const {id} = req.params;
 //     Journal.findByIdAndDelete(id)
 //         .then(res.status(200).json({
-//             message: "JournalPage deleted successfully"
+//             message: "Page deleted successfully"
 //         }));
 // });
 //
@@ -96,7 +96,7 @@
 //
 //     Journal.findByIdAndUpdate(id, newData)
 //         .then(res.status(200).json({
-//             message: "JournalPage updated successfully"
+//             message: "Page updated successfully"
 //         }));
 // })
 //

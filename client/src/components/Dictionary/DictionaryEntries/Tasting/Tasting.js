@@ -1,5 +1,5 @@
 import './Tasting.css'
-import DictionaryArticle from "../DictionaryArticle/DictionaryArticle";
+import DictionaryArticle from "../../DictionaryArticle/DictionaryArticle";
 
 const Tasting = () => {
     return (
