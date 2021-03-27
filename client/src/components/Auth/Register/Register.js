@@ -1,5 +1,5 @@
 import './Register.css'
-import { Component } from 'react';
+import {Component} from 'react';
 import FormHeader from "../../Other/FormHeader/FormHeader";
 import authenticate from "../../../utils/authenticate";
 import UserContext from "../../../Context";
@@ -12,7 +12,8 @@ class Register extends Component {
         this.state = {
             username: "",
             password: "",
-            rePassword: ""
+            rePassword: "",
+            avatarUrl: ""
         }
     }
 
@@ -29,12 +30,14 @@ class Register extends Component {
         event.preventDefault()
         const {
             username,
-            password
+            password,
+            avatarUrl
         } = this.state
 
         await authenticate('http://localhost:5000/api/user/register', {
                 username,
-                password
+                password,
+                avatarUrl
             }, (user) => {
                 this.context.logIn(user)
                 this.props.history.push('/home')
@@ -47,56 +50,73 @@ class Register extends Component {
     render() {
         const {
             username,
+            avatarUrl,
             password,
             rePassword
         } = this.state
 
         return (
-            <section className="custom-section register-section">
+            <section className="auth-form-wrapper register-form-wrapper">
+                <FormHeader title="Регистрация"/>
+                <form className="auth-form" onSubmit={this.handleSubmit}>
 
-                <div className="register-container">
-
-                    <div className="auth-form-wrapper register-form-wrapper">
-
-                        <FormHeader title="Регистрация"/>
-
-                        <form className="auth-form" onSubmit={this.handleSubmit}>
-
-                            <div className="auth-form-field-wrapper">
-                                <div className="auth-form-field-heading">
-                                    <label htmlFor="username">Потребителско име:</label>
-                                </div>
-                                <input className="auth-form-field-input" type="text" id="username" name="username" value={username} onChange={(e) => this.onChange(e, 'username')}/>
-                            </div>
-
-                            {/*<div className="auth-form-field-wrapper">*/}
-                            {/*    <div className="auth-form-field-heading">*/}
-                            {/*        <label htmlFor="email">Имейл адрес:</label>*/}
-                            {/*    </div>*/}
-                            {/*    <input className="auth-form-field-input" type="email" id="email" name="email"/>*/}
-                            {/*</div>*/}
-
-                            <div className="auth-form-field-wrapper">
-                                <div className="auth-form-field-heading">
-                                    <label htmlFor="password">Парола:</label>
-                                </div>
-                                <input className="auth-form-field-input" type="password" id="password" name="password" value={password} onChange={(e) => this.onChange(e, 'password')}/>
-                            </div>
-
-                            <div className="auth-form-field-wrapper">
-                                <div className="auth-form-field-heading">
-                                    <label htmlFor="rePassword">Повторете паролата:</label>
-                                </div>
-                                <input className="auth-form-field-input" type="password" id="rePassword"
-                                       name="rePassword" value={rePassword} onChange={(e) => this.onChange(e, 'rePassword')}/>
-                            </div>
-
-                            <div className="auth-form-button-wrapper">
-                                <button className="auth-form-button" type="submit">ИЗПРАТИ</button>
-                            </div>
-                        </form>
+                    <div className="auth-form-field-wrapper">
+                        <div className="auth-form-field-heading">
+                            <label htmlFor="username">Потребителско име*:</label>
+                        </div>
+                        <input className="auth-form-field-input"
+                               type="text"
+                               id="username"
+                               name="username"
+                               required
+                               value={username}
+                               onChange={(e) => this.onChange(e, 'username')}/>
                     </div>
-                </div>
+
+                    <div className="auth-form-field-wrapper">
+                        <div className="auth-form-field-heading">
+                            <label htmlFor="avatarUrl">URL профилна снимка:</label>
+                        </div>
+                        <input className="auth-form-field-input"
+                               type="avatarUrl"
+                               id="avatarUrl"
+                               name="avatarUrl"
+                               value={avatarUrl}
+                               onChange={(e) => this.onChange(e, 'avatarUrl')}/>
+                    </div>
+
+                    <div className="auth-form-field-wrapper">
+                        <div className="auth-form-field-heading">
+                            <label htmlFor="password">Парола*:</label>
+                        </div>
+                        <input className="auth-form-field-input"
+                               type="password"
+                               id="password"
+                               name="password"
+                               required
+                               value={password}
+                               onChange={(e) => this.onChange(e, 'password')}/>
+                    </div>
+
+                    <div className="auth-form-field-wrapper">
+                        <div className="auth-form-field-heading">
+                            <label htmlFor="rePassword">Повторете паролата*:</label>
+                        </div>
+                        <input className="auth-form-field-input"
+                               type="password"
+                               id="rePassword"
+                               name="rePassword"
+                               required
+                               value={rePassword}
+                               onChange={(e) => this.onChange(e, 'rePassword')}/>
+                    </div>
+                    <span className="form-info">Полетата, отбелязани със (*) са задъжлителни</span>
+
+                    <div className="auth-form-button-wrapper">
+                        <input className="auth-form-button" type="submit" value="ИЗПРАТИ"/>
+                    </div>
+                </form>
+
             </section>
         )
     }

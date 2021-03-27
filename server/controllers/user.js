@@ -19,8 +19,9 @@ module.exports = {
                     role = "root"
                 }
             }).then(() => {
-                const {username, password} = req.body;
-                User.create({username, password, role})
+                const {username, password, avatarUrl} = req.body;
+
+                User.create({username, password, avatarUrl, role})
                     .then((createdUser) => {
                         const token = utils.jwt.createToken({id: createdUser._id});
                         res.header("Authorization", token).send(createdUser);
@@ -69,12 +70,12 @@ module.exports = {
             const {username, password} = req.body;
 
             User.findOne({username})
-                // .then((user) => Promise.all([user, user.matchPassword(password)]))
-                .then((user) => {
-                    // if (!match) {
-                    //     res.status(401).send('Invalid password');
-                    //     return;
-                    // }
+                .then((user) => Promise.all([user, user.matchPassword(password)]))
+                .then(([user, match]) => {
+                    if (!match) {
+                        res.status(401).json({message: "Wrong username or password"});
+                        return;
+                    }
 
                     const token = utils.jwt.createToken({id: user._id});
                     res.header("Authorization", token).send(user);

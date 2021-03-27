@@ -1,9 +1,3 @@
-.add-destination-form-wrapper {
-    width: 60%;
-    margin: 3% auto;
-    padding: 20px 30px;
-}
-
 .add-destination-form-wrapper > .auth-form-site-name-wrapper > .auth-form-site-name-text {
     top: 10px;
     left:50px;

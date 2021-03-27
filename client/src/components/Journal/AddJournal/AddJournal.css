@@ -1,9 +1,3 @@
-.add-journal-form-wrapper {
-    width: 65%;
-    margin: auto;
-    height: 65%;
-}
-
 .add-journal-form-wrapper > .auth-form-site-name-wrapper > .auth-form-site-name-text {
      left: 20px;
  }

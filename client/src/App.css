@@ -149,29 +149,37 @@
     display: flex;
     flex-direction: column;
     color: white;
-    width: 100%;
-    height: 100%;
+    width: 60%;
     background-color: rgba(0, 0, 0, 0.85);
     justify-content: center;
-
+    margin: 3% auto;
+    padding: 20px 30px;
 }
 
-.auth-form {
+.auth-form-heading-wrapper, .general-form-heading-wrapper {
+    text-align: center;
+}
+
+.auth-form, .general-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px 50px;
 }
 
+.auth-form {
+    padding: 10px 50px;
+}
+
 .general-form {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     padding: 0 50px;
 }
 
-.auth-form-heading-wrapper, .general-form-heading-wrapper {
-    text-align: center;
+.general-form-main-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .auth-form-field-wrapper, .general-form-field-wrapper {
@@ -184,6 +192,10 @@
     background-color: #F0F8FF;
     color: black;
     border-radius: 3px;
+}
+
+.delete-input {
+    color: gray;
 }
 
 .auth-form-button-wrapper, .general-form-button-wrapper {
@@ -218,15 +230,9 @@
     background-color: #5B8A39;
 }
 
-.general-form {
-    display: flex;
-    flex-direction: column;
+.form-info {
+    font-style: oblique;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #9F61B1;
 }
-
-.general-form-main-section {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 100%;
-}
-

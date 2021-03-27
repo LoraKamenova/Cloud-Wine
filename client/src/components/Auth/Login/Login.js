@@ -1,8 +1,8 @@
-import React, { useState, useContext } from 'react'
-import { useHistory } from "react-router-dom"
-
 import './Login.css'
 import FormHeader from "../../Other/FormHeader/FormHeader";
+
+import React, {useState, useContext} from 'react'
+import {useHistory} from "react-router-dom"
 
 import authenticate from "../../../utils/authenticate";
 import UserContext from "../../../Context";
@@ -23,43 +23,46 @@ const Login = () => {
                 context.logIn(user)
                 history.push('/home')
             }, (e) => {
-                console.log('Error', e)
+                console.log('Unsuccessful login', e)
             }
         )
     }
 
     return (
-        <div className="custom-section login-section">
-            <div className="login-container">
-                <div className="auth-form-wrapper login-form-wrapper">
+        <section className="auth-form-wrapper login-form-wrapper">
+            <FormHeader title="Вход"/>
 
-                    <FormHeader title="Вход"/>
-
-                    <form className="auth-form" onSubmit={handleSubmit}>
-
-                        <div className="auth-form-field-wrapper">
-                            <div className="auth-form-field-heading">
-                                <label htmlFor="username">Потребителско име:</label>
-                            </div>
-                            <input className="auth-form-field-input" type="text" id="username" name="username"
-                                   value={username} onChange={e => setUsername(e.target.value)}/>
-                        </div>
-
-                        <div className="auth-form-field-wrapper">
-                            <div className="auth-form-field-heading">
-                                <label htmlFor="password">Парола:</label>
-                            </div>
-                            <input className="auth-form-field-input" type="password" id="password" name="password"
-                                   value={password} onChange={e => setPassword(e.target.value)}/>
-                        </div>
-
-                        <div className="auth-form-button-wrapper">
-                            <button className="auth-form-button" type="submit">ИЗПРАТИ</button>
-                        </div>
-                    </form>
+            <form className="auth-form" onSubmit={handleSubmit}>
+                <div className="auth-form-field-wrapper">
+                    <div className="auth-form-field-heading">
+                        <label htmlFor="username">Потребителско име:</label>
+                    </div>
+                    <input className="auth-form-field-input"
+                           type="text"
+                           id="username"
+                           name="username"
+                           value={username}
+                           onChange={e => setUsername(e.target.value)}/>
                 </div>
-            </div>
-        </div>
+
+                <div className="auth-form-field-wrapper">
+                    <div className="auth-form-field-heading">
+                        <label htmlFor="password">Парола:</label>
+                    </div>
+                    <input className="auth-form-field-input"
+                           type="password"
+                           id="password"
+                           name="password"
+                           value={password}
+                           onChange={e => setPassword(e.target.value)}/>
+                </div>
+
+                <div className="auth-form-button-wrapper">
+                    <input className="auth-form-button" type="submit" value="ИЗПРАТИ"/>
+                </div>
+            </form>
+        </section>
+
     )
 }
 
