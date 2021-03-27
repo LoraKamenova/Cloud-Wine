@@ -1,10 +1,13 @@
 import './DestinationDetails.css'
 import DestinationDetailsCard from "./DestinationDetailsCard/DestinationDetailsCard";
-import {useEffect, useState} from 'react';
+import {useContext, useEffect, useState} from 'react';
 import * as destinationService from "../../../services/destinationService";
 import {Link} from "react-router-dom";
+import UserContext from "../../../Context";
 
 const DestinationDetails = ({match}) => {
+    const context = useContext(UserContext)
+    const role = context.user.role;
 
     let [destination, setDestination] = useState({});
 
@@ -12,6 +15,16 @@ const DestinationDetails = ({match}) => {
         destinationService.getOne(match.params.destinationId)
             .then(res => setDestination(res));
     }, []);
+
+    let buttons;
+    if (role === "root") {
+        buttons = <div className="destination-details-button-wrapper">
+            <Link className="button edit-button" to={`/destination/edit/${destination._id}`}>Редактирай<i
+                className="fas fa-pencil-alt"></i></Link>
+            <Link className="button delete-button" to={`/destination/delete/${destination._id}`}>Изтрий<i
+                className="fas fa-times"></i></Link>
+        </div>;
+    }
 
     return (
         <section className="custom-section destination-details-page">
@@ -29,12 +42,7 @@ const DestinationDetails = ({match}) => {
                         description={destination.description}
                     />
                 </div>
-
-                <div className="destination-details-button-wrapper">
-                    <Link className="button edit-button" to={`/destination/edit/${destination._id}`}>Редактирай<i className="fas fa-pencil-alt"></i></Link>
-                    <Link className="button delete-button" to={`/destination/delete/${destination._id}`}>Изтрий<i className="fas fa-times"></i></Link>
-                </div>
-
+                {buttons}
             </div>
 
         </section>

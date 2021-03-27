@@ -6,13 +6,6 @@
     justify-content: flex-start;
 }
 
-.all-journals-button-wrapper {
-    display: flex;
-    height: 80px;
-    justify-content: center;
-    padding: 20px 0;
-}
-
 .all-journals-wrapper {
     display: flex;
     flex-direction: column;
@@ -23,10 +16,6 @@
     border-radius: 5px;
 }
 
-.peg-image {
-    margin: 0 auto;
-}
-
 .all-journals-header {
     font-size: 55px;
     font-family: 'Caveat', cursive;
@@ -35,6 +24,11 @@
     top: -20px;
     color: black;
 }
+
+.peg-image {
+    margin: 0 auto;
+}
+
 .all-journals-container {
     justify-content: center;
     display: flex;
@@ -54,4 +48,11 @@
     text-decoration: none;
     color: black;
 
+}
+
+.all-journals-button-wrapper {
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    padding: 20px 0;
 }

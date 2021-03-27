@@ -1,0 +1,167 @@
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 3% auto;
+    justify-content: flex-start;
+}
+
+.profile-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFACC;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.profile-heading {
+    font-family: 'Caveat', cursive;
+    font-size: 60px;
+}
+
+.profile-user-info-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 30px;
+    padding: 0 60px;
+}
+
+.data-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 25%;
+}
+
+.data-wrapper-section {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.data-wrapper-subtitle {
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 150px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5970763305322129) 100%);;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
+
+.avatar-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+}
+
+.avatar-image-container {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.avatar-image {
+    width: 100%;
+    height: 100%;
+}
+
+.journal-counter-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+}
+
+.journal-counter-heading {
+    font-size: 25px;
+}
+
+.journal-counter-digit-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.journal-counter-digit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5970763305322129) 100%);
+    width: 25px;
+    height: 35px;
+    margin: 2px;
+    color: white;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+.user-journals-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 5% auto;
+    /*border: 2px dashed black;*/
+    padding: 30px 50px;
+}
+
+.user-journals-header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+}
+
+.user-journals-list {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.user-journal-list-item {
+    display: flex;
+    flex-grow: 1;
+    margin: 10px 0;
+    background-color: wheat;
+    padding: 15px 40px;
+    clip-path: polygon(4% 0, 96% 0, 100% 50%, 96% 100%, 4% 100%, 0% 50%);
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.8);
+}
+
+.user-journal-list-item:hover {
+    background-color: blanchedalmond;
+}
+
+.user-journals-list > a {
+    color: black;
+    text-decoration: none;
+}
+
+.add-journal-profile-button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}

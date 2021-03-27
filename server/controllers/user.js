@@ -4,13 +4,15 @@ const config = require('../config/config');
 const utils = require('../utils');
 
 module.exports = {
-    get: (req, res, next) => {
-        User.findById(req.query.id)
-            .then((user) => res.send(user))
-            .catch((err) => res.status(500).send("Error"))
-    },
-
     post: {
+        getOne: (req, res, next) => {
+            const { id } = req.body;
+
+            User.findById(id)
+                .then((user) => res.send(user))
+                .catch((err) => res.status(500).send("Error"))
+        },
+
         register: (req, res, next) => {
             let role = "user";
 
@@ -27,7 +29,6 @@ module.exports = {
                         res.header("Authorization", token).send(createdUser);
                     })
                     .catch((err) => {
-
                         console.log(err)
                     })
             })
@@ -79,7 +80,7 @@ module.exports = {
 
                     const token = utils.jwt.createToken({id: user._id});
                     res.header("Authorization", token).send(user);
-                    console.log(user)
+                    // console.log(user)
                 })
                 .catch(next);
         },

@@ -1,7 +1,7 @@
 const userController = require('../controllers/user');
 const router = require('express').Router();
 
-router.get('/', userController.get);
+router.post('/getOne', userController.post.getOne);
 
 router.post('/register', userController.post.register);
 
@@ -11,8 +11,8 @@ router.get('/verify', userController.post.verifyLogin);
 
 router.post('/logout', userController.post.logout);
 
-// router.put('/:id', controllers.user.put);
-//
+// router.patch('/', userController.patch);
+
 // router.delete('/:id', controllers.user.delete);
 
 module.exports = router;

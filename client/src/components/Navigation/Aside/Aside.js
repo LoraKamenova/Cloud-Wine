@@ -35,6 +35,8 @@ const Aside = () => {
                                  to="/wine/top"><AsideItem>ВИНЕН ЛИСТ</AsideItem></NavLink>
                         <NavLink activeClassName="selected-aside-item" exact={true}
                                  to="/journal"><AsideItem>ПЪТЕПИСИ</AsideItem></NavLink>
+                        <NavLink activeClassName="selected-aside-item" exact={true}
+                                 to="/profile"><AsideItem>ПРОФИЛ</AsideItem></NavLink>
                         <NavLink onClick={logOut} to="/"><AsideItem>ИЗХОД</AsideItem></NavLink>
                     </ul>
                 </div>

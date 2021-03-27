@@ -39,6 +39,7 @@ import EditWine from "./components/Winelist/EditWine/EditWine";
 import DeleteWine from "./components/Winelist/DeleteWine/DeleteWine";
 import EditJournal from "./components/Journal/EditJournal/EditJournal";
 import DeleteJournal from "./components/Journal/DeleteJournal/DeleteJournal";
+import Profile from "./components/Profile/Profile";
 
 function App() {
     return (
@@ -72,6 +73,13 @@ function App() {
                     <Route path="/destination/edit/:destinationId" exact component={EditDestination}/>
                     <Route path="/destination/delete/:destinationId" exact component={DeleteDestination}/>
 
+                    <Route path="/wine/all" exact component={WineList}/>
+                    <Route path="/wine/top" exact component={TopWines}/>
+                    <Route path="/wine/details/:wineId" component={WineListDetails}/>
+                    <Route path="/wine/create" exact component={AddWine}/>
+                    <Route path="/wine/edit/:wineId" exact component={EditWine}/>
+                    <Route path="/wine/delete/:wineId" exact component={DeleteWine}/>
+
                     <Route path="/journal" exact component={Journal}/>
                     <Route path="/journal/all" exact component={AllJournals}/>
                     <Route path="/journal/my" exact component={MyJournals}/>
@@ -80,12 +88,7 @@ function App() {
                     <Route path="/journal/edit/:journalId" exact component={EditJournal}/>
                     <Route path="/journal/delete/:journalId" exact component={DeleteJournal}/>
 
-                    <Route path="/wine/all" exact component={WineList}/>
-                    <Route path="/wine/top" exact component={TopWines}/>
-                    <Route path="/wine/details/:wineId" component={WineListDetails}/>
-                    <Route path="/wine/create" exact component={AddWine}/>
-                    <Route path="/wine/edit/:wineId" exact component={EditWine}/>
-                    <Route path="/wine/delete/:wineId" exact component={DeleteWine}/>
+                    <Route path="/profile" exact component={Profile}/>
                 </Switch>
             </main>
         </div>

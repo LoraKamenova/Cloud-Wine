@@ -8,7 +8,7 @@ import React, {useContext, useState, useEffect} from 'react';
 import UserContext from "../../../Context";
 
 const AllJournals = () => {
-    const context = useContext(UserContext)
+    const context = useContext(UserContext);
     const role = context.user.role;
     const userId = context.user.id;
 
@@ -18,13 +18,6 @@ const AllJournals = () => {
         journalService.getAll()
             .then(res => setJournals(res));
     }, []);
-
-
-    // let button;
-    // if (role === "root") {
-    //     button = <Link className="button my-items-button" to="my-journals">Моите пътеписи<i
-    //         className="fas fa-heart"></i></Link>;
-    // }
 
     return (
         <section className="journals-section">
@@ -46,11 +39,7 @@ const AllJournals = () => {
 
                 </div>
                 <div className="all-journals-button-wrapper">
-                    {/*{button}*/}
-                    <Link className="button my-items-button" to="/journal/my">Моите пътеписи<i
-                        className="fas fa-heart"></i></Link>;
-                    <Link className="button new-item-button" to="/journal/create">Нов пътепис<i
-                        className="fas fa-check"></i></Link>
+                    <Link className="button new-item-button" to="/journal/create">Нов пътепис<i className="fas fa-check"></i></Link>
                 </div>
             </div>
         </section>

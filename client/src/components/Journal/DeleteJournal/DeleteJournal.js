@@ -22,7 +22,7 @@ const DeleteJournal = ( { match } ) => {
 
         journalService.deleteJournal(journalId)
             .then(() => {
-                history.push('/journal/all');
+                history.push('/profile');
                 return null;
             });
     }
