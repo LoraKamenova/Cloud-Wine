@@ -29,8 +29,12 @@ module.exports = {
                         res.header("Authorization", token).send(createdUser);
                     })
                     .catch((err) => {
-                        console.log(err)
-                    })
+                        if (err.name === 'MongoError' && err.code === 11000) {
+                            res.status(400).send({ msg: 'User already taken!' });
+                            return;
+                        }
+                        next(err);
+                    });
             })
 
         },
@@ -77,12 +81,12 @@ module.exports = {
                         res.status(401).json({message: "Wrong username or password"});
                         return;
                     }
-
                     const token = utils.jwt.createToken({id: user._id});
                     res.header("Authorization", token).send(user);
-                    // console.log(user)
                 })
-                .catch(next);
+                .catch(err => {
+                    next({status: 404, message: 'Unsuccessful login', type: 'ERROR'})
+                })
         },
 
         logout: (req, res, next) => {

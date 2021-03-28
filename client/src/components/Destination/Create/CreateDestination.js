@@ -5,7 +5,7 @@ import InputError from "../../Shared/InputError/InputError";
 import * as destinationService from "../../../services/destinationService";
 
 import {useHistory} from "react-router-dom"
-import {useState} from "react";
+import React, {useState} from "react";
 
 const CreateDestination = () => {
     const history = useHistory();

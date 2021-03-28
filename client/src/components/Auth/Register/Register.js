@@ -14,8 +14,8 @@ class Register extends Component {
         this.state = {
             username: "",
             password: "",
-            rePassword: "",
-            avatarUrl: ""
+            avatarUrl: "",
+            errorMessage: "",
         }
     }
 
@@ -43,9 +43,7 @@ class Register extends Component {
             }, (user) => {
                 this.context.logIn(user)
                 this.props.history.push('/home')
-            }, (e) => {
-                console.log('Error', e)
-            }
+            }, (e) => { this.setState({errorMessage: "Потребителското име е заето"})}
         )
     }
 
@@ -54,8 +52,12 @@ class Register extends Component {
             username,
             avatarUrl,
             password,
-            rePassword
         } = this.state
+
+        let errorSpan = '';
+        if(this.state.errorMessage) {
+            errorSpan = <span className="form-error-span">{this.state.errorMessage}</span>
+        }
 
         return (
             <section className="form-wrapper register-form-wrapper">
@@ -74,6 +76,19 @@ class Register extends Component {
                                value={username}
                                onChange={(e) => this.onChange(e, 'username')}/>
                     </div>
+
+                    {/*<div className="form-field-wrapper">*/}
+                    {/*    <div className="form-field-heading">*/}
+                    {/*        <label htmlFor="rePassword">Повторете паролата:*</label>*/}
+                    {/*    </div>*/}
+                    {/*    <input className="form-field-input"*/}
+                    {/*           type="password"*/}
+                    {/*           id="rePassword"*/}
+                    {/*           name="rePassword"*/}
+                    {/*           required*/}
+                    {/*           value={rePassword}*/}
+                    {/*           onChange={(e) => this.onChange(e, 'rePassword')}/>*/}
+                    {/*</div>*/}
 
                     <div className="form-field-wrapper">
                         <div className="form-field-heading">
@@ -100,19 +115,11 @@ class Register extends Component {
                                onChange={(e) => this.onChange(e, 'password')}/>
                     </div>
 
-                    <div className="form-field-wrapper">
-                        <div className="form-field-heading">
-                            <label htmlFor="rePassword">Повторете паролата:*</label>
-                        </div>
-                        <input className="form-field-input"
-                               type="password"
-                               id="rePassword"
-                               name="rePassword"
-                               required
-                               value={rePassword}
-                               onChange={(e) => this.onChange(e, 'rePassword')}/>
-                    </div>
                     <span className="form-info-span">Полетата, отбелязани със (*) са задъжлителни</span>
+
+                    <div className="form-error-div">
+                        {errorSpan}
+                    </div>
 
                     <div className="form-button-wrapper">
                         <input className="form-button" type="submit" value="ИЗПРАТИ"/>

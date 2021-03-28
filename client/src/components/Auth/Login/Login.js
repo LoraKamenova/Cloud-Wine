@@ -10,6 +10,8 @@ import UserContext from "../../../Context";
 const Login = () => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+    const [errorMessage, setErrorMessage] = useState('')
+
     const context = useContext(UserContext);
     const history = useHistory();
 
@@ -22,10 +24,13 @@ const Login = () => {
             }, (user) => {
                 context.logIn(user)
                 history.push('/home')
-            }, (e) => {
-                console.log('Unsuccessful login', e)
-            }
+            }, (e) => { setErrorMessage("Грешна парола или потребителско име")}
         )
+    }
+    let errorSpan = '';
+
+    if(errorMessage) {
+       errorSpan = <span className="form-error-span">{errorMessage}</span>
     }
 
     return (
@@ -33,6 +38,7 @@ const Login = () => {
             <FormHeader title="Вход"/>
 
             <form className="form-container" onSubmit={handleSubmit}>
+
                 <div className="form-field-wrapper">
                     <div className="form-field-heading">
                         <label htmlFor="username">Потребителско име:</label>
@@ -57,10 +63,16 @@ const Login = () => {
                            onChange={e => setPassword(e.target.value)}/>
                 </div>
 
+                <div className="form-error-div">
+                    {errorSpan}
+                </div>
+
                 <div className="form-button-wrapper">
                     <input className="form-button" type="submit" value="ИЗПРАТИ"/>
                 </div>
+
             </form>
+
         </section>
     )
 }
