@@ -1,5 +1,6 @@
 const journalController = require('../controllers/journal');
 const router = require('express').Router();
+// const { auth } = require('../utils');
 
 router.get('/all', journalController.get.all);
 

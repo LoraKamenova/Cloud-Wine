@@ -68,7 +68,7 @@ const Login = () => {
                 </div>
 
                 <div className="form-button-wrapper">
-                    <input className="form-button" type="submit" value="ИЗПРАТИ"/>
+                    <input className="form-button auth-form-button" type="submit" value="ИЗПРАТИ"/>
                 </div>
 
             </form>

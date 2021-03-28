@@ -16,6 +16,6 @@
 
 .selected-aside-item {
     font-weight: bold;
-    border-left: 5px solid red;
+    border-left: 5px solid firebrick;
     padding: 0 0 0 10px;
 }

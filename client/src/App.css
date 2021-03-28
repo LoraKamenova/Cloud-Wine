@@ -185,8 +185,12 @@
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
-    /*margin: 0 0 20px 0;*/
+    margin: 30px 0 0 0;
     border: none;
+}
+
+.form-button.auth-form-button {
+    margin: 0;
 }
 
 .form-button:hover {
@@ -208,12 +212,14 @@
 }
 .form-error-span {
     display: flex;
-    width: 80%;
+    width: 100%;
     justify-content: center;
-    background-color: #5B3256;
+    border-bottom: 3px solid firebrick;
+    /*border-top: 3px solid firebrick;*/
+    /*background-color: #5B3256;*/
     color: white;
     margin: 10px 0;
-    padding: 10px 30px;
+    padding: 8px 30px;
     border-radius: 3px;
 }
 /*--------------------------------------*/

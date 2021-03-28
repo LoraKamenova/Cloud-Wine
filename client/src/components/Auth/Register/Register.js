@@ -77,6 +77,8 @@ class Register extends Component {
                                onChange={(e) => this.onChange(e, 'username')}/>
                     </div>
 
+                    <span className="form-info-span">Полетата, отбелязани със (*) са задъжлителни</span>
+
                     {/*<div className="form-field-wrapper">*/}
                     {/*    <div className="form-field-heading">*/}
                     {/*        <label htmlFor="rePassword">Повторете паролата:*</label>*/}
@@ -115,14 +117,12 @@ class Register extends Component {
                                onChange={(e) => this.onChange(e, 'password')}/>
                     </div>
 
-                    <span className="form-info-span">Полетата, отбелязани със (*) са задъжлителни</span>
-
                     <div className="form-error-div">
                         {errorSpan}
                     </div>
 
                     <div className="form-button-wrapper">
-                        <input className="form-button" type="submit" value="ИЗПРАТИ"/>
+                        <input className="form-button auth-form-button" type="submit" value="ИЗПРАТИ"/>
                     </div>
                 </form>
             </section>

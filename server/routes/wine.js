@@ -1,5 +1,6 @@
 const wineController = require('../controllers/wine');
 const router = require('express').Router();
+// const { auth } = require('../utils');
 
 router.get('/all', wineController.get.all);
 
