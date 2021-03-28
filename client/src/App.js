@@ -39,6 +39,7 @@ import DeleteWine from "./components/Wine/Delete/DeleteWine";
 import EditJournal from "./components/Journal/Edit/EditJournal";
 import DeleteJournal from "./components/Journal/Delete/DeleteJournal";
 import Profile from "./components/Profile/Profile";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 
 function App() {
     return (
@@ -87,6 +88,8 @@ function App() {
                     <Route path="/journal/delete/:journalId" exact component={DeleteJournal}/>
 
                     <Route path="/profile" exact component={Profile}/>
+
+                    <Route component={ErrorPage} />
                 </Switch>
             </main>
         </div>

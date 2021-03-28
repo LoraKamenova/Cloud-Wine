@@ -1,0 +1,10 @@
+.error-section {
+    display: flex;
+    flex-grow: 1;
+}
+
+.error-picture {
+    margin: auto;
+    width: 70%;
+    height: 90%;
+}
