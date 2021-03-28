@@ -1,9 +1,9 @@
-.error-section {
+.error-404-section {
     display: flex;
     flex-grow: 1;
 }
 
-.error-picture {
+.error-404-picture {
     margin: auto;
     width: 70%;
     height: 90%;

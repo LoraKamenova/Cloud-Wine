@@ -1,17 +1,17 @@
 const wineController = require('../controllers/wine');
 const router = require('express').Router();
-// const { auth } = require('../utils');
+const { auth } = require('../utils');
 
-router.get('/all', wineController.get.all);
+router.get('/all', auth(), wineController.get.all);
 
-router.get('/top', wineController.get.top);
+router.get('/top', auth(), wineController.get.top);
 
-router.get('/details/:id', wineController.get.details);
+router.get('/details/:id', auth(), wineController.get.details);
 
-router.post('/', wineController.post);
+router.post('/', auth(), wineController.post);
 
-router.put('/:id', wineController.put);
+router.put('/:id', auth(), wineController.put);
 
-router.delete('/:id', wineController.delete);
+router.delete('/:id', auth(), wineController.delete);
 
 module.exports = router;

@@ -1,7 +1,5 @@
 import './App.css';
 
-import {Route, Switch} from "react-router-dom"
-
 import Start from "./components/StartPage/Start";
 import Home from "./components/HomePage/Home";
 import Terroir from "./components/Dictionary/DictionaryEntries/Terroir/Terroir";
@@ -39,57 +37,66 @@ import DeleteWine from "./components/Wine/Delete/DeleteWine";
 import EditJournal from "./components/Journal/Edit/EditJournal";
 import DeleteJournal from "./components/Journal/Delete/DeleteJournal";
 import Profile from "./components/Profile/Profile";
-import ErrorPage from "./components/ErrorPage/ErrorPage";
+import Error404 from "./components/Shared/Error/Error404";
+
+import {Route, Switch, Redirect} from "react-router-dom"
+import React, { useContext } from 'react'
+import UserContext from './Context'
 
 function App() {
+
+    const context = useContext(UserContext)
+    const loggedIn = context.user && context.user.loggedIn
+
     return (
         <div className="app">
             <main className="page-wrapper">
                 <Aside/>
                 <Switch>
                     <Route path="/" exact component={Start}/>
-                    <Route path="/home" exact component={Home}/>
                     <Route path="/register" exact component={Register}/>
                     <Route path="/login" exact component={Login}/>
 
-                    <Route path="/dictionary" exact component={DictionaryPage}/>
-                    <Route path="/dictionary/terroir" exact component={Terroir}/>
-                    <Route path="/dictionary/vineyard" exact component={Vineyard}/>
-                    <Route path="/dictionary/grape" exact component={Grape}/>
-                    <Route path="/dictionary/wine" exact component={Wine}/>
-                    <Route path="/dictionary/barrel" exact component={Barrel}/>
-                    <Route path="/dictionary/bottle" exact component={Bottle}/>
-                    <Route path="/dictionary/tasting" exact component={Tasting}/>
-                    <Route path="/dictionary/fermentation" exact component={Fermentation}/>
-                    <Route path="/dictionary/must" exact component={Must}/>
-                    <Route path="/dictionary/yeast" exact component={Yeast}/>
-                    <Route path="/dictionary/cork" exact component={Cork}/>
-                    <Route path="/dictionary/blending" exact component={Blending}/>
+                    <Route path="/home" exact>{loggedIn ? (<Home />): (<Redirect to="/login" />)}</Route>
 
-                    <Route path="/destination" exact component={Destination}/>
-                    <Route path="/destination/all" exact component={AllDestinations}/>
-                    <Route path="/destination/details/:destinationId" component={DestinationDetails}/>
-                    <Route path="/destination/create" exact component={CreateDestination}/>
-                    <Route path="/destination/edit/:destinationId" exact component={EditDestination}/>
-                    <Route path="/destination/delete/:destinationId" exact component={DeleteDestination}/>
+                    <Route path="/dictionary" exact>{loggedIn ? (<DictionaryPage />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/dictionary/terroir" exact>{loggedIn ? (<Terroir />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/dictionary/vineyard" exact>{loggedIn ? (<Vineyard />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/dictionary/grape" exact>{loggedIn ? (<Grape />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/dictionary/wine" exact>{loggedIn ? (<Wine />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/dictionary/barrel" exact>{loggedIn ? (<Barrel />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/dictionary/bottle" exact>{loggedIn ? (<Bottle />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/dictionary/tasting" exact>{loggedIn ? (<Tasting />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/dictionary/fermentation" exact>{loggedIn ? (<Fermentation />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/dictionary/must" exact>{loggedIn ? (<Must />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/dictionary/yeast" exact>{loggedIn ? (<Yeast />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/dictionary/cork" exact>{loggedIn ? (<Cork />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/dictionary/blending" exact>{loggedIn ? (<Blending />): (<Redirect to="/login" />)}</Route>
 
-                    <Route path="/wine/all" exact component={AllWines}/>
-                    <Route path="/wine/top" exact component={TopWines}/>
-                    <Route path="/wine/details/:wineId" component={WineDetails}/>
-                    <Route path="/wine/create" exact component={CreateWine}/>
-                    <Route path="/wine/edit/:wineId" exact component={EditWine}/>
-                    <Route path="/wine/delete/:wineId" exact component={DeleteWine}/>
+                    <Route path="/destination" exact>{loggedIn ? (<Destination />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/destination/all" exact>{loggedIn ? (<AllDestinations />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/destination/details/:destinationId" exact>{loggedIn ? (<DestinationDetails />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/destination/create" exact>{loggedIn ? (<CreateDestination />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/destination/edit/:destinationId" exact>{loggedIn ? (<EditDestination />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/destination/delete/:destinationId" exact>{loggedIn ? (<DeleteDestination />): (<Redirect to="/login" />)}</Route>
 
-                    <Route path="/journal" exact component={Journal}/>
-                    <Route path="/journal/all" exact component={AllJournals}/>
-                    <Route path="/journal/details/:journalId" component={JournalDetails}/>
-                    <Route path="/journal/create" exact component={CreateJournal}/>
-                    <Route path="/journal/edit/:journalId" exact component={EditJournal}/>
-                    <Route path="/journal/delete/:journalId" exact component={DeleteJournal}/>
+                    <Route path="/wine/all" exact>{loggedIn ? (<AllWines />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/wine/top" exact>{loggedIn ? (<TopWines />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/wine/details/:wineId" exact>{loggedIn ? (<WineDetails />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/wine/create" exact>{loggedIn ? (<CreateWine />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/wine/edit/:wineId" exact>{loggedIn ? (<EditWine />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/wine/delete/:wineId" exact>{loggedIn ? (<DeleteWine />): (<Redirect to="/login" />)}</Route>
 
-                    <Route path="/profile" exact component={Profile}/>
+                    <Route path="/journal" exact>{loggedIn ? (<Journal />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/journal/all" exact>{loggedIn ? (<AllJournals />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/journal/details/:journalId" exact>{loggedIn ? (<JournalDetails />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/journal/create" exact>{loggedIn ? (<CreateJournal />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/journal/edit/:journalId" exact>{loggedIn ? (<EditJournal />): (<Redirect to="/login" />)}</Route>
+                    <Route path="/journal/delete/:journalId" exact>{loggedIn ? (<DeleteJournal />): (<Redirect to="/login" />)}</Route>
 
-                    <Route component={ErrorPage} />
+                    <Route path="/profile" exact>{loggedIn ? (<Profile />): (<Redirect to="/login" />)}</Route>
+
+                    <Route component={Error404} />
                 </Switch>
             </main>
         </div>
