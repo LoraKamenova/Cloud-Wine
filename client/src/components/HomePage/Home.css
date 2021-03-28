@@ -7,8 +7,8 @@
 .home-content-wrapper {
     display: flex;
     width: 60%;
-    height: 70%;
     margin: auto;
+    padding: 10px;
     border: 15px solid rgba(0, 0, 0, 0.65);;
 }
 
@@ -16,11 +16,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 97%;
-    height: 95%;
+    width: 100%;
     color: white;
     background-color: rgba(0, 0, 0, 0.65);
-    margin: auto;
     padding: 0 80px 80px 80px;
 }
 
@@ -29,7 +27,7 @@
     bottom: -50px;
     text-align: center;
     font-family: 'Caveat', cursive;
-    font-size: 40px ;
+    font-size: 40px;
     font-weight: 400;
     color: #FCB269;
 }

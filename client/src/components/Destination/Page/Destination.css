@@ -5,3 +5,19 @@
 .destination-section > .destination-content-container > .destination-article-wrapper > .info-button-wrapper > a {
     text-decoration: none;
 }
+
+@media all and (max-width: 1200px) {
+    .destination-image-container {
+        display: none;
+    }
+    .destination-article-wrapper {
+        width: 100%;
+        height: auto;
+        padding: 55px;
+    }
+
+    .info-button-wrapper {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}

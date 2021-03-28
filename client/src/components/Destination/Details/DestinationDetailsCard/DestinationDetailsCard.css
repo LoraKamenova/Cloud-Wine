@@ -49,3 +49,21 @@
 .destination-details-card-services {
     margin-top: 20px;
 }
+
+@media all and (max-width: 1200px) {
+
+    .pic-and-info-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-wrapper {
+        width: 100%;
+    }
+
+    .destination-details-button-wrapper {
+        justify-content: center;
+    }
+}

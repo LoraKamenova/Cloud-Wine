@@ -86,14 +86,14 @@
     margin-bottom: 10px;
 }
 
+@media all and (max-width: 1024px) {
+    .jdc-image {
+        width: 350px;
+        height: 200px;
+    }
 
-
-/*@media only screen and (max-width: 1024px) {*/
-/*    .journal-details-card-image-wrapper {*/
-/*        flex-direction: column;*/
-/*        align-items: center;*/
-/*    }*/
-/*    .journal-details-card-button-wrapper {*/
-/*        justify-content: center;*/
-/*    }*/
-/*}*/
+    .tape {
+        width: 150px;
+        height: 50px;
+    }
+}

@@ -14,3 +14,21 @@
     width: 400px;
     height: 70px;
 }
+
+.form-header-heading-hidden {
+    display: none;
+}
+
+@media all and (max-width: 800px) {
+    .form-header-heading-container, .form-header-image-container {
+        display: none;
+    }
+
+    .form-header-heading-hidden {
+        display: inline-block;
+        text-align: center;
+        font-family: 'Caveat', cursive;
+        font-size: 50px;
+        color: #9F61B1;
+    }
+}

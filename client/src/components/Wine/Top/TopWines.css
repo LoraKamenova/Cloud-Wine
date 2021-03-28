@@ -47,3 +47,13 @@
     text-decoration: none;
     color: #465945;
 }
+
+@media all and (max-width: 970px) {
+
+    .top-wines-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

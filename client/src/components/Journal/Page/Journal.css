@@ -5,3 +5,20 @@
 .journal-section > .journal-content-container > .journal-article-wrapper > .info-button-wrapper > a {
     text-decoration: none;
 }
+
+
+@media all and (max-width: 1200px) {
+    .journal-image-container {
+        display: none;
+    }
+    .journal-article-wrapper {
+        width: 100%;
+        height: auto;
+        padding: 55px;
+    }
+
+    .info-button-wrapper {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
