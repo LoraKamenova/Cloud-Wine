@@ -2,10 +2,10 @@ import './Aside.css'
 import AsideItem from "./AsideItem/AsideItem";
 import Footer from "../Footer/Footer";
 
-import {NavLink} from "react-router-dom";
-import React, { useContext } from 'react';
+import {Link, NavLink} from "react-router-dom";
+import React, {useContext} from 'react';
 import UserContext from "../../../Context";
-import { useHistory } from 'react-router-dom';
+import {useHistory} from 'react-router-dom';
 
 const Aside = () => {
     const context = useContext(UserContext);
@@ -18,11 +18,13 @@ const Aside = () => {
         history.push('/')
     }
 
+
     if (loggedIn) {
         return (
             <aside className="aside-navigation-wrapper">
-                <h1 className="site-name">Винoписи</h1>
-
+                <div className="site-name-container">
+                    <h1 className="site-name">Винoписи</h1>;
+                </div>
                 <div className="aside-navigation">
                     <ul className="aside-navigation-list">
                         <NavLink activeClassName="selected-aside-item" exact={true}
@@ -47,7 +49,8 @@ const Aside = () => {
     } else {
         return (
             <aside className="aside-navigation-wrapper">
-                <h1 className="site-name">Винoписи</h1>
+                <div className="site-name-container">
+                </div>
 
                 <div className="aside-navigation">
                     <ul className="aside-navigation-list">
