@@ -56,8 +56,6 @@ module.exports = {
             mapUrl
         } = req.body;
 
-        console.log(description);
-
         Destination.updateOne({_id: id}, {name, description, address, services, logoUrl, imageUrl1, imageUrl2, mapUrl})
             .then((updatedDestination) => res.send(updatedDestination))
             .catch(next);

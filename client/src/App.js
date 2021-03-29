@@ -2,13 +2,7 @@ import './App.css';
 
 import Start from "./components/StartPage/Start";
 import Home from "./components/HomePage/Home";
-import Terroir from "./components/Dictionary/DictionaryEntries/Terroir/Terroir";
-import DictionaryPage from "./components/Dictionary/DictionaryPage/DictionaryPage";
-import Vineyard from "./components/Dictionary/DictionaryEntries/Vineyard/Vineyard";
-import Grape from "./components/Dictionary/DictionaryEntries/Grape/Grape";
-import Wine from "./components/Dictionary/DictionaryEntries/Wine/Wine";
-import Bottle from "./components/Dictionary/DictionaryEntries/Bottle/Bottle";
-import Barrel from "./components/Dictionary/DictionaryEntries/Barrel/Barrel";
+import AllDictionaryEntries from "./components/Dictionary/All/AllDictionaryEntries";
 import Destination from "./components/Destination/Page/Destination";
 import Journal from "./components/Journal/Page/Journal";
 import Register from "./components/Auth/Register/Register";
@@ -20,12 +14,6 @@ import JournalDetails from "./components/Journal/Details/JournalDetails";
 import AllDestinations from "./components/Destination/All/AllDestinations";
 import DestinationDetails from "./components/Destination/Details/DestinationDetails";
 import Aside from "./components/Navigation/Aside/Aside";
-import Tasting from "./components/Dictionary/DictionaryEntries/Tasting/Tasting";
-import Fermentation from "./components/Dictionary/DictionaryEntries/Fermentation/Fermentation";
-import Must from "./components/Dictionary/DictionaryEntries/Must/Must";
-import Yeast from "./components/Dictionary/DictionaryEntries/Yeast/Yeast";
-import Cork from "./components/Dictionary/DictionaryEntries/Cork/Cork";
-import Blending from "./components/Dictionary/DictionaryEntries/Blending/Blending";
 import AllWines from "./components/Wine/All/AllWines";
 import TopWines from "./components/Wine/Top/TopWines";
 import WineDetails from "./components/Wine/Details/WineDetails";
@@ -42,6 +30,10 @@ import Error404 from "./components/Shared/Error/Error404";
 import {Route, Switch, Redirect} from "react-router-dom"
 import React, {useContext} from 'react'
 import UserContext from './Context'
+import CreateDictionaryEntry from "./components/Dictionary/Create/CreateDictionaryEntry";
+import DetailsDictionaryEntry from "./components/Dictionary/Details/DetailsDictionaryEntry";
+import EditDictionaryEntry from "./components/Dictionary/Edit/EditDictionaryEntry";
+import DeleteDictionaryEntry from "./components/Dictionary/Delete/DeleteDictionaryEntry";
 
 function App() {
 
@@ -62,19 +54,17 @@ function App() {
 
                     <Route path="/home" exact>{loggedIn ? (<Home/>) : (<Redirect to="/login"/>)}</Route>
 
-                    <Route path="/dictionary" exact>{loggedIn ? (<DictionaryPage/>) : (<Redirect to="/login"/>)}</Route>
-                    <Route path="/dictionary/terroir" exact>{loggedIn ? (<Terroir/>) : (<Redirect to="/login"/>)}</Route>
-                    <Route path="/dictionary/vineyard" exact>{loggedIn ? (<Vineyard/>) : (<Redirect to="/login"/>)}</Route>
-                    <Route path="/dictionary/grape" exact>{loggedIn ? (<Grape/>) : (<Redirect to="/login"/>)}</Route>
-                    <Route path="/dictionary/wine" exact>{loggedIn ? (<Wine/>) : (<Redirect to="/login"/>)}</Route>
-                    <Route path="/dictionary/barrel" exact>{loggedIn ? (<Barrel/>) : (<Redirect to="/login"/>)}</Route>
-                    <Route path="/dictionary/bottle" exact>{loggedIn ? (<Bottle/>) : (<Redirect to="/login"/>)}</Route>
-                    <Route path="/dictionary/tasting" exact>{loggedIn ? (<Tasting/>) : (<Redirect to="/login"/>)}</Route>
-                    <Route path="/dictionary/fermentation" exact>{loggedIn ? (<Fermentation/>) : (<Redirect to="/login"/>)}</Route>
-                    <Route path="/dictionary/must" exact>{loggedIn ? (<Must/>) : (<Redirect to="/login"/>)}</Route>
-                    <Route path="/dictionary/yeast" exact>{loggedIn ? (<Yeast/>) : (<Redirect to="/login"/>)}</Route>
-                    <Route path="/dictionary/cork" exact>{loggedIn ? (<Cork/>) : (<Redirect to="/login"/>)}</Route>
-                    <Route path="/dictionary/blending" exact>{loggedIn ? (<Blending/>) : (<Redirect to="/login"/>)}</Route>
+
+                    <Route path="/dictionary/all" exact>{loggedIn ? (<AllDictionaryEntries/>) : (<Redirect to="/login"/>)}</Route>
+                    <Route path="/dictionary/create" exact>{loggedIn ? (<CreateDictionaryEntry/>) : (<Redirect to="/login"/>)}</Route>
+                    <Route path="/dictionary/details/:entryId" exact render={(props) => {
+                        return loggedIn ? (<DetailsDictionaryEntry {...props} />) : (<Redirect to="/login"/>)}}/>
+
+                    <Route path="/dictionary/edit/:entryId" exact render={(props) => {
+                        return loggedIn ? (<EditDictionaryEntry {...props} />) : (<Redirect to="/login"/>)}}/>
+
+                    <Route path="/dictionary/delete/:entryId" exact render={(props) => {
+                        return loggedIn ? (<DeleteDictionaryEntry {...props} />) : (<Redirect to="/login"/>)}}/>
 
 
                     <Route path="/destination" exact>{loggedIn ? (<Destination/>) : (<Redirect to="/login"/>)}</Route>

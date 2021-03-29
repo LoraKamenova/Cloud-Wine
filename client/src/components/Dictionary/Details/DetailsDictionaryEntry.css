@@ -1,0 +1,16 @@
+.dictionary-pages {
+    width: 70%;
+    margin: 3% auto;
+}
+
+.dictionary-details-container {
+    background-color: #FFFACC;
+    padding-bottom: 30px;
+}
+
+
+.dictionary-entry-details-button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}

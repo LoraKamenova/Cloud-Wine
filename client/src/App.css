@@ -249,8 +249,6 @@
     height: 300px;
     padding: 20px;
     box-shadow: 0px 0px 11px -4px #000000;
-    justify-content: space-between;
-    align-items: center;
     margin: 30px;
     background-color: white;
 }
@@ -258,8 +256,8 @@
 .red-dictionary-card-content-wrapper, .white-dictionary-card-content-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
 .red-dictionary-image, .white-dictionary-image {
@@ -271,6 +269,12 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 15px;
+}
+
+.red-dictionary-text-wrapper, .white-dictionary-text-wrapper {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
 }
 
 .red-dictionary-card-text, .white-dictionary-card-text {
@@ -295,9 +299,3 @@
 }
 
 /*----------------------------------------------------------------------*/
-/*dictionary-entries*/
-
-.dictionary-pages {
-    width: 70%;
-    margin: 3% auto;
-}
