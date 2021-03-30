@@ -1,5 +1,5 @@
 import getCookie from "../utils/cookie";
-import api_key from "../Constants";
+import api_key from "../C";
 
 const basicUrl = 'http://localhost:5000/api/destinations';
 
