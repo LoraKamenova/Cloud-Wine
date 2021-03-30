@@ -18,6 +18,8 @@ const CreateDestination = () => {
             name,
             description,
             address,
+            lat,
+            lon,
             services,
             logoUrl,
             imageUrl1,
@@ -29,6 +31,8 @@ const CreateDestination = () => {
             name.value,
             description.value,
             address.value,
+            lat.value,
+            lon.value,
             services.value,
             logoUrl.value,
             imageUrl1.value,
@@ -72,6 +76,30 @@ const CreateDestination = () => {
                            type="text"
                            id="address"
                            name="address"
+                           required/>
+                </div>
+
+                <div className="form-field-wrapper">
+                    <div className="form-field-heading">
+                        <label htmlFor="lat">Географска ширина:</label>
+                    </div>
+                    <input className="form-field-input"
+                           type="number"
+                           step="0.0001"
+                           id="lat"
+                           name="lat"
+                           required/>
+                </div>
+
+                <div className="form-field-wrapper">
+                    <div className="form-field-heading">
+                        <label htmlFor="lon">Географска дължина:</label>
+                    </div>
+                    <input className="form-field-input"
+                           type="number"
+                           step="0.0001"
+                           id="lon"
+                           name="lon"
                            required/>
                 </div>
 

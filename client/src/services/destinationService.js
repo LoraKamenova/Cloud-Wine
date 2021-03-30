@@ -15,11 +15,13 @@ export const getOne = (destinationId) => {
         .catch(error => console.log(error));
 }
 
-export const create = (destinationName, description, address, services, logoUrl, imageUrl1, imageUrl2, mapUrl) => {
+export const create = (destinationName, description, address, lat, lon, services, logoUrl, imageUrl1, imageUrl2, mapUrl) => {
     let destination = {
         name: destinationName,
         description: description,
         address: address,
+        lat: lat,
+        lon: lon,
         services: services,
         logoUrl: logoUrl,
         imageUrl1: imageUrl1,

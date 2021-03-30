@@ -14,6 +14,14 @@ const DestinationSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    lat: {
+        type: String,
+        required: true,
+    },
+    lon: {
+        type: String,
+        required: true,
+    },
     services: {
         type: String,
         required: true,

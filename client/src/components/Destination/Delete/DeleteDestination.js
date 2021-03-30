@@ -47,18 +47,6 @@ const DeleteDestination = ({match}) => {
 
                 <div className="form-field-wrapper">
                     <div className="form-field-heading">
-                        <label htmlFor="description">Описание:</label>
-                    </div>
-                    <textarea className="form-field-input textarea form-field-input-delete"
-                              rows="11"
-                              id="description"
-                              name="description"
-                              readOnly
-                              defaultValue={destination.description}/>
-                </div>
-
-                <div className="form-field-wrapper">
-                    <div className="form-field-heading">
                         <label htmlFor="address">Адрес:</label>
                     </div>
                     <input className="form-field-input form-field-input-delete"
@@ -67,6 +55,44 @@ const DeleteDestination = ({match}) => {
                            name="address"
                            readOnly
                            defaultValue={destination.address}/>
+                </div>
+
+                <div className="form-field-wrapper">
+                    <div className="form-field-heading">
+                        <label htmlFor="lat">Географска ширина:</label>
+                    </div>
+                    <input className="form-field-input"
+                           type="number"
+                           step="0.0001"
+                           id="lat"
+                           name="lat"
+                           readOnly
+                           defaultValue={destination.lat}/>
+                </div>
+
+                <div className="form-field-wrapper">
+                    <div className="form-field-heading">
+                        <label htmlFor="lon">Географска дължина:</label>
+                    </div>
+                    <input className="form-field-input"
+                           type="number"
+                           step="0.0001"
+                           id="lon"
+                           name="lon"
+                           readOnly
+                           defaultValue={destination.lon}/>
+                </div>
+
+                <div className="form-field-wrapper">
+                    <div className="form-field-heading">
+                        <label htmlFor="description">Описание:</label>
+                    </div>
+                    <textarea className="form-field-input textarea form-field-input-delete"
+                              rows="11"
+                              id="description"
+                              name="description"
+                              readOnly
+                              defaultValue={destination.description}/>
                 </div>
 
                 <div className="form-field-wrapper">

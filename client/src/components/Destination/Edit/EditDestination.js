@@ -27,6 +27,8 @@ const EditDestination = ({match}) => {
             name: e.target.name.value,
             description: e.target.description.value,
             address: e.target.address.value,
+            lat: e.target.lat.value,
+            lon: e.target.lon.value,
             services: e.target.services.value,
             logoUrl: e.target.logoUrl.value,
             imageUrl1: e.target.imageUrl1.value,
@@ -69,6 +71,43 @@ const EditDestination = ({match}) => {
 
                 <div className="form-field-wrapper">
                     <div className="form-field-heading">
+                        <label htmlFor="address">Адрес:</label>
+                    </div>
+                    <input className="form-field-input"
+                           type="text"
+                           id="address"
+                           name="address"
+                           defaultValue={destination.address}/>
+                </div>
+
+                <div className="form-field-wrapper">
+                    <div className="form-field-heading">
+                        <label htmlFor="lat">Географска ширина:</label>
+                    </div>
+                    <input className="form-field-input"
+                           type="number"
+                           step="0.0001"
+                           id="lat"
+                           name="lat"
+                           required
+                           defaultValue={destination.lat}/>
+                </div>
+
+                <div className="form-field-wrapper">
+                    <div className="form-field-heading">
+                        <label htmlFor="lon">Географска дължина:</label>
+                    </div>
+                    <input className="form-field-input"
+                           type="number"
+                           step="0.0001"
+                           id="lon"
+                           name="lon"
+                           required
+                           defaultValue={destination.lon}/>
+                </div>
+
+                <div className="form-field-wrapper">
+                    <div className="form-field-heading">
                         <label htmlFor="description">Описание:</label>
                     </div>
                     <textarea className="form-field-input textarea"
@@ -79,17 +118,6 @@ const EditDestination = ({match}) => {
                               onBlur={onChangeDescriptionHandler}
                               defaultValue={destination.description}/>
                     <InputError>{errorMessage}</InputError>
-                </div>
-
-                <div className="form-field-wrapper">
-                    <div className="form-field-heading">
-                        <label htmlFor="address">Адрес:</label>
-                    </div>
-                    <input className="form-field-input"
-                           type="text"
-                           id="address"
-                           name="address"
-                           defaultValue={destination.address}/>
                 </div>
 
                 <div className="form-field-wrapper">
