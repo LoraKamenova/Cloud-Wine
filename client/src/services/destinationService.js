@@ -1,4 +1,5 @@
 import getCookie from "../utils/cookie";
+import api_key from "../Constants";
 
 const basicUrl = 'http://localhost:5000/api/destinations';
 
@@ -60,7 +61,7 @@ export const deleteDestination = (destinationId) => {
 
 
 export const getWeatherInfo = (lat, lon) => {
-    return fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly,minutely&units=metric&appid=fb6ae550c253be1248239e245c9e6579&lang=bg`)
+    return fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly,minutely&units=metric&appid=${api_key}&lang=bg`)
         .then(res => res.json())
         .catch(error => console.log(error));
 }
