@@ -3,50 +3,58 @@
 /*}*/
 
 .forecast-wrapper {
-    width: 85%;
+    color: white;
+    width: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /*justify-content: center;*/
     background-color: #FFFACC;
     border-radius: 5px;
-    padding: 50px 20px;
-    margin: 0 auto;
+    padding: 20px 30px 70px 30px;
+    margin: auto;
+    background-image: url("https://media.istockphoto.com/photos/clear-blue-sky-background-with-scattered-clouds-picture-id184304316?k=6&m=184304316&s=612x612&w=0&h=Y3daH7tigcvjNSI7dYKWiT2EWGQ14XHkxdHLqkTpaSU=");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 .forecast-header {
-    position: relative;
-    top: -20px;
     text-align: center;
     font-family: 'Caveat', cursive;
     font-size: 55px;
-    color: black;
+    color: white;
 }
 
 .forecast-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    margin: 0 auto;
+    margin: 4% auto;
 }
 
 .forecast-card {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    border: 1px solid black;
     justify-content: center;
     align-items: center;
-    width: 220px;
+    width: 160px;
     height: 250px;
-    margin: 5px;
-    padding: 20px 0;
+    padding: 20px 5px;
+}
+
+.forecast-card:not(:last-child){
+    border-right: 1px solid white;
+}
+
+.date-wrapper, .day-wrapper {
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .date-wrapper {
     font-style: italic;
-    text-decoration: underline;
-
 }
 
 .description-wrapper {
@@ -55,9 +63,10 @@
     margin: 20px 0;
     text-wrap: normal;
     text-align: center;
+    align-items: center;
 }
 
-.temperature-container > span {
+.temperature-container {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 35px;
 }
