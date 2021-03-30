@@ -6,6 +6,7 @@ import * as destinationService from "../../../services/destinationService";
 import {Link} from "react-router-dom";
 import {useContext, useEffect, useState} from 'react';
 import UserContext from "../../../Context";
+import DestinationCard from "../All/DestinationCard/DestinationCard";
 
 const DestinationDetails = ({match}) => {
     const context = useContext(UserContext)
@@ -14,8 +15,10 @@ const DestinationDetails = ({match}) => {
     let [destination, setDestination] = useState({});
 
     useEffect(() => {
+
         destinationService.getOne(match.params.destinationId)
             .then(res => setDestination(res));
+
     }, []);
 
     let buttons;
@@ -28,6 +31,7 @@ const DestinationDetails = ({match}) => {
     }
 
     return (
+
         <section className="custom-details-section destination-details-section">
 
             <div className="destination-details-wrapper">
@@ -41,9 +45,11 @@ const DestinationDetails = ({match}) => {
                         services={destination.services}
                         description={destination.description}
                     />
+                <Link to={`/destination/details/${destination.lat}/${destination.lon}`}>
+                    <button>Click me</button>
+                </Link>
                 {buttons}
             </div>
-
         </section>
     );
 };

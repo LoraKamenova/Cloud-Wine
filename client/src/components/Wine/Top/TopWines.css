@@ -1,5 +1,6 @@
-.top-wines-section {
+.common-all-section.top-wines-section {
     width: 82%;
+    margin: 2% auto;
 }
 
 .top-wines-wrapper {

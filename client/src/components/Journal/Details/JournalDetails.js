@@ -9,6 +9,7 @@ import UserContext from "../../../Context";
 
 const JournalDetails = ({match}) => {
     const context = useContext(UserContext)
+    const role = context.user.role;
     const userId = context.user.id;
 
     let [journal, setJournal] = useState({});
@@ -19,7 +20,7 @@ const JournalDetails = ({match}) => {
     }, []);
 
     let buttons;
-    if (userId === journal.creatorId) {
+    if (userId === journal.creatorId || role === "root") {
         buttons =
             <div className="jdc-button-wrapper">
                 <Link className="button edit-button" to={`/journal/edit/${journal._id}`}>Редактирай<i className="fas fa-pencil-alt"></i></Link>

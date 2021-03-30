@@ -49,7 +49,7 @@ const AllDictionaryEntries = () => {
                 <div className="dictionary-header">Винен речник</div>
 
                 <div className="dictionary-cards-container">
-                    {entries.map((x, index) => ((index % 2 !== 0) ?
+                    {entries.map((x, index) => ((index % 2 === 0) ?
                             <RedDictionaryCard key={x._id} {...x}
                                                title={x.title}
                                                iconUrl={x.iconWhiteUrl}

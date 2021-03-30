@@ -47,7 +47,7 @@ const AllDestinations = () => {
 
                 <div className="all-destinations-container">
                     {destinations.map((x) => (
-                        <Link key={x._id} {...x} to={`/destination/details/${x._id}`}>
+                        <Link key={x._id} {...x} to={`/destination/details/${x._id}/${x.lat}/${x.lon}`}>
                             <DestinationCard
                                 title={x.name}
                                 address={x.address}

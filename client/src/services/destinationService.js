@@ -57,3 +57,11 @@ export const deleteDestination = (destinationId) => {
         // body: JSON.stringify(destination)
     })
 }
+
+
+export const getWeatherInfo = (lat, lon) => {
+    return fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly,minutely&units=metric&appid=fb6ae550c253be1248239e245c9e6579&lang=bg`)
+        .then(res => res.json())
+        .catch(error => console.log(error));
+}
+

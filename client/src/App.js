@@ -34,6 +34,7 @@ import CreateDictionaryEntry from "./components/Dictionary/Create/CreateDictiona
 import DetailsDictionaryEntry from "./components/Dictionary/Details/DetailsDictionaryEntry";
 import EditDictionaryEntry from "./components/Dictionary/Edit/EditDictionaryEntry";
 import DeleteDictionaryEntry from "./components/Dictionary/Delete/DeleteDictionaryEntry";
+import Forecast from "./components/Destination/All/DestinationCard/Forecast";
 
 function App() {
 
@@ -69,8 +70,11 @@ function App() {
 
                     <Route path="/destination" exact>{loggedIn ? (<Destination/>) : (<Redirect to="/login"/>)}</Route>
                     <Route path="/destination/all" exact>{loggedIn ? (<AllDestinations/>) : (<Redirect to="/login"/>)}</Route>
-                    <Route path="/destination/details/:destinationId" exact render={(props) => {
+                    <Route path="/destination/details/:destinationId/:lat/:lon" exact render={(props) => {
                         return loggedIn ? (<DestinationDetails {...props} />) : (<Redirect to="/login"/>)}}/>
+
+                    <Route path="/destination/details/:lat/:lon" exact render={(props) => {
+                        return loggedIn ? (<Forecast {...props} />) : (<Redirect to="/login"/>)}}/>
 
                     <Route path="/destination/create" exact>{loggedIn ? (<CreateDestination/>) : (<Redirect to="/login"/>)}</Route>
                     <Route path="/destination/edit/:destinationId" exact render={(props) => {
