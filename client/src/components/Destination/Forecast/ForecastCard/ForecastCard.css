@@ -1,0 +1,36 @@
+.forecast-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 250px;
+    padding: 20px 5px;
+}
+
+.forecast-card:not(:last-child){
+    border-right: 1px solid white;
+}
+
+.date-wrapper, .day-wrapper {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.date-wrapper {
+    font-style: italic;
+}
+
+.description-wrapper {
+    display: flex;
+    flex-grow: 1;
+    margin: 20px 0;
+    text-wrap: normal;
+    text-align: center;
+    align-items: center;
+}
+
+.temperature-container {
+    font-weight: bold;
+    font-size: 35px;
+}

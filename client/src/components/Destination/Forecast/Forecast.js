@@ -4,6 +4,7 @@ import * as destinationService from "../../../services/destinationService";
 
 import {useEffect, useState} from 'react';
 import Loading from "../../Shared/Loading/Loading";
+import ForecastCard from "./ForecastCard/ForecastCard";
 
 const Forecast = ({match}) => {
 
@@ -56,17 +57,16 @@ const Forecast = ({match}) => {
     return (
         <section className="custom-details-section forecast-section">
             <div className="forecast-wrapper">
-                <h2 className="forecast-header">7-дневна прогноза</h2>
+                <h2 className="forecast-header">7-дневна прогноза за района</h2>
                 <div className="forecast-container">
                     {weatherInfo.daily.map((x, index) => (index > 0) ? (
-                            <div className="forecast-card" key={x._id} {...x}>
-                                <div className="date-wrapper">{convertToDate(x.dt)}</div>
-                                <div className="day-wrapper">{convertToDay(x.dt)}</div>
-                                <div className="description-wrapper">{x.weather[0].description}</div>
-                                <div className="temperature-container">
-                                    <span>{Math.round(x.temp.min)}&#176;</span>/<span>{Math.round(x.temp.max)}&#176;</span>
-                                </div>
-                            </div>
+                        <ForecastCard key={x._id} {...x}
+                            date={convertToDate(x.dt)}
+                            day={convertToDay(x.dt)}
+                            description={x.weather[0].description}
+                            minTemp={Math.round(x.temp.min)}
+                            maxTemp={Math.round(x.temp.max)}
+                        />
                         ) : null
                     )}
                 </div>

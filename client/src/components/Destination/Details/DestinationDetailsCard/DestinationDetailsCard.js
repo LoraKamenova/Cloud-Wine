@@ -1,4 +1,5 @@
 import './DestinationDetailsCard.css'
+import {Link} from "react-router-dom";
 
 const DestinationDetailsCard = (props) => {
     return (
@@ -16,12 +17,17 @@ const DestinationDetailsCard = (props) => {
                 <img className="destination-details-card-image non-floating-image" src={props.imageUrl2} alt="destination"/>
 
                 <div className="info-wrapper">
+                    <div className="destination-details-card-services">Услуги: {props.services}</div>
                     <img className="destination-details-card-map" src={props.mapUrl} alt="map"/>
-                    <div className="text-wrapper">
+                    <div className="destination-details-card-text-wrapper">
                         <p className="destination-details-card-address">Адрес: {props.address}</p>
-                        <div className="destination-details-card-services">Услуги: {props.services}</div>
                     </div>
                 </div>
+            </div>
+            <div className="forecast-button-wrapper">
+                <Link  className="forecast-button" to={props.link}>
+                    7-дневна прогноза за времето в района
+                </Link>
             </div>
         </div>
     );

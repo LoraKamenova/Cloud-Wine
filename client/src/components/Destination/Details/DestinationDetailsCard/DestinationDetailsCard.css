@@ -46,8 +46,33 @@
     align-items: center;
 }
 
-.destination-details-card-services {
-    margin-top: 20px;
+.destination-details-card-address {
+    text-align: center;
+}
+
+.forecast-button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.forecast-button-wrapper > a {
+    text-decoration: none;
+}
+
+.forecast-button {
+    outline: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    background-color: #3C5A26;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    border: none;
+}
+
+.forecast-button:hover {
+    cursor: pointer;
+    background-color: #5B8A39;
 }
 
 @media all and (max-width: 1200px) {
