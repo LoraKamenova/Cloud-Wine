@@ -1,8 +1,9 @@
 import './Forecast.css'
 
-import * as destinationService from "../../../../services/destinationService";
+import * as destinationService from "../../../services/destinationService";
 
 import {useEffect, useState} from 'react';
+import Loading from "../../Shared/Loading/Loading";
 
 const Forecast = ({match}) => {
 
@@ -15,7 +16,8 @@ const Forecast = ({match}) => {
 
     }, []);
 
-    console.log(weatherInfo.daily);
+    // console.log(weatherInfo);
+
 
     function convertToDate(dateStamp) {
         const milliseconds = dateStamp * 1000
@@ -47,6 +49,9 @@ const Forecast = ({match}) => {
         }
     }
 
+    if (weatherInfo.daily === undefined) {
+        return  <Loading />;
+    } else {
 
     return (
         <section className="custom-details-section forecast-section">
@@ -69,6 +74,8 @@ const Forecast = ({match}) => {
         </section>
 
     );
+    }
+
 };
 
 export default Forecast;
