@@ -59,26 +59,26 @@ const DeleteDestination = ({match}) => {
 
                 <div className="form-field-wrapper">
                     <div className="form-field-heading">
-                        <label htmlFor="lat">Географска ширина:</label>
+                        <label htmlFor="latitude">Географска ширина:</label>
                     </div>
                     <input className="form-field-input"
                            type="number"
                            step="0.0001"
-                           id="lat"
-                           name="lat"
+                           id="latitude"
+                           name="latitude"
                            readOnly
                            defaultValue={destination.lat}/>
                 </div>
 
                 <div className="form-field-wrapper">
                     <div className="form-field-heading">
-                        <label htmlFor="lon">Географска дължина:</label>
+                        <label htmlFor="longitude">Географска дължина:</label>
                     </div>
                     <input className="form-field-input"
                            type="number"
                            step="0.0001"
-                           id="lon"
-                           name="lon"
+                           id="longitude"
+                           name="longitude"
                            readOnly
                            defaultValue={destination.lon}/>
                 </div>

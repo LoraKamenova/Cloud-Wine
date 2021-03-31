@@ -46,6 +46,10 @@
     align-items: center;
 }
 
+.info-subtitle {
+    font-weight: bold;
+}
+
 .destination-details-card-address {
     text-align: center;
 }
@@ -53,7 +57,7 @@
 .forecast-button-wrapper {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .forecast-button-wrapper > a {

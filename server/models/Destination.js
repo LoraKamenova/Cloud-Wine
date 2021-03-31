@@ -14,11 +14,11 @@ const DestinationSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    lat: {
+    latitude: {
         type: String,
         required: true,
     },
-    lon: {
+    longitude: {
         type: String,
         required: true,
     },

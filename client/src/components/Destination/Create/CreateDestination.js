@@ -18,8 +18,8 @@ const CreateDestination = () => {
             name,
             description,
             address,
-            lat,
-            lon,
+            latitude,
+            longitude,
             services,
             logoUrl,
             imageUrl1,
@@ -31,8 +31,8 @@ const CreateDestination = () => {
             name.value,
             description.value,
             address.value,
-            lat.value,
-            lon.value,
+            latitude.value,
+            longitude.value,
             services.value,
             logoUrl.value,
             imageUrl1.value,
@@ -81,25 +81,27 @@ const CreateDestination = () => {
 
                 <div className="form-field-wrapper">
                     <div className="form-field-heading">
-                        <label htmlFor="lat">Географска ширина:</label>
+                        <label htmlFor="latitude">Географска ширина:</label>
                     </div>
                     <input className="form-field-input"
                            type="number"
+                           placeholder="пример: 24.1751"
                            step="0.0001"
-                           id="lat"
-                           name="lat"
+                           id="latitude"
+                           name="latitude"
                            required/>
                 </div>
 
                 <div className="form-field-wrapper">
                     <div className="form-field-heading">
-                        <label htmlFor="lon">Географска дължина:</label>
+                        <label htmlFor="longitude">Географска дължина:</label>
                     </div>
                     <input className="form-field-input"
                            type="number"
+                           placeholder="пример: 42.2658"
                            step="0.0001"
-                           id="lon"
-                           name="lon"
+                           id="longitude"
+                           name="longitude"
                            required/>
                 </div>
 

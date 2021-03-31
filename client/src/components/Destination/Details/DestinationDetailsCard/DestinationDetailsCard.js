@@ -17,10 +17,10 @@ const DestinationDetailsCard = (props) => {
                 <img className="destination-details-card-image non-floating-image" src={props.imageUrl2} alt="destination"/>
 
                 <div className="info-wrapper">
-                    <div className="destination-details-card-services">Услуги: {props.services}</div>
+                    <div className="destination-details-card-services"><span className="info-subtitle">Услуги: </span>{props.services}</div>
                     <img className="destination-details-card-map" src={props.mapUrl} alt="map"/>
                     <div className="destination-details-card-text-wrapper">
-                        <p className="destination-details-card-address">Адрес: {props.address}</p>
+                        <p className="destination-details-card-address"><span className="info-subtitle">Адрес: </span>{props.address}</p>
                     </div>
                 </div>
             </div>

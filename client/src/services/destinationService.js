@@ -15,13 +15,13 @@ export const getOne = (destinationId) => {
         .catch(error => console.log(error));
 }
 
-export const create = (destinationName, description, address, lat, lon, services, logoUrl, imageUrl1, imageUrl2, mapUrl) => {
+export const create = (destinationName, description, address, latitude, longitude, services, logoUrl, imageUrl1, imageUrl2, mapUrl) => {
     let destination = {
         name: destinationName,
         description: description,
         address: address,
-        lat: lat,
-        lon: lon,
+        latitude: latitude,
+        longitude: longitude,
         services: services,
         logoUrl: logoUrl,
         imageUrl1: imageUrl1,
@@ -62,8 +62,8 @@ export const deleteDestination = (destinationId) => {
 }
 
 
-export const getWeatherInfo = (lat, lon) => {
-    return fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly,minutely&units=metric&appid=${api_key}&lang=bg`)
+export const getWeatherInfo = (latitude, longitude) => {
+    return fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=hourly,minutely&units=metric&appid=${api_key}&lang=bg`)
         .then(res => res.json())
         .catch(error => console.log(error));
 }

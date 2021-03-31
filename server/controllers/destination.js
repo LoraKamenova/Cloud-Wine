@@ -24,8 +24,8 @@ module.exports = {
             name,
             description,
             address,
-            lat,
-            lon,
+            latitude,
+            longitude,
             services,
             logoUrl,
             imageUrl1,
@@ -33,7 +33,7 @@ module.exports = {
             mapUrl
         } = req.body;
 
-        Destination.create({name, description, address, lat, lon, services, logoUrl, imageUrl1, imageUrl2, mapUrl})
+        Destination.create({name, description, address, latitude, longitude, services, logoUrl, imageUrl1, imageUrl2, mapUrl})
             .then((createdDestination) => {
                 return Promise.all([
                     Destination.findOne({_id: createdDestination._id})
@@ -51,8 +51,8 @@ module.exports = {
             name,
             description,
             address,
-            lat,
-            lon,
+            latitude,
+            longitude,
             services,
             logoUrl,
             imageUrl1,
@@ -60,7 +60,7 @@ module.exports = {
             mapUrl
         } = req.body;
 
-        Destination.updateOne({_id: id}, {name, description, address, lat, lon, services, logoUrl, imageUrl1, imageUrl2, mapUrl})
+        Destination.updateOne({_id: id}, {name, description, address, latitude, longitude, services, logoUrl, imageUrl1, imageUrl2, mapUrl})
             .then((updatedDestination) => res.send(updatedDestination))
             .catch(next);
     },

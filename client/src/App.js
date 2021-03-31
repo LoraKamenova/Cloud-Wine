@@ -73,7 +73,7 @@ function App() {
                     <Route path="/destination/details/:destinationId/" exact render={(props) => {
                         return loggedIn ? (<DestinationDetails {...props} />) : (<Redirect to="/login"/>)}}/>
 
-                    <Route path="/destination/forecast/:lat/:lon" exact render={(props) => {
+                    <Route path="/destination/forecast/:latitude/:longitude" exact render={(props) => {
                         return loggedIn ? (<Forecast {...props} />) : (<Redirect to="/login"/>)}}/>
 
                     <Route path="/destination/create" exact>{loggedIn ? (<CreateDestination/>) : (<Redirect to="/login"/>)}</Route>

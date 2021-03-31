@@ -46,7 +46,7 @@ const DestinationDetails = ({match}) => {
                     address={destination.address}
                     services={destination.services}
                     description={destination.description}
-                    link={`/destination/forecast/${destination.lat}/${destination.lon}`}
+                    link={`/destination/forecast/${destination.latitude}/${destination.longitude}`}
                 />
                 {buttons}
             </div>

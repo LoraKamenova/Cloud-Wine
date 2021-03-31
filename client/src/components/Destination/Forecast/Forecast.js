@@ -12,7 +12,7 @@ const Forecast = ({match}) => {
 
     useEffect(() => {
 
-        destinationService.getWeatherInfo(match.params.lat, match.params.lon)
+        destinationService.getWeatherInfo(match.params.latitude, match.params.longitude)
             .then(res => setWeatherInfo(res));
 
     }, []);
@@ -50,32 +50,54 @@ const Forecast = ({match}) => {
         }
     }
 
+    function convertToIcon(description) {
+
+        if (description === "слаб дъжд") {
+            return "https://res.cloudinary.com/dyhmxus4n/image/upload/v1617215294/React%20Project/slab_dujd_isayi5.png";
+        } else if (description === "умерен дъжд") {
+            return "https://res.cloudinary.com/dyhmxus4n/image/upload/v1617215294/React%20Project/umeren_dujd_tseb7s.png";
+        } else if (description === "дъжд и сняг") {
+            return "https://res.cloudinary.com/dyhmxus4n/image/upload/v1617217840/React%20Project/dujd_i_sniag_taukcy.png";
+        } else if (description === "слаб снеговалеж") {
+            return "https://res.cloudinary.com/dyhmxus4n/image/upload/v1617217841/React%20Project/slab_snegovalej_jp9ivj.png";
+        } else if (description === "облачно") {
+            return "https://res.cloudinary.com/dyhmxus4n/image/upload/v1617215294/React%20Project/oblachno_ezgzqe.png";
+        } else if (description === "разкъсана облачност") {
+            return "https://res.cloudinary.com/dyhmxus4n/image/upload/v1617215294/React%20Project/razkusana_oblachnost_gi5phd.png";
+        } else if (description === "предимно облачно") {
+            return "https://res.cloudinary.com/dyhmxus4n/image/upload/v1617215294/React%20Project/predimno_oblachno_t3vabd.png";
+        } else if (description === "ясно небе") {
+            return "https://res.cloudinary.com/dyhmxus4n/image/upload/v1617215294/React%20Project/yasno_nebe_k9x8yn.png";
+        } else if (description === "предимно ясно") {
+            return "https://res.cloudinary.com/dyhmxus4n/image/upload/v1617215294/React%20Project/predimno_yasno_rdxoft.png";
+        } else {
+            return "https://res.cloudinary.com/dyhmxus4n/image/upload/v1617216202/React%20Project/question_1_wk2ulm.png"
+        }
+    }
+
     if (weatherInfo.daily === undefined) {
-        return  <Loading />;
+        return <Loading/>;
     } else {
 
-    return (
-        <section className="custom-details-section forecast-section">
+        return (
             <div className="forecast-wrapper">
-                <h2 className="forecast-header">7-дневна прогноза за района</h2>
+                <h2 className="forecast-header">Прогноза за времето</h2>
                 <div className="forecast-container">
                     {weatherInfo.daily.map((x, index) => (index > 0) ? (
-                        <ForecastCard key={x._id} {...x}
-                            date={convertToDate(x.dt)}
-                            day={convertToDay(x.dt)}
-                            description={x.weather[0].description}
-                            minTemp={Math.round(x.temp.min)}
-                            maxTemp={Math.round(x.temp.max)}
-                        />
+                            <ForecastCard key={x._id} {...x}
+                                          date={convertToDate(x.dt)}
+                                          day={convertToDay(x.dt)}
+                                          iconUrl={convertToIcon(x.weather[0].description)}
+                                          description={x.weather[0].description}
+                                          minTemp={Math.round(x.temp.min)}
+                                          maxTemp={Math.round(x.temp.max)}
+                            />
                         ) : null
                     )}
                 </div>
             </div>
-        </section>
-
-    );
+        );
     }
-
 };
 
 export default Forecast;

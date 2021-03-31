@@ -27,8 +27,8 @@ const EditDestination = ({match}) => {
             name: e.target.name.value,
             description: e.target.description.value,
             address: e.target.address.value,
-            lat: e.target.lat.value,
-            lon: e.target.lon.value,
+            latitude: e.target.latitude.value,
+            longitude: e.target.longitude.value,
             services: e.target.services.value,
             logoUrl: e.target.logoUrl.value,
             imageUrl1: e.target.imageUrl1.value,
@@ -82,28 +82,28 @@ const EditDestination = ({match}) => {
 
                 <div className="form-field-wrapper">
                     <div className="form-field-heading">
-                        <label htmlFor="lat">Географска ширина:</label>
+                        <label htmlFor="latitude">Географска ширина:</label>
                     </div>
                     <input className="form-field-input"
                            type="number"
                            step="0.0001"
-                           id="lat"
-                           name="lat"
+                           id="latitude"
+                           name="latitude"
                            required
-                           defaultValue={destination.lat}/>
+                           defaultValue={destination.latitude}/>
                 </div>
 
                 <div className="form-field-wrapper">
                     <div className="form-field-heading">
-                        <label htmlFor="lon">Географска дължина:</label>
+                        <label htmlFor="longitude">Географска дължина:</label>
                     </div>
                     <input className="form-field-input"
                            type="number"
                            step="0.0001"
-                           id="lon"
-                           name="lon"
+                           id="longitude"
+                           name="longitude"
                            required
-                           defaultValue={destination.lon}/>
+                           defaultValue={destination.longitude}/>
                 </div>
 
                 <div className="form-field-wrapper">
