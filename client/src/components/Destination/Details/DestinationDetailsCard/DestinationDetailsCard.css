@@ -15,7 +15,7 @@
 .destination-details-card-image {
     width: 450px;
     height: 300px;
-    box-shadow: 0px 0px 11px -3px #000000;
+    box-shadow: 0 0 11px -3px #000000;
 }
 
 .floating-image {
@@ -40,10 +40,10 @@
 .info-wrapper {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    margin-left: 20px;
     justify-content: space-around;
     align-items: center;
+    width: 40%;
+    margin-left: 20px;
 }
 
 .info-subtitle {
@@ -65,18 +65,18 @@
 }
 
 .forecast-button {
-    outline: none;
-    padding: 15px 40px;
-    border-radius: 5px;
     background-color: #3C5A26;
     color: white;
     font-family: 'Rubik', sans-serif;
+    outline: none;
     border: none;
+    border-radius: 5px;
+    padding: 15px 40px;
 }
 
 .forecast-button:hover {
-    cursor: pointer;
     background-color: #5B8A39;
+    cursor: pointer;
 }
 
 @media all and (max-width: 1200px) {

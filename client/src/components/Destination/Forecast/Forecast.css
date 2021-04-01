@@ -1,37 +1,35 @@
 .forecast-wrapper {
-    margin: auto;
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
-    padding: 50px 0px 100px 0px;
     background-color: rgba(255, 255, 255, 0.60);
+    border-radius: 5px;
+    margin: auto;
+    padding: 50px 0 100px 0;
 }
 
 .forecast-header {
-    text-align: center;
     font-family: 'Caveat', cursive;
     font-size: 55px;
     color: black;
+    text-align: center;
 }
 
 .forecast-container {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 0 30px;
     margin-top: 30px;
-
+    padding: 0 30px;
 }
 
 @media all and (max-width: 1200px) {
 
     .forecast-header {
-        padding: 0 30px;
         text-wrap: normal;
+        padding: 0 30px;
     }
 
     .forecast-container {
-
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
