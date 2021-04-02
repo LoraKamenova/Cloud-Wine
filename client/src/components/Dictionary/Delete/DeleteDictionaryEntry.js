@@ -71,6 +71,18 @@ const DeleteDictionaryEntry = ({match}) => {
 
                 <div className="form-field-wrapper">
                     <div className="form-field-heading">
+                        <label htmlFor="iconBlackUrl">URL черна икона::</label>
+                    </div>
+                    <input className="form-field-input form-field-input-delete"
+                           type="text"
+                           id="iconBlackUrl"
+                           name="iconBlackUrl"
+                           readOnly
+                           defaultValue={entry.iconBlackUrl}/>
+                </div>
+
+                <div className="form-field-wrapper">
+                    <div className="form-field-heading">
                         <label htmlFor="iconWhiteUrl">URL бяла икона::</label>
                     </div>
                     <input className="form-field-input form-field-input-delete"
@@ -79,18 +91,6 @@ const DeleteDictionaryEntry = ({match}) => {
                            name="iconWhiteUrl"
                            readOnly
                            defaultValue={entry.iconWhiteUrl}/>
-                </div>
-
-                <div className="form-field-wrapper">
-                    <div className="form-field-heading">
-                        <label htmlFor="iconBlackUrl">URL бяла икона::</label>
-                    </div>
-                    <input className="form-field-input form-field-input-delete"
-                           type="text"
-                           id="iconBlackUrl"
-                           name="iconBlackUrl"
-                           readOnly
-                           defaultValue={entry.iconBlackUrl}/>
                 </div>
 
                 <div className="form-field-wrapper">
