@@ -25,7 +25,7 @@ const AllDictionaryEntries = () => {
     if (role === "root") {
         button =
             <div className="all-destinations-button-wrapper">
-                <Link className="button new-item-button" to="/dictionary/create">Нова дестинация<i className="fas fa-check"></i></Link>
+                <Link className="button new-item-button" to="/dictionary/create">Нов термин<i className="fas fa-check"></i></Link>
             </div>;
     }
 
