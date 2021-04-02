@@ -6,10 +6,9 @@ import * as destinationService from "../../../services/destinationService";
 import {Link} from "react-router-dom";
 import {useContext, useEffect, useState} from 'react';
 import UserContext from "../../../Context";
-import DestinationCard from "../All/DestinationCard/DestinationCard";
 
-const DestinationDetails = ({match}) => {
-    const context = useContext(UserContext)
+const DestinationDetails = ( {match} ) => {
+    const context = useContext(UserContext);
     const role = context.user.role;
 
     let [destination, setDestination] = useState({});
@@ -33,11 +32,8 @@ const DestinationDetails = ({match}) => {
     }
 
     return (
-
         <section className="custom-details-section destination-details-section">
-
             <div className="destination-details-wrapper">
-
                 <DestinationDetailsCard
                     name={destination.name}
                     imageUrl1={destination.imageUrl1}

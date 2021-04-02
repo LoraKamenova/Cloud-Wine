@@ -110,8 +110,11 @@
 }
 
 .edit-button, .delete-button {
-    margin: 0 5px;
     width: 160px;
+}
+
+.delete-button {
+    margin-left: 20px;
 }
 
 .edit-button {
@@ -297,5 +300,4 @@
     cursor: pointer;
     color: white;
 }
-
 /*----------------------------------------------------------------------*/
