@@ -11,8 +11,4 @@ router.get('/verify', userController.post.verifyLogin);
 
 router.post('/logout', userController.post.logout);
 
-// router.patch('/', userController.patch);
-
-// router.delete('/:id', controllers.user.delete);
-
 module.exports = router;

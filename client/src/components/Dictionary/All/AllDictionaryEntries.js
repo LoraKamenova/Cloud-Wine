@@ -60,7 +60,7 @@ const AllDictionaryEntries = () => {
                             <WhiteDictionaryCard key={x._id} {...x}
                                                  title={x.title}
                                                  iconUrl={x.iconBlackUrl}
-                                                 shortText={x.shortText}
+                                                 shortText={x.shortText + '...'}
                                                  link={`/dictionary/details/${x._id}`}
                             />
                         )

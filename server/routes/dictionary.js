@@ -1,6 +1,6 @@
 const dictionaryController = require('../controllers/dictionary');
 const router = require('express').Router();
-const { auth } = require('../utils');
+// const { auth } = require('../utils');
 
 router.get('/all', dictionaryController.get.all);
 

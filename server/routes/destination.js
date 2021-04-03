@@ -1,6 +1,6 @@
 const destinationController = require('../controllers/destination');
 const router = require('express').Router();
-const { auth } = require('../utils');
+// const { auth } = require('../utils');
 
 router.get('/all', destinationController.get.all);
 

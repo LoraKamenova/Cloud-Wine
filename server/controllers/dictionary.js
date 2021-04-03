@@ -29,8 +29,6 @@ module.exports = {
             imageUrl,
         } = req.body;
 
-        shortText += '...';
-
         Dictionary.create({title, fullText, shortText, iconWhiteUrl, iconBlackUrl, imageUrl})
             .then((createdEntry) => {
                 return Promise.all([
@@ -53,8 +51,6 @@ module.exports = {
             iconBlackUrl,
             imageUrl,
         } = req.body;
-
-        shortText += '...';
 
         Dictionary.updateOne({_id: id}, {title, fullText, shortText, iconWhiteUrl, iconBlackUrl, imageUrl})
             .then((updatedEntry) => res.send(updatedEntry))
