@@ -1,0 +1,14 @@
+.error-image-wrapper {
+    background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1616944441/React%20Project/Error_2_xwnu4u.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 900px;
+    height: 500px;
+}

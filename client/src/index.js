@@ -6,13 +6,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ScrollToTop from "./components/Shared/ScrollToTop/ScrollToTop";
 import Global from "./Global";
+import ErrorBoundary from "./components/Shared/Error/ErrorBoundary";
 
 ReactDOM.render(
     <React.StrictMode>
         <Global>
             <Router>
                 <ScrollToTop>
-                    <App/>
+                    <ErrorBoundary>
+                        <App/>
+                    </ErrorBoundary>
                 </ScrollToTop>
             </Router>
         </Global>
