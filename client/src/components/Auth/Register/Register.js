@@ -7,6 +7,7 @@ import authenticate from "../../../utils/authenticate";
 import UserContext from "../../../Context";
 
 class Register extends Component {
+    static contextType = UserContext;
 
     constructor(props) {
         super(props)
@@ -14,12 +15,29 @@ class Register extends Component {
         this.state = {
             username: "",
             password: "",
+            rePassword: "",
             avatarUrl: "",
             errorMessage: "",
+            errorMessage2: "",
         }
     }
 
-    static contextType = UserContext;
+    validate() {
+        const {
+            password,
+            rePassword
+        } = this.state;
+
+        this.setState({errorMessage2: "", errorMessage: ""});
+
+        if (password !== rePassword) {
+            this.setState({errorMessage2: "Паролите не съвпадат"});
+            return true;
+        }
+
+        return false;
+    }
+
 
     onChange = (event, type) => {
         const newState = {}
@@ -36,6 +54,12 @@ class Register extends Component {
             avatarUrl
         } = this.state
 
+        const hasErrors = this.validate();
+
+        if (hasErrors) {
+            return;
+        }
+
         await authenticate('http://localhost:5000/api/user/register', {
                 username,
                 password,
@@ -51,12 +75,18 @@ class Register extends Component {
         const {
             username,
             avatarUrl,
+            rePassword,
             password,
         } = this.state
 
         let errorSpan = '';
         if(this.state.errorMessage) {
             errorSpan = <span className="form-error-span">{this.state.errorMessage}</span>
+        }
+
+        let errorSpan2 = '';
+        if(this.state.errorMessage2) {
+            errorSpan2 = <span className="form-error-span">{this.state.errorMessage2}</span>
         }
 
         return (
@@ -77,33 +107,6 @@ class Register extends Component {
                                onChange={(e) => this.onChange(e, 'username')}/>
                     </div>
 
-                    <span className="form-info-span">Полетата, отбелязани със (*) са задъжлителни</span>
-
-                    {/*<div className="form-field-wrapper">*/}
-                    {/*    <div className="form-field-heading">*/}
-                    {/*        <label htmlFor="rePassword">Повторете паролата:*</label>*/}
-                    {/*    </div>*/}
-                    {/*    <input className="form-field-input"*/}
-                    {/*           type="password"*/}
-                    {/*           id="rePassword"*/}
-                    {/*           name="rePassword"*/}
-                    {/*           required*/}
-                    {/*           value={rePassword}*/}
-                    {/*           onChange={(e) => this.onChange(e, 'rePassword')}/>*/}
-                    {/*</div>*/}
-
-                    <div className="form-field-wrapper">
-                        <div className="form-field-heading">
-                            <label htmlFor="avatarUrl">URL профилна снимка:</label>
-                        </div>
-                        <input className="form-field-input"
-                               type="avatarUrl"
-                               id="avatarUrl"
-                               name="avatarUrl"
-                               value={avatarUrl}
-                               onChange={(e) => this.onChange(e, 'avatarUrl')}/>
-                    </div>
-
                     <div className="form-field-wrapper">
                         <div className="form-field-heading">
                             <label htmlFor="password">Парола:*</label>
@@ -117,8 +120,35 @@ class Register extends Component {
                                onChange={(e) => this.onChange(e, 'password')}/>
                     </div>
 
+                    <div className="form-field-wrapper">
+                        <div className="form-field-heading">
+                            <label htmlFor="rePassword">Повторете паролата:*</label>
+                        </div>
+                        <input className="form-field-input"
+                               type="password"
+                               id="rePassword"
+                               name="rePassword"
+                               required
+                               value={rePassword}
+                               onChange={(e) => this.onChange(e, 'rePassword')}/>
+                    </div>
+
+                    <div className="form-field-wrapper">
+                        <div className="form-field-heading">
+                            <label htmlFor="avatarUrl">URL профилна снимка:</label>
+                        </div>
+                        <input className="form-field-input"
+                               type="avatarUrl"
+                               id="avatarUrl"
+                               name="avatarUrl"
+                               value={avatarUrl}
+                               onChange={(e) => this.onChange(e, 'avatarUrl')}/>
+                    </div>
+
+                    <span className="form-info-span">Полетата, отбелязани със (*) са задъжлителни</span>
+
                     <div className="form-error-div">
-                        {errorSpan}
+                        {errorSpan}{errorSpan2}
                     </div>
 
                     <div className="form-button-wrapper">
