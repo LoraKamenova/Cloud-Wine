@@ -56,10 +56,14 @@ const Forecast = ({match}) => {
             return "https://res.cloudinary.com/dyhmxus4n/image/upload/v1617215294/React%20Project/slab_dujd_isayi5.png";
         } else if (description === "умерен дъжд") {
             return "https://res.cloudinary.com/dyhmxus4n/image/upload/v1617215294/React%20Project/umeren_dujd_tseb7s.png";
+        } else if (description === "интензивен дъжд") {
+            return "https://res.cloudinary.com/dyhmxus4n/image/upload/v1617476369/React%20Project/intenziven_dujd_wv8eph.png";
         } else if (description === "дъжд и сняг") {
             return "https://res.cloudinary.com/dyhmxus4n/image/upload/v1617217840/React%20Project/dujd_i_sniag_taukcy.png";
         } else if (description === "слаб снеговалеж") {
             return "https://res.cloudinary.com/dyhmxus4n/image/upload/v1617217841/React%20Project/slab_snegovalej_jp9ivj.png";
+        } else if (description === "снеговалеж") {
+            return "https://res.cloudinary.com/dyhmxus4n/image/upload/v1617476369/React%20Project/snegovalej_gjvlhq.png";
         } else if (description === "облачно") {
             return "https://res.cloudinary.com/dyhmxus4n/image/upload/v1617215294/React%20Project/oblachno_ezgzqe.png";
         } else if (description === "разкъсана облачност") {
