@@ -2,62 +2,71 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.destination-details-card-header {
+.ddc-heading {
     text-align: center;
-}
-
-.destination-details-card-heading {
     font-size: 35px;
 }
 
-.destination-details-card-image {
+.ddc-description {
+    text-align: justify;
+    margin-top: 30px;
+}
+
+.ddc-floating-image {
+    float: right;
     width: 450px;
     height: 300px;
+    margin-left: 20px;
     box-shadow: 0 0 11px -3px #000000;
 }
 
-.floating-image {
-    float: right;
-    margin-left: 20px;
-}
-.destination-details-card-text {
-    text-align: justify;
+.ddc-non-floating-image {
+    width: 90%;
+    height: 40%;
     margin: 30px 0;
+    box-shadow: 0 0 11px -3px #000000;
 }
 
-.pic-and-info-wrapper {
+.ddc-map-and-info-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-.destination-details-card-map {
-    width: 85%;
-    height: 60%;
+.ddc-map {
+    width: 50%;
+    min-height: 300px;
 }
 
-.info-wrapper {
+.ddcs-info-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 40%;
-    margin-left: 20px;
+    justify-content: space-between;
+    width: 41%;
+    min-height: 300px;
+    padding-top: 40px;
 }
 
-.info-subtitle {
+.ddc-address-services-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.ddc-info-subtitle {
     font-weight: bold;
 }
 
-.destination-details-card-address {
-    text-align: center;
+.ddc-address {
+    margin-bottom: 30px;
 }
 
 .forecast-button-wrapper {
     display: flex;
     justify-content: flex-end;
-    margin-top: 15px;
 }
 
 .forecast-button-wrapper > a {
@@ -66,12 +75,14 @@
 
 .forecast-button {
     background-color: #3C5A26;
+    width: 100%;
+    text-align: center;
     color: white;
     font-family: 'Rubik', sans-serif;
     outline: none;
     border: none;
     border-radius: 5px;
-    padding: 15px 18px;
+    padding: 15px 0;
 }
 
 .forecast-button:hover {
@@ -81,18 +92,27 @@
 
 @media all and (max-width: 1200px) {
 
-    .pic-and-info-wrapper {
-        display: flex;
+    .ddc-map-and-info-wrapper {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .info-wrapper {
+    .ddc-map, .ddcs-info-wrapper {
         width: 100%;
     }
 
-    .destination-details-button-wrapper {
-        justify-content: center;
+    .ddc-address-services-wrapper {
+        align-items: center;
+    }
+
+    .ddc-services {
+        text-align: center;
+    }
+
+    .ddc-floating-image {
+        display: flex;
+        float: none;
+        margin: 0 auto;
     }
 }

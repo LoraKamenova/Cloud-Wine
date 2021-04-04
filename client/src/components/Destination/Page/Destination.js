@@ -10,11 +10,7 @@ const Destination = () => {
                     <div className="destination-article-wrapper">
                         <AsideArticle
                             title="ДЕСТИНАЦИИ"
-                            paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus pulvinar tellus nec ante volutpat, vel commodo nisl aliquam. Maecenas nec
-                            malesuada risus, ut maximus libero. Aliquam bibendum sollicitudin nibh, ac vehicula leo
-                            maximus vitae. Aenean vitae metus luctus, molestie leo ac, ullamcorper justo. Class aptent
-                            taciti sociosqu ad litora torquent per conubia nostra, per"
+                            paragraph="България предлага разнообразни възможности за винен туризъм. Според личните ви предпочитания можете да се разходите из лозови масиви, да разгледате винарска изба и, разбира се, да дегустирате различни вина. Голяма част от винарски изби имат собствени ресторанти, а някои разполагат и с хотелска част, където може да отседнете."
                         />
                         <div className="info-button-wrapper">
                             <Link to="/destination/all"><span className="button info-button">Виж дестинациите<i className="fas fa-angle-double-right"></i></span></Link>

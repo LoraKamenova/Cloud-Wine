@@ -17,13 +17,7 @@ class Home extends Component {
                             <h1 className="home-page-heading">Винописи</h1>
                         </div>
                         <p className="home-page-paragraph">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus pulvinar tellus nec ante volutpat, vel commodo nisl aliquam. Maecenas nec
-                            malesuada risus, ut maximus libero. Aliquam bibendum sollicitudin nibh, ac vehicula leo
-                            maximus vitae. Aenean vitae metus luctus, molestie leo ac, ullamcorper justo. Aliquam
-                            bibendum
-                            sollicitudin nibh, ac vehicula leo
-                            maximus vitae. Aenean vitae metus luctus, molestie leo ac, ullamcorper justo.
+Това е споделено пространство за любителите на винения туризъм. Тук можете да намерите идеи за вашата следваща винена дестинация в България, а след това да ни разкажете за вашите преживявания и впечатления. Имаме и внимателно селектиран винен лист с български вина, заслужаващи вашето внимание, а нашият винен речник винаги е на разположение за обогатяване на вашата обща култура на тема вино.
                         </p>
                     </div>
                 </div>
