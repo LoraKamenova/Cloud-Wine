@@ -53,7 +53,7 @@ const AllDictionaryEntries = () => {
                             <RedDictionaryCard key={x._id} {...x}
                                                title={x.title}
                                                iconUrl={x.iconWhiteUrl}
-                                               shortText={x.shortText}
+                                               shortText={x.shortText + '...'}
                                                link={`/dictionary/details/${x._id}`}
                             />
                             :

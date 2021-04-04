@@ -25,6 +25,7 @@
 }
 
 .dictionary-article-paragraph {
-    text-indent: 30px;
-    margin: 50px;
+    margin: 50px 70px;
+    text-align: justify;
+    white-space: pre-wrap
 }

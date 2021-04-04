@@ -37,8 +37,8 @@ const CreateDictionaryEntry = () => {
     };
 
     const onChangeShortTextHandler = (e) => {
-        if (e.target.value.length > 120) {
-            setErrorMessage('Текстът трябва да е максимум 120 символа');
+        if (e.target.value.length > 80) {
+            setErrorMessage('Текстът трябва да е максимум 80 символа');
         } else {
             setErrorMessage('');
         }
