@@ -1,8 +1,12 @@
+.custom-details-section.wine-details-section {
+    margin: auto ;
+}
+
 .wine-details-wrapper {
     width: 80%;
     background-color: white;
     margin: 0 auto;
-    padding: 30px;
+    padding: 20px 30px;
 }
 
 .wine-details-button-wrapper {

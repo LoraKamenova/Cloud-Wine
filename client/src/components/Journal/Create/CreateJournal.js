@@ -37,7 +37,7 @@ const CreateJournal = () => {
             imageUrl2.value,
             userId)
             .then(() => {
-                history.push('/profile')
+                history.push('/journal/all')
             })
     };
 

@@ -84,6 +84,7 @@ const EditJournal = ({match}) => {
                            type="text"
                            id="place"
                            name="place"
+                           required
                            defaultValue={journal.place}/>
                 </div>
 
@@ -95,6 +96,7 @@ const EditJournal = ({match}) => {
                            type="text"
                            id="time"
                            name="time"
+                           required
                            defaultValue={journal.time}/>
                 </div>
 
@@ -120,6 +122,7 @@ const EditJournal = ({match}) => {
                            type="text"
                            id="imageUrl1"
                            name="imageUrl1"
+                           required
                            defaultValue={journal.imageUrl1}/>
                 </div>
 
@@ -131,6 +134,7 @@ const EditJournal = ({match}) => {
                            type="text"
                            id="imageUrl2"
                            name="imageUrl2"
+                           required
                            defaultValue={journal.imageUrl2}/>
                 </div>
 
