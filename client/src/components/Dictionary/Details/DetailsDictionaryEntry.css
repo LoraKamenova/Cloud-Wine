@@ -5,12 +5,11 @@
 
 .dictionary-details-container {
     background-color: #FFFACC;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
 }
-
 
 .dictionary-entry-details-button-wrapper {
     display: flex;
     justify-content: flex-end;
-    margin-right: 20px;
+    margin-right: 70px;
 }
