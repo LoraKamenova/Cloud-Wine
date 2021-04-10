@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WhiteDictionaryCard Component WhiteDictionaryCard Component snapshot 1`] = `
+<DocumentFragment>
+  <article
+    class="white-dictionary-card"
+  >
+    <div
+      class="white-dictionary-card-content-wrapper"
+    >
+      <div
+        class="white-dictionary-image-wrapper"
+      >
+        <img
+          alt="icon"
+          class="white-dictionary-image"
+        />
+      </div>
+      <h3
+        class="white-dictionary-card-title"
+      />
+      <div
+        class="white-dictionary-text-wrapper"
+      >
+        <p
+          class="white-dictionary-card-text"
+        />
+      </div>
+      <a
+        class="white-dictionary-card-button"
+        href="/"
+      >
+        Прочети
+      </a>
+    </div>
+  </article>
+</DocumentFragment>
+`;

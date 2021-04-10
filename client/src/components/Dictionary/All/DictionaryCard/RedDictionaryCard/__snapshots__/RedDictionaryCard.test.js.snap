@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RedDictionaryCard Component RedDictionaryCard Component snapshot 1`] = `
+<DocumentFragment>
+  <article
+    class="red-dictionary-card"
+  >
+    <div
+      class="red-dictionary-card-content-wrapper"
+    >
+      <div
+        class="red-dictionary-image-wrapper"
+      >
+        <img
+          alt="icon"
+          class="red-dictionary-image"
+        />
+      </div>
+      <h3
+        class="red-dictionary-card-title"
+      />
+      <div
+        class="red-dictionary-text-wrapper"
+      >
+        <p
+          class="red-dictionary-card-text"
+        />
+      </div>
+      <a
+        class="red-dictionary-card-button"
+        href="/"
+      >
+        Прочети
+      </a>
+    </div>
+  </article>
+</DocumentFragment>
+`;

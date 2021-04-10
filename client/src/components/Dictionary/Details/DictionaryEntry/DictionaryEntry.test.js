@@ -23,4 +23,8 @@ describe('DictionaryEntry Component', () => {
         expect(document.querySelector(".dictionary-article-paragraph").textContent).toBe('Аерирането на виното означава излагане на виното на въздух или с други думи оставянето му да „подиша“ преди да бъде изпито.');
     });
 
+    it("DictionaryEntry Component snapshot", () => {
+        const { asFragment } = render(<DictionaryEntry />);
+        expect(asFragment()).toMatchSnapshot();
+    });
 });

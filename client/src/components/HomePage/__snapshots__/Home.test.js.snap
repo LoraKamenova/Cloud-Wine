@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DictionaryEntry Component renders 1`] = `
+exports[`Home Component Home Component snapshot 1`] = `
 <DocumentFragment>
   <section
     class="home-section"

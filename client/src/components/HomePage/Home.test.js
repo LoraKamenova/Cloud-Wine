@@ -1,10 +1,9 @@
-import { BrowserRouter } from 'react-router-dom';
 import { render } from '@testing-library/react';
 import Home from './Home';
 
-describe('DictionaryEntry Component', () => {
+describe('Home Component', () => {
 
-    it("renders", () => {
+    it("Home Component snapshot", () => {
         const { asFragment } = render(<Home />);
         expect(asFragment()).toMatchSnapshot();
     });

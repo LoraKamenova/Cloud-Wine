@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DictionaryEntry Component DictionaryEntry Component snapshot 1`] = `
+<DocumentFragment>
+  <article
+    class="dictionary-article"
+  >
+    <div
+      class="dictionary-article-header"
+      style="background-image: url(undefined);"
+    >
+      <span
+        class="dictionary-article-heading"
+      />
+    </div>
+    <p
+      class="dictionary-article-paragraph"
+    />
+  </article>
+</DocumentFragment>
+`;

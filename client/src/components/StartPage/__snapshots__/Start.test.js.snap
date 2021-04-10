@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Start Component Start Component snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="start-section"
+  >
+    <div
+      class="header-container"
+    >
+      <p
+        class="header-heading"
+      >
+        Винописи
+      </p>
+    </div>
+  </section>
+</DocumentFragment>
+`;
