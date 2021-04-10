@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DictionaryEntry Component renders 1`] = `
+<DocumentFragment>
+  <section
+    class="home-section"
+  >
+    <div
+      class="home-content-wrapper"
+    >
+      <div
+        class="home-content-container"
+      >
+        <div
+          class="heading-wrapper"
+        >
+          <h3
+            class="home-page-subheading"
+          >
+            Добре дошли във
+          </h3>
+          <h1
+            class="home-page-heading"
+          >
+            Винописи
+          </h1>
+        </div>
+        <p
+          class="home-page-paragraph"
+        >
+          Това е споделено пространство за любителите на винения туризъм. Тук можете да намерите идеи за вашата следваща винена дестинация в България, а след това да ни разкажете за вашите преживявания и впечатления. Имаме и внимателно селектиран винен лист с български вина, заслужаващи вашето внимание, а нашият винен речник винаги е на разположение за обогатяване на вашата обща култура на тема вино.
+        </p>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

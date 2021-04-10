@@ -9,7 +9,7 @@ import UserContext from "../../../Context";
 
 
 const DetailsDictionaryEntry = ({match}) => {
-    const context = useContext(UserContext)
+    const context = useContext(UserContext);
     const role = context.user.role;
 
     let [entry, setEntry] = useState({});
