@@ -1,7 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
 import { render } from '@testing-library/react';
 import RedDictionaryCard from './RedDictionaryCard';
-import DictionaryEntry from "../../../Details/DictionaryEntry/DictionaryEntry";
 
 describe('RedDictionaryCard Component', () => {
     it('Should display entry title', () => {

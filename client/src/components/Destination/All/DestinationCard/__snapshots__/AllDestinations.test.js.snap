@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DestinationCard Component DestinationCard Component snapshot 1`] = `
+<DocumentFragment>
+  <article
+    class="destination-card"
+  >
+    <div
+      class="destination-card-image-wrapper"
+    >
+      <img
+        alt="logo"
+        class="destination-card-image"
+      />
+    </div>
+    <div
+      class="destination-card-info-wrapper"
+    >
+      <div
+        class="destination-card-line-wrapper"
+      >
+        <img
+          alt="house"
+          class="destination-card-pic"
+          src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616189586/React%20Project/house_nwweqf.png"
+        />
+        <h3
+          class="destination-info-item destination-card-title"
+        />
+      </div>
+      <div
+        class="destination-card-line-wrapper"
+      >
+        <img
+          alt="pin"
+          class="destination-card-pic"
+          src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616189587/React%20Project/push-pin_hopc61.png"
+        />
+        <h3
+          class="destination-info-item destination-card-address"
+        />
+      </div>
+      <div
+        class="destination-card-line-wrapper"
+      >
+        <img
+          alt="info"
+          class="destination-card-pic"
+          src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616199816/React%20Project/info_rg32io.png"
+        />
+        <h3
+          class="destination-info-item destination-card-services"
+        />
+      </div>
+    </div>
+  </article>
+</DocumentFragment>
+`;
+
+exports[`RedDictionaryCard Component DestinationCard Component snapshot 1`] = `
+<DocumentFragment>
+  <article
+    class="destination-card"
+  >
+    <div
+      class="destination-card-image-wrapper"
+    >
+      <img
+        alt="logo"
+        class="destination-card-image"
+      />
+    </div>
+    <div
+      class="destination-card-info-wrapper"
+    >
+      <div
+        class="destination-card-line-wrapper"
+      >
+        <img
+          alt="house"
+          class="destination-card-pic"
+          src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616189586/React%20Project/house_nwweqf.png"
+        />
+        <h3
+          class="destination-info-item destination-card-title"
+        />
+      </div>
+      <div
+        class="destination-card-line-wrapper"
+      >
+        <img
+          alt="pin"
+          class="destination-card-pic"
+          src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616189587/React%20Project/push-pin_hopc61.png"
+        />
+        <h3
+          class="destination-info-item destination-card-address"
+        />
+      </div>
+      <div
+        class="destination-card-line-wrapper"
+      >
+        <img
+          alt="info"
+          class="destination-card-pic"
+          src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1616199816/React%20Project/info_rg32io.png"
+        />
+        <h3
+          class="destination-info-item destination-card-services"
+        />
+      </div>
+    </div>
+  </article>
+</DocumentFragment>
+`;
