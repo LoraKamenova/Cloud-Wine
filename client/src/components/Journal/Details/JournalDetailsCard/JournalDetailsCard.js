@@ -10,17 +10,17 @@ const JournalDetailsCard = (props) => {
 
                     <div className="jdc-subsection">
                         <h3 className="jdc-subheading">Къде ходихме</h3>
-                        <div className="jdc-text">{props.place}</div>
+                        <div className="jdc-text jdc-place">{props.place}</div>
                     </div>
 
                     <div className="jdc-subsection">
                         <h3 className="jdc-subheading">Кога отидохме</h3>
-                        <div className="jdc-text">{props.time}</div>
+                        <div className="jdc-text jdc-time">{props.time}</div>
                     </div>
 
                     <div className="jdc-subsection">
                         <h3 className="jdc-subheading">Какво правихме</h3>
-                        <div className="jdc-text">{props.description}</div>
+                        <div className="jdc-text jdc-description">{props.description}</div>
                     </div>
                 </section>
 

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WineCard Component WineCard Component snapshot 1`] = `
+<DocumentFragment>
+  <article
+    class="wine-card"
+  >
+    <div
+      class="wine-card-image-wrapper"
+    >
+      <img
+        alt="wine item"
+        class="wine-card-image"
+      />
+    </div>
+    <div
+      class="wine-card-title-wrapper"
+    >
+      <h3
+        class="wine-card-title"
+      />
+    </div>
+  </article>
+</DocumentFragment>
+`;

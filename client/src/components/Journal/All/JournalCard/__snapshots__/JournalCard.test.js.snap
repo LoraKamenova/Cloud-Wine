@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JournalCard Component JournalCard Component snapshot 1`] = `
+<DocumentFragment>
+  <article
+    class="journal-card"
+  >
+    <div
+      class="journal-card-image-wrapper"
+    >
+      <img
+        alt="journal"
+        class="journal-card-image"
+      />
+    </div>
+    <div
+      class="journal-card-title-wrapper"
+    >
+      <h3
+        class="journal-card-title"
+      />
+    </div>
+  </article>
+</DocumentFragment>
+`;

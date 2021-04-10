@@ -20,9 +20,9 @@ const DestinationDetailsCard = (props) => {
                 <div className="ddcs-info-wrapper">
                     <div className="ddc-address-services-wrapper">
                         <p className="ddc-info-subtitle">Адрес:</p>
-                        <p className="ddc-address"> {props.address}</p>
+                        <p className="ddc-address">{props.address}</p>
                         <p className="ddc-info-subtitle">Услуги:</p>
-                        <p className="ddc-services"> {props.services}</p>
+                        <p className="ddc-services">{props.services}</p>
                     </div>
 
                     <div className="forecast-button-wrapper">

@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login Component Login Component snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="form-wrapper login-form-wrapper"
+  >
+    <div
+      class="form-header-wrapper"
+    >
+      <div
+        class="form-header-heading-container"
+      >
+        <h1
+          class="form-header-heading"
+        >
+          Вход
+        </h1>
+      </div>
+      <div
+        class="form-header-image-container"
+      >
+        <img
+          alt="vine"
+          class="form-header-image"
+          src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1615712293/React%20Project/grape_border_ogd8gq.png"
+        />
+      </div>
+      <h1
+        class="form-header-heading-hidden"
+      >
+        Вход
+      </h1>
+    </div>
+    <form
+      class="form-container"
+    >
+      <div
+        class="form-field-wrapper"
+      >
+        <div
+          class="form-field-heading"
+        >
+          <label
+            for="username"
+          >
+            Потребителско име:
+          </label>
+        </div>
+        <input
+          class="form-field-input"
+          id="username"
+          name="username"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="form-field-wrapper"
+      >
+        <div
+          class="form-field-heading"
+        >
+          <label
+            for="password"
+          >
+            Парола:
+          </label>
+        </div>
+        <input
+          class="form-field-input"
+          id="password"
+          name="password"
+          type="password"
+          value=""
+        />
+      </div>
+      <div
+        class="form-error-div"
+      />
+      <div
+        class="form-button-wrapper"
+      >
+        <input
+          class="form-button auth-form-button"
+          type="submit"
+          value="ИЗПРАТИ"
+        />
+      </div>
+    </form>
+  </section>
+</DocumentFragment>
+`;

@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JournalDetailsCard Component JournalDetailsCard Component snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="journal-details-card"
+  >
+    <div
+      class="jdc-content-wrapper"
+    >
+      <section
+        class="jdc-first-section"
+      >
+        <h1
+          class="jdc-heading"
+        />
+        <div
+          class="jdc-subsection"
+        >
+          <h3
+            class="jdc-subheading"
+          >
+            Къде ходихме
+          </h3>
+          <div
+            class="jdc-text jdc-place"
+          />
+        </div>
+        <div
+          class="jdc-subsection"
+        >
+          <h3
+            class="jdc-subheading"
+          >
+            Кога отидохме
+          </h3>
+          <div
+            class="jdc-text jdc-time"
+          />
+        </div>
+        <div
+          class="jdc-subsection"
+        >
+          <h3
+            class="jdc-subheading"
+          >
+            Какво правихме
+          </h3>
+          <div
+            class="jdc-text jdc-description"
+          />
+        </div>
+      </section>
+      <section
+        class="jdc-second-section"
+      >
+        <h3
+          class="jdc-subheading image-and-tape-heading"
+        >
+          Какво снимахме
+        </h3>
+        <div
+          class="jdc-image-and-tape-wrapper"
+        >
+          <div
+            class="tape left-tape"
+          />
+          <img
+            alt="journal"
+            class="jdc-image"
+          />
+          <div
+            class="tape right-tape"
+          />
+          <img
+            alt="journal"
+            class="jdc-image"
+          />
+        </div>
+      </section>
+    </div>
+  </div>
+</DocumentFragment>
+`;

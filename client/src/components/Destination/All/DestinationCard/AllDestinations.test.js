@@ -13,7 +13,7 @@ describe('DestinationCard Component', () => {
         expect(document.querySelector(".destination-card-title").textContent).toBe('Шато Копса');
     });
 
-    it('Should display card content', () => {
+    it('Should display card address', () => {
         render(
             <BrowserRouter>
                 <DestinationCard address="с. Московец, общ. Карлово" link="/"/>
@@ -23,7 +23,7 @@ describe('DestinationCard Component', () => {
         expect(document.querySelector(".destination-card-address").textContent).toBe('с. Московец, общ. Карлово');
     });
 
-    it('Should display card content', () => {
+    it('Should display card services', () => {
         render(
             <BrowserRouter>
                 <DestinationCard services="Дегустация на вина" link="/"/>

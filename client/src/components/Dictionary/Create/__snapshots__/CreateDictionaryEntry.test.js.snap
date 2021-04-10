@@ -1,0 +1,170 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateDictionaryEntry Component CreateDictionaryEntry Component snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="form-wrapper add-dictionary-entry-form-wrapper"
+  >
+    <div
+      class="form-header-wrapper"
+    >
+      <div
+        class="form-header-heading-container"
+      >
+        <h1
+          class="form-header-heading"
+        >
+          Нов термин
+        </h1>
+      </div>
+      <div
+        class="form-header-image-container"
+      >
+        <img
+          alt="vine"
+          class="form-header-image"
+          src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1615712293/React%20Project/grape_border_ogd8gq.png"
+        />
+      </div>
+      <h1
+        class="form-header-heading-hidden"
+      >
+        Нов термин
+      </h1>
+    </div>
+    <form
+      class="form-container"
+    >
+      <div
+        class="form-field-wrapper"
+      >
+        <div
+          class="form-field-heading"
+        >
+          <label
+            for="title"
+          >
+            Заглавие:
+          </label>
+        </div>
+        <input
+          class="form-field-input"
+          id="title"
+          name="title"
+          required=""
+          type="text"
+        />
+      </div>
+      <div
+        class="form-field-wrapper"
+      >
+        <div
+          class="form-field-heading"
+        >
+          <label
+            for="fullText"
+          >
+            Пълен текст:
+          </label>
+        </div>
+        <textarea
+          class="form-field-input textarea"
+          id="fullText"
+          name="fullText"
+          required=""
+          rows="11"
+        />
+      </div>
+      <div
+        class="form-field-wrapper"
+      >
+        <div
+          class="form-field-heading"
+        >
+          <label
+            for="shortText"
+          >
+            Кратък текст:
+          </label>
+        </div>
+        <textarea
+          class="form-field-input textarea"
+          id="shortText"
+          name="shortText"
+          required=""
+          rows="2"
+        />
+      </div>
+      <div
+        class="form-field-wrapper"
+      >
+        <div
+          class="form-field-heading"
+        >
+          <label
+            for="iconBlackUrl"
+          >
+            URL черна иконка:
+          </label>
+        </div>
+        <input
+          class="form-field-input"
+          id="iconBlackUrl"
+          name="iconBlackUrl"
+          required=""
+          type="text"
+        />
+      </div>
+      <div
+        class="form-field-wrapper"
+      >
+        <div
+          class="form-field-heading"
+        >
+          <label
+            for="iconWhiteUrl"
+          >
+            URL бяла икона:
+          </label>
+        </div>
+        <input
+          class="form-field-input"
+          id="iconWhiteUrl"
+          name="iconWhiteUrl"
+          required=""
+          type="text"
+        />
+      </div>
+      <div
+        class="form-field-wrapper"
+      >
+        <div
+          class="form-field-heading"
+        >
+          <label
+            for="imageUrl"
+          >
+            URL снимка:
+          </label>
+        </div>
+        <input
+          class="form-field-input"
+          id="imageUrl"
+          name="imageUrl"
+          required=""
+          type="text"
+        />
+      </div>
+      <div
+        class="form-button-wrapper"
+      >
+        <input
+          class="form-button"
+          type="submit"
+          value="ИЗПРАТИ"
+        />
+      </div>
+    </form>
+  </section>
+</DocumentFragment>
+`;

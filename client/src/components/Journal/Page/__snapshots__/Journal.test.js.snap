@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Journal Component Journal Component snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="journal-section"
+  >
+    <div
+      class="journal-content-container"
+    >
+      <div
+        class="journal-article-wrapper"
+      >
+        <article
+          class="article"
+        >
+          <div
+            class="article-heading-wrapper"
+          >
+            <span
+              class="article-heading"
+            >
+              ПЪТЕПИСИ
+            </span>
+          </div>
+          <p
+            class="article-paragraph"
+          >
+            Тук е мястото, където ще събираме вашите пътеписи. Разкажете ни вашите положителни или отрицателни впечатления от посетената дестинация. Препоръчайте или не вината, които сте опитали. Покажените снимките, които сте заснели. Прочетете преживяванията на другите любители на виното.
+          </p>
+        </article>
+        <div
+          class="info-button-wrapper"
+        >
+          <a
+            href="/journal/all"
+          >
+            <span
+              class="button info-button"
+            >
+              Виж пътеписите
+              <i
+                class="fas fa-angle-double-right"
+              />
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        class="journal-image-container"
+      >
+        <div
+          class="journal-image-wrapper"
+        />
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

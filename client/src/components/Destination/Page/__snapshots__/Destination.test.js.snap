@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Destination Component Destination Component snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="destination-section"
+  >
+    <div
+      class="destination-content-container"
+    >
+      <div
+        class="destination-article-wrapper"
+      >
+        <article
+          class="article"
+        >
+          <div
+            class="article-heading-wrapper"
+          >
+            <span
+              class="article-heading"
+            >
+              ДЕСТИНАЦИИ
+            </span>
+          </div>
+          <p
+            class="article-paragraph"
+          >
+            България предлага разнообразни възможности за винен туризъм. Според личните ви предпочитания можете да се разходите из лозови масиви, да разгледате винарска изба и, разбира се, да дегустирате различни вина. Голяма част от винарски изби имат собствени ресторанти, а някои разполагат и с хотелска част, където може да отседнете.
+          </p>
+        </article>
+        <div
+          class="info-button-wrapper"
+        >
+          <a
+            href="/destination/all"
+          >
+            <span
+              class="button info-button"
+            >
+              Виж дестинациите
+              <i
+                class="fas fa-angle-double-right"
+              />
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        class="destination-image-container"
+      >
+        <div
+          class="destination-image-wrapper"
+        />
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
